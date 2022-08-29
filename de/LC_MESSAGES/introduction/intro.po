@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Tobias Killer, 2022
+# m, 2022
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:32+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/introduction/intro.rst:3 af12476f5f8742a399a19c68c8601be3
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../../../_doc/introduction/intro.rst:9 3e992934bb2048049c146c21e24c85da
+msgid "What is Qubes OS?"
+msgstr "Was ist Qubes OS?"
+
+#: ../../../_doc/introduction/intro.rst:74 b0f17bf46525488ea75ca4c21ad02c60
+msgid "Note: See our glossary and FAQ for more information."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:80 13056369f36b441c8b4b7846231b3032
+msgid "Features"
+msgstr "Funktionen"
+
+#: ../../../_doc/introduction/intro.rst:196 67d3ebb07edb4b3691d21c6e741f0937
+msgid ""
+"Note: Given the technical nature of Qubes OS, prior experience with Linux "
+"can be helpful."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:203 a2dfc8714bbe485ab66cf2d83f0cc513
+msgid "Why Qubes OS?"
+msgstr "Warum Qubes OS?"
+
+#: ../../../_doc/introduction/intro.rst:213 54cc9d2e3fba4791bd06c0af01788460
+msgid "Physical isolation is a given safeguard that the digital world lacks"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:259 7458e8ab52414df18ffd53a7ab98b353
+msgid "Qubes allows you to compartmentalize your digital life"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:313 9c9a654eedce47389ab1d8562fd01d8e
+msgid "Made to support vulnerable users and power users alike"
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:413 3ae78d3e60b44cdbb9b21d7538437186
+msgid "More information"
+msgstr "Weitere Infromation"
+
+#: ../../../_doc/introduction/intro.rst:423 5d74fc230f974bfb8eff58f1bc7925d3
+msgid ""
+"This page is just a brief introduction to what Qubes is all about, and many "
+"technical details have been omitted here for the sake of presentation."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:435 16a1a904aad24479a2752dfda6f624d6
+msgid ""
+"If you’re a current or potential Qubes user, you may want to check out the "
+"documentation and the user FAQ."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:446 160ea4ca27e0492192a4d0f88816eea9
+msgid ""
+"If you’re a developer, there’s dedicated developer documentation and a "
+"developer FAQ just for you."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:457 58b5018078b841f880913a85e41813b8
+msgid ""
+"Ready to give Qubes a try? Head on over to the downloads page, and read the "
+"installation guide."
+msgstr ""
+
+#: ../../../_doc/introduction/intro.rst:468 458c9cabc04c48af8bf66eac63e99b61
+msgid ""
+"Need help, or just want to join the conversation? Learn more about help, "
+"support, the mailing lists, and the forum."
+msgstr ""

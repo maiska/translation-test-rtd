@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Emma Peel, 2022
+# AO <ao@localizationlab.org>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:28+0000\n"
+"Last-Translator: AO <ao@localizationlab.org>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:3
+#: 7cabe544b48f496baa43fdf083bd9df6
+msgid "How to upgrade to Qubes 4.1"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:5
+#: d2001fd4c6cf4b61af130c5460299b3b
+msgid ""
+"This page explains how to upgrade from Qubes 4.0 to Qubes 4.1. There are two"
+" ways to upgrade: a clean installation or an in-place upgrade. In general, a"
+" clean installation is simpler and less error-prone, but an in-place upgrade"
+" allows you to preserve your customizations."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:11
+#: 0fe57ed8857b4c5ca640646694ee33e2
+msgid "Back up"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:13
+#: 9ad971076f87475eab3f1a377217ed55
+msgid ""
+"Before attempting either an in-place upgrade or a clean installation, we "
+"strongly recommend that you first :doc:`back up your system </user/how-to-"
+"guides/how-to-back-up-restore-and-migrate>` so that you don’t lose any data."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:18
+#: 7846450aa76b4e5bb7c28b4d71d9bc06
+msgid "Clean installation"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:20
+#: 4dbbd0e732e4456caaf95b5e0da68bfa
+msgid ""
+"If you would prefer to perform a clean installation rather than upgrading "
+"in-place:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:23
+#: bd02e0aa6a8a41ceb82e02121780bcab
+msgid ""
+"Create a :ref:`backup <user/how-to-guides/how-to-back-up-restore-and-"
+"migrate:creating a backup>` of your current installation."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:26
+#: 6813756ade3f48b887f39344d0943e55
+msgid ""
+":doc:`Download </user/downloading-installing-upgrading/downloads>` the "
+"latest 4.1 release."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:27
+#: 8527252bc1824ee7a558c7035f5b8f73
+msgid ""
+"Follow the :doc:`installation guide </user/downloading-installing-"
+"upgrading/installation-guide>` to install Qubes 4.1."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:29
+#: 18c4425a9e1645cc95c8993e90207b33
+msgid ""
+":ref:`Restore from your    backup <user/how-to-guides/how-to-back-up-"
+"restore-and-migrate:restoring from a backup>` on your new 4.1 installation."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:33
+#: fbd23b73ab5d47fc9451b955f2c012b0
+msgid "In-place upgrade"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:35
+#: 2832464ea43e4e2b9090bc86796c57ce
+msgid ""
+"**Warning:** It is not possible to upgrade directly from releases earlier "
+"than 4.0. If you’re still on an earlier release, please either perform a "
+":ref:`clean installation of 4.1 <user/downloading-installing-"
+"upgrading/upgrade/4_1:clean installation>` or :doc:`upgrade to 4.0 "
+"</user/downloading-installing-upgrading/upgrade/4_0>` first."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:39
+#: fbf29007fdee40fda6a06b1e9fa7498e
+msgid ""
+"The upgrade may take several hours, and will download several gigabytes of "
+"data."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:42
+#: 7e88723dca904ae187fcc6d5bfbbfa7a
+msgid ""
+"In place upgrade is a complex operation. For this reason, we provide a "
+"``qubes-dist-upgrade`` tool to handle all the necessary steps automatically."
+" You can install it with the following command in the dom0 terminal:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:51
+#: 0cf5e2b0f9d04da695b2d00c8271423f
+msgid ""
+"The upgrade consists of seven stages — six before restarting the system — "
+"labeled “STAGE 0” through “STAGE 5” in the options list below. The seventh "
+"stage is rebuilding the application and features lists, which you can start "
+"with the ``--resync-appmenus-features`` option."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:56
+#: cc0b45e770894f9589ecc43bc99b6d62
+msgid ""
+"Full list of options can be obtained with ``qubes-dist-upgrade --help``:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:89
+#: ee53ea2a7fbe4f6ba568ce29d6fc2b9b
+msgid "After installing the tool, upgrade can be performed all at once with:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:95
+#: 8d99fa45dd4b470a86a500550c39e8df
+msgid ""
+"Optionally, an ``--assumeyes`` (or ``-y``) option can be used to "
+"automatically accept all the actions without confirmation."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:98
+#: 2c92f8ae61024ccc96173f1e6b94450e
+msgid ""
+"Alternatively, each upgrade stage can be started separately (see the list of"
+" options above)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:101
+#: ce6aab77c0824a8bafcae9dbebbecf91
+msgid ""
+"After completing “STAGE 0” through “STAGE 5”, restart the system. Then "
+"perform the final step:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:108
+#: 476c78a74bcd44b28a74d966a51bd8fa
+msgid "When this completes, you can start using Qubes OS 4.1."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:111
+#: ac2af7be1114429aad52ab4e50334791
+msgid "Known issues"
+msgstr "Bekannte Probleme"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:113
+#: ce3134e6495f4abda46735c037cab076
+msgid ""
+"The script does not convert LUKS1 to LUKS2 disk encryption format (fresh "
+"Qubes 4.1 install uses LUKS2 for disk encryption, while earlier versions use"
+" LUKS1)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:116
+#: 562d0d38f2914efdbbe32338c28a7c3e
+msgid ""
+"Early Qubes 4.0 pre-releases (before R4.0-rc2) made ``/boot/efi`` partition "
+"only 200MB, which is too small for R4.1. In case of such partition layout, "
+"clean installation is necessary."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:119
+#: 7038e6b0a0eb4607a5587f5671d39f3b
+msgid ""
+"If user has created some custom qrexec policy entries, they may not be "
+"correctly handled in R4.1, resulting in denying all the calls. It is advised"
+" to verify if there are not qrexec policy errors in the log after the system"
+" restart - using ``journalctl -b`` command."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:124
+#: 8aa8faa9686540f5a9187983524f03d9
+msgid ""
+"If any early upgrade stage fails, the ``qubes-dist-upgrade`` tool will try "
+"to restore previous system state. After fixing an issue, the tool can be "
+"started again, to retry the operation. If a later stage (number 3 or later) "
+"fails, the tool may not be able to rollback the changes. But it may still be"
+" possible to retry the upgrade."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:131
+#: 4cd6d521ca53472e99eef0170f3d3a0b
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_1.rst:133
+#: 981d9551576f48bf96ecbd903ce5d0e5
+msgid ""
+"After upgrading or performing a clean installation, we strongly recommend "
+":doc:`updating your system </user/how-to-guides/how-to-update>`."
+msgstr ""

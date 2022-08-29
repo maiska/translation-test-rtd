@@ -1,0 +1,394 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Florian <florian.brandes@gmx.de>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:29+0000\n"
+"Last-Translator: Florian <florian.brandes@gmx.de>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:3
+#: 4a9948db72c541f794555b8845a02efb
+msgid "Automated tests"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:6
+#: 8f085e48914641a6897d800737ae5efd
+msgid "Unit and Integration Tests"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:8
+#: 2b319f485464470fb37267fb617e1fef
+msgid ""
+"Starting with Qubes R3 we use `python unittest "
+"<https://docs.python.org/3/library/unittest.html>`__ to perform automatic "
+"tests of Qubes OS. Despite the name, we use it for both `unit tests "
+"<https://en.wikipedia.org/wiki/Unit_tests>`__ and `integration tests "
+"<https://en.wikipedia.org/wiki/Integration_tests>`__. The main purpose is, "
+"of course, to deliver much more stable releases."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:11
+#: 45c6f5ffa3f544b4b538e2615e69bc86
+msgid ""
+"The integration tests must be run in dom0, but some unit tests can run "
+"inside a VM as well."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:15
+#: cd95bd433d0d49aa9fe7166074635d85
+msgid "Integration & unit testing in dom0"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:17
+#: 1407c0f7a074476b9c1243dbbc6c0b6f
+msgid ""
+"Integration tests are written with the assumption that they will be executed"
+" on dedicated hardware and must be run in dom0. All other unit tests can "
+"also be run in dom0."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:21
+#: 6ded640c86e4479dbea04787495e7b8b
+msgid ""
+"**Do not run the tests on installations with important data, because you "
+"might lose it.**"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:24
+#: 5eab3d0fb10a454ea12462891ac7a197
+msgid ""
+"All the VMs with a name starting with ``test-`` on the installation are "
+"removed during the process, and all the tests are recklessly started from "
+"dom0, even when testing (& possibly breaking) VM components."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:28
+#: b1d0c122f69140a39b966fce0b2f3a58
+msgid ""
+"First you need to build all packages that you want to test. Please do not "
+"mix branches as this will inevitably lead to failures. Then setup Qubes OS "
+"with these packages installed."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:32
+#: feb2426140264e909317dfd4b0aba7cf
+msgid ""
+"For testing you’ll have to stop the ``qubesd`` service as the tests will use"
+" its own custom variant of the service: ``sudo systemctl stop qubesd``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:36
+#: 29c286ec256844779a0e21964edf79c9
+msgid "Don’t forget to start it after testing again."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:38
+#: d7ebf859bf844288b3300fd96f1d35f4
+msgid "To start testing you can then use the standard python unittest runner:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:40
+#: d7b6bf886e254af6ba3d078ba860caa8
+msgid "``sudo -E python3 -m unittest -v qubes.tests``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:42
+#: c98c6b2872e24bc4a039568e85a0c0a6
+msgid "Alternatively, use the custom Qubes OS test runner:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:44
+#: 066cbf543256455e83a8b983fc5f6625
+msgid "``sudo -E python3 -m qubes.tests.run -v``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:46
+#: 40dcaaea548747c392f67b5159a6cd36
+msgid ""
+"Our test runner runs mostly the same as the standard one, but it has some "
+"nice additional features like colored output and not needing the "
+"“qubes.test” prefix."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:50
+#: 285ccdbcfd374273b4996ff7a984f97d
+msgid ""
+"You can use ``python3 -m qubes.tests.run -h`` to get usage information:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:92
+#: 8aff7d6f2eb04c97b0cd87fbe61d959b
+msgid ""
+"For instance, to run only the tests for the fedora-21 template, you can use "
+"the ``-l`` option, then filter the list:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:120
+#: e1d73dfb6a41427fb503b2040f87fe32
+msgid "Example test run:"
+msgstr "Beispiele:"
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:125
+#: ../../../_doc/developer/debugging/automated-tests.rst:125
+#: 61cb81a4bcd24625bed18e67fe77479f 30b0d70e9bfb43ff86570a9827c32b7c
+msgid "snapshot-tests2.png"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:127
+#: 7263d00472034342ab7d035e1f3f993e
+msgid ""
+"Tests are also compatible with nose2 test runner, so you can use this "
+"instead:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:134
+#: 4f83dc6522b6450faaa33650b698efaa
+msgid ""
+"This may be especially useful together with various nose2 plugins to store "
+"tests results (for example ``nose2.plugins.junitxml``), to ease presenting "
+"results. This is what we use on `OpenQA <http://open.qa/>`__."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:138
+#: 35882f2a7de640fe895c35c92813dfdb
+msgid "Unit testing inside a VM"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:140
+#: 0663f01acf34405bb774654fb66541ad
+msgid ""
+"Many unit tests will also work inside a VM. However all of the tests "
+"requiring a dedicated VM to be run (mostly the integration tests) will be "
+"skipped."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:144
+#: df422161bbe049bea0baeadf37cfc34d
+msgid ""
+"Whereas integration tests are mostly stored in the `qubes-core-admin "
+"<https://github.com/QubesOS/qubes-core-admin>`__ repository, unit tests can "
+"be found in each of the Qubes OS repositories."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:148
+#: e8d4bf4c81c644218e81fb0059256746
+msgid ""
+"To for example run the ``qubes-core-admin unit tests, you currently have to "
+"clone at least `qubes-core-admin <https://github.com/QubesOS/qubes-core-"
+"admin>`__ and its dependency `qubes-core-qrexec "
+"<https://github.com/QubesOS/qubes-core-qrexec>`__ repository in the branches"
+" that you want to test."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:151
+#: cda44edd70284a4095491f61f2bade01
+msgid ""
+"The below example however will assume that you set up a build environment as"
+" described in the :doc:`Qubes Builder documentation "
+"</developer/building/qubes-builder>`."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:154
+#: b2daff5d738a478ab93ce95bc25280f8
+msgid ""
+"Assuming you cloned the ``qubes-builder`` repository to your home directory "
+"inside a fedora VM, you can use the following commands to run the unit "
+"tests:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:170
+#: 99bb52b66cd64e86909eb8a302ef1ac6
+msgid "To run only the tests related to e.g. ``lvm``, you may use:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:172
+#: 54dff0794cb7456e9d9577cab647bd37
+msgid "``./run-tests -v $(python3 -m qubes.tests.run -l | grep lvm)``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:174
+#: ca09991bec7e4df48b59032e94a5e25a
+msgid ""
+"You can later re-use the created virtual environment including all of the "
+"via ``pip3`` installed packages with ``source ~/python35/bin/activate``."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:178
+#: 4d5f8972f5e84f549396679686435389
+msgid ""
+"We recommend to run the unit tests with the Python version that the code is "
+"meant to be run with in dom0 (3.5 was just an example above). For instance, "
+"the ``release4.0`` (Qubes 4.0) branch is intended to be run with Python 3.5 "
+"whereas the Qubes 4.1 branch (``master`` as of 2020-07) is intended to be "
+"run with Python 3.7 or higher. You can always check your dom0 installation "
+"for the Python version of the current stable branch."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:187
+#: 5aeeb504ec1d4f2bb8d62095c3c9c317
+msgid "Tests configuration"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:189
+#: 3e570ca0d8f546029a4ee84ad670026b
+msgid "Test runs can be altered using environment variables:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:191
+#: 21734ea81caa47eb884fad939fe78170
+msgid ""
+"``DEFAULT_LVM_POOL`` - LVM thin pool to use for tests, in "
+"``VolumeGroup/ThinPool`` format"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:193
+#: 113cbb7ddbab4aa887afe75a40c5ffaa
+msgid ""
+"``QUBES_TEST_PCIDEV`` - PCI device to be used in PCI passthrough tests (for "
+"example sound card)"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:195
+#: 58e683ecce3c4b38a81bd0a7983bd6cc
+msgid ""
+"``QUBES_TEST_TEMPLATES`` - space separated list of templates to run tests "
+"on; if not set, all installed templates are tested"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:197
+#: 142af59c17f94861a9d50beb7d15adfd
+msgid ""
+"``QUBES_TEST_LOAD_ALL`` - load all tests (including tests for all templates)"
+" when relevant test modules are imported; this needs to be set for test "
+"runners not supporting `load_tests    protocol "
+"<https://docs.python.org/3/library/unittest.html#load-tests-protocol>`__  "
+"Adding a new test to core-admin -------------------------------  After "
+"adding a new unit test to `core-admin/qubes/tests "
+"<https://github.com/QubesOS/qubes-core-admin/tree/master/qubes/tests>`__ "
+"you’ll have to include it in `core-admin/qubes/tests/__init__.py "
+"<https://github.com/QubesOS/qubes-core-"
+"admin/tree/master/qubes/tests/__init__.py>`__"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:202
+#: 39bb1b5122ab423a8f8d9158d0aa49a8
+msgid "Editing ``__init__.py``"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:204
+#: 6efdda14dc364f85a9dacd0893460a06
+msgid ""
+"You’ll also need to add your test at the bottom of the ``__init__.py`` file,"
+" in the method ``def load_tests``, in the for loop with ``modname``. Again, "
+"given the hypothetical ``example.py`` test:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:222
+#: ee67931cb0a2435ca4d068f746b85d4e
+msgid "Testing PyQt applications"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:224
+#: 687c48a998a2467095a0d81b173bf7c6
+msgid ""
+"When testing (Py)QT applications, it’s useful to create a separate "
+"QApplication object for each test. But QT framework does not allow multiple "
+"QApplication objects in the same process at the same time. This means it’s "
+"critical to reliably cleanup the previous instance before creating a new "
+"one. This turns out to be a non-trivial task, especially if *any* test uses "
+"the event loop. Failure to perform proper cleanup in many cases results in "
+"SEGV. Below you can find steps for the proper cleanup:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:278
+#: 372bc3896a264c84a1f380b46d779809
+msgid "Automated tests with openQA"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:280
+#: ee9fadb683ba433b9d255628d012ba06
+msgid ""
+"**URL:** https://openqa.qubes-os.org/ **Tests:** "
+"https://github.com/marmarek/openqa-tests-qubesos"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:283
+#: 4cca01bd116a440dac76d332b51900ff
+msgid ""
+"Manually testing Qubes OS and its installation is a time-consuming process. "
+"We use `OpenQA <http://open.qa/>`__ to automate this process. It works by "
+"installing Qubes in KVM and interacting with it as a user would, including "
+"simulating mouse clicks and keyboard presses. Then, it checks the output to "
+"see whether various tests were passed, e.g. by comparing the virtual screen "
+"output to screenshots of a successful installation."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:291
+#: 8a06a4211dfe4d22a26509007ffd9022
+msgid ""
+"Using openQA to automatically test the Qubes installation process works as "
+"of Qubes 4.0-rc4 on 2018-01-26, provided that the versions of KVM and QEMU "
+"are new enough and the hardware has VT-x and EPT. KVM also supports nested "
+"virtualization, so HVM should theoretically work. In practice, however, "
+"either Xen or QEMU crashes when this is attempted. Nonetheless, PV works "
+"well, which is sufficient for automated installation testing."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:298
+#: 236da5ad6cc24f7e820814560a8f0d8b
+msgid ""
+"Thanks to present and past donors who have provided the infrastructure for "
+"Qubes’ openQA system with hardware that meets these requirements."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:302
+#: 3f86c16d412847589c36448c48ae974a
+msgid "Looking for patterns in tests"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:304
+#: d8cf08490a194629be4f439a11f288ed
+msgid ""
+"In order to better visualize patterns in tests the `openqa_investigator "
+"<https://github.com/QubesOS/openqa-tests-"
+"qubesos/blob/master/utils/openqa_investigator.py>`__ script can be used. It "
+"feeds off of the openQA test data to make graph plots. Here is an example:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:311
+#: ../../../_doc/developer/debugging/automated-tests.rst:311
+#: 83086728e78a4edf962ec0ad6366ec79 1c61457c1914437daa477fe343000e8e
+msgid "openqa-investigator-splitgpg-example.png"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:313
+#: c5453a7471bc41bfa1404b8ab4e8f42f
+msgid "Some outputs: - plot by tests - plot by errors - markdown"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:315
+#: 99f14a11d96448ef984d0639dbe7d3fb
+msgid "Some filters: - filter by error - filter by test name"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/automated-tests.rst:317
+#: 75336820331349a99eb9a120a7e3f6f4
+msgid ""
+"Check out the script’s help with ``python3 openqa_investigator.py --help`` "
+"to see all available options."
+msgstr ""

@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:30+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/system/security-design-goals.rst:3
+#: ea8d79dcd91940978bb657eb2196ebc2
+msgid "Security design goals"
+msgstr ""
+
+#: ../../../_doc/developer/system/security-design-goals.rst:5
+#: 7b8fe1d609de488388873b08e728f3ec
+msgid ""
+"Qubes OS implements a security-by-isolation (or security-by-"
+"compartmentalization) approach by providing the ability to easily create "
+"many security domains. These domains are implemented as lightweight Virtual "
+"Machines (VMs) running under the Xen hypervisor. Qubes’ main objective is to"
+" provide strong isolation between these domains, so that even if an attacker"
+" compromises one of the domains, the others are still safe. Qubes, however, "
+"does not attempt to provide any security isolation for applications running "
+"within the same domain. For example, a buggy web browser running in a Qubes "
+"domain could still be compromised just as easily as on a regular Linux "
+"distribution. The difference that Qubes makes is that now the attacker "
+"doesn’t have access to all the software running in the other domains."
+msgstr ""
+
+#: ../../../_doc/developer/system/security-design-goals.rst:18
+#: 960a883bcc404d8185dd8127e2ceecb0
+msgid ""
+"Qubes also provides features that make it easy and convenient to run these "
+"multiple domains, such as seamless GUI integration into one common desktop, "
+"secure clipboard copy and paste between domains, secure file transfer "
+"between domains, disposable VMs, and much more. Qubes also provides an "
+"advanced networking infrastructure that allows for the creation of multiple "
+"network VMs which isolate all the world-facing networking stacks and proxy "
+"VMs which can be used for advanced VPN configurations and tunneling over "
+"untrusted connections."
+msgstr ""

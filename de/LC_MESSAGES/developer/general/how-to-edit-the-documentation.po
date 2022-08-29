@@ -1,0 +1,446 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# m, 2022
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:30+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:3
+#: 45f76f1cc45b4438881d87836345a022
+msgid "How to edit the documentation"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:5
+#: f5f7e55c39074e659c33b23226e20cf9
+msgid ""
+"*Also see the*\\ :doc:`documentation style guide "
+"</developer/general/documentation-style-guide>`\\ *.*"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:7
+#: 77e5bf5cb47e44bf952718b82c0ae783
+msgid ""
+"Qubes OS documentation pages are stored as plain text Markdown files in the "
+"`qubes-doc <https://github.com/QubesOS/qubes-doc>`__ repository. By cloning "
+"and regularly pulling from this repo, users can maintain their own up-to-"
+"date offline copy of all Qubes documentation rather than relying solely on "
+"the web."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:13
+#: d3ba114ee68e484cae92009fb9932d60
+msgid ""
+"The documentation is a volunteer community effort. People like you are "
+"constantly working to make it better. If you notice something that can be "
+"fixed or improved, please follow the steps below to open a pull request!"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:19
+#: 661f461f7b5a4c58b820da179ffd11f0
+msgid "How to submit a pull request"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:21
+#: 9b229cfdfa8444eebe472aa9436f5033
+msgid ""
+"We keep all the documentation in `qubes-doc "
+"<https://github.com/QubesOS/qubes-doc>`__, a dedicated Git repository hosted"
+" on `GitHub <https://github.com/>`__. Thanks to GitHub’s easy web interface,"
+" you can edit the documentation even if you’re not familiar with Git or the "
+"command line! All you need is a free GitHub account."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:26
+#: f719f47cf9e04867822b642c84112c1e
+msgid "A few notes before we get started:"
+msgstr "Eineige Bemerkungne bevor wir starten:"
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:28
+#: 55ce8a205e93415b80e3cfa75720ef68
+msgid ""
+"Since Qubes is a security-oriented project, every documentation change will "
+"be :ref:`reviewed <developer/general/how-to-edit-the-"
+"documentation:security>` before it’s accepted. This allows us to maintain "
+"quality control and protect our users."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:32
+#: d5edde29934749e6adefa3a9ca88c71c
+msgid ""
+"To give your contribution a better chance of being accepted, please follow "
+"our :doc:`documentation style    guide </developer/general/documentation-"
+"style-guide>`."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:35
+#: 53c1ccdb7da6438785a5c53e2b71a5ac
+msgid ""
+"We don’t want you to spend time and effort on a contribution that we can’t "
+"accept. If your contribution would take a lot of time, please :doc:`file an "
+"issue </introduction/issue-tracking>` for it first so that we can make sure "
+"we’re on the same page before significant works begins."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:40
+#: 8782d1d8090c4afb8bff9549cc0767d7
+msgid ""
+"Alternatively, you may already have written content that doesn’t conform to "
+"these guidelines, but you’d be willing to modify it so that it does. In this"
+" case, you can still submit it by following the instructions below. Just "
+"make a note in your pull request (PR) that you’re aware of the changes that "
+"need to be made and that you’re just asking for the content to be reviewed "
+"before you spend time making those changes."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:48
+#: 5921ab9d045749f78184b4127ca4b40d
+msgid ""
+"Finally, if you’ve written something that doesn’t belong in qubes-doc but "
+"that would be beneficial to the Qubes community, please consider adding it "
+"to the :ref:`external    documentation <developer/general/documentation-"
+"style-guide:core vs external documentation>`."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:52
+#: 07c9e602e872491a9c000c0266105714
+msgid ""
+"(**Advanced users:** If you’re already familiar with GitHub or wish to work "
+"from the command line, you can skip the rest of this section. All you need "
+"to do to contribute is to `fork and clone "
+"<https://guides.github.com/activities/forking/>`__ the `qubes-doc "
+"<https://github.com/QubesOS/qubes-doc>`__ repo, make your changes, then "
+"`submit a pull request <https://help.github.com/articles/using-pull-"
+"requests/>`__.)"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:56
+#: ee15986ddd674ffaaafe2eeacd4c09bc
+msgid ""
+"Ok, let’s begin. Every documentation page has a “Page Source on GitHub” "
+"button. Depending on the size of your screen, it may either be on the side "
+"(larger screens) or on the bottom (smaller screens)."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:60
+#: d897ff545eaa40bd991777ab9c332654
+msgid "|page-source-button|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: e3b7ed9eddf44b7d958f5ef37967203f 1ad6634872de45d5be82dad822be792b
+msgid "page-source-button"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:62
+#: f59f1a0e61ee4eaea034d297a4d25191
+msgid ""
+"When you click on it, you’ll be taken to the source file — usually a "
+"Markdown (``.md``) file — on GitHub. On this page, there will be a button to"
+" edit the file."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:66
+#: 0410040a0fae4b57887944be26542168
+msgid "|github-edit|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ed42851b3af04c4eb95400bf96796926 a48de118c5134719beeb6f0c60fd8687
+msgid "github-edit"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:68
+#: df9c4d1f10ad4e64a09958f4a7fbe3f0
+msgid ""
+"You’ll be prompted to sign in with your GitHub username and password (if you"
+" aren’t already logged in). You can also create a free account from here."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:72
+#: 6eed65d0905546f1bedf94a5df9050b7
+msgid "|github-sign-in|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: cb7b085acb4640d38ff2abbf03708812 9913e91b1e7f4f3eb92f996572a2763b
+msgid "github-sign-in"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:74
+#: 545a7a9fdea64d3ba5c6d97e991a5d8c
+msgid ""
+"If this is your first contribution to the documentation, you need to “fork” "
+"the repository (make your own copy). It’s easy — just click the big green "
+"button on the next page. This step is only needed the first time you make a "
+"contribution."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:79
+#: 3971cabb959d45799c08dad67abad842
+msgid "|fork|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: 2c8526d6b52846c18d41e318a8e951d0 49a4086787fe44a78e5990fbc2540d6d
+msgid "fork"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:81
+#: 09ac55559c27439d96a003c1acd86bb4
+msgid ""
+"Now you can make your modifications. You can also preview the changes to see"
+" how they’ll be formatted by clicking the “Preview changes” tab. If you want"
+" to add images, please see :ref:`How to add images <developer/general/how-"
+"to-edit-the-documentation:how to add images>`. If you’re making formatting "
+"changes, please `render the site locally "
+"<https://github.com/QubesOS/qubesos.github.io#instructions>`__ to verify "
+"that everything looks correct before submitting any changes."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:86
+#: be02f8ce47fb41e2b7c01a2eaa0e4712
+msgid "|edit|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: 8928c66742164ba9963b1f443abc58de 5ec41bbf688c4ad3b6901119895d0bf4
+msgid "edit"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:88
+#: ad4adb6d714945e58b4d87fa57c83237
+msgid ""
+"Once you’re finished, describe your changes at the bottom and click “Propose"
+" file change”."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:91
+#: 1a340655ccd54270b1836313e3296a1c
+msgid "|commit|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: 2350a1332597483f80450418d64c2fe9 c49477a4bbdf4c1d95c500ce5d5dc91a
+msgid "commit"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:93
+#: a4b88109189d4855a7f0ce3e12628c5d
+msgid ""
+"After that, you’ll see exactly what modifications you’ve made. At this "
+"stage, those changes are still in your own copy of the documentation "
+"(“fork”). If everything looks good, send those changes to us by pressing the"
+" “Create pull request” button."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:98
+#: 89987a143724451ba6bc75ded87fb152
+msgid "|pull-request|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: c54d4c8946db4df2af22f6b934547248 7e340530325346349d042f8707f72405
+msgid "pull-request"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:100
+#: 27cf43cb97674c609e97401705d58a8b
+msgid ""
+"You will be able to adjust the pull request message and title there. In most"
+" cases, the defaults are ok, so you can just confirm by pressing the “Create"
+" pull request” button again. However, if you’re not ready for your PR to be "
+"reviewed or merged yet, please `make a draft PR instead "
+"<https://github.blog/2019-02-14-introducing-draft-pull-requests/>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:105
+#: 371c158e095941a6afa924da3134ba45
+msgid "|pull-request-confirm|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: f61ca600bc50484fb245559c22b9d370 8a7ddfc493c24ebc8644d4fda66d2cf6
+msgid "pull-request-confirm"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:107
+#: 3599632a196b41c5960fc8e83da4e8a0
+msgid ""
+"If any of your changes should be reflected in the `documentation index "
+"(a.k.a. table of contents) </>`__ — for example, if you’re adding a new "
+"page, changing the title of an existing page, or removing a page — please "
+"see :ref:`How to edit the documentation index <developer/general/how-to-"
+"edit-the-documentation:how to edit the documentation index>`."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:111
+#: c93012efc99640cea70a03204aa86fae
+msgid ""
+"That’s all! We will review your changes. If everything looks good, we’ll "
+"pull them into the official documentation. Otherwise, we may have some "
+"questions for you, which we’ll post in a comment on your pull request. "
+"(GitHub will automatically notify you if we do.) If, for some reason, we "
+"can’t accept your pull request, we’ll post a comment explaining why we "
+"can’t."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:118
+#: 33ff7ac3e451438da3d7d3f831635306
+msgid "|done|"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:0
+#: f6f306bf94944533b38ae10c6c11b280 49b4b156bfa94b0dbe809aae9e09d4f5
+msgid "done"
+msgstr "abgeschlossen"
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:121
+#: 1acd54ebedea46d9b3dc2976d4166a37
+msgid "How to edit the documentation index"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:123
+#: 92c1e2211b3f461a924db3444ddc3ee6
+msgid ""
+"The source file for the `documentation index (a.k.a. table of contents) "
+"</>`__ is `doc-index.yml "
+"<https://github.com/QubesOS/qubesos.github.io/blob/master/_data/doc-"
+"index.yml>`__."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:125
+#: 960ea4c383914512b80f9695952c2da1
+msgid ""
+"Editing this file will change what appears on the documentation index. If "
+"your pull request (PR) adds, removes, or edits anything that should be "
+"reflected in the documentation index, please make sure you also submit an "
+"associated pull request against this file."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:131
+#: acb640bb3c5541d086a9d9eb8b92eabc
+msgid "How to add images"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:133
+#: 26778fb8fc9a4a96b8b03cf51d2aa0c4
+msgid ""
+"To add an image to a page, use the following syntax in the main document "
+"(see :ref:`here <developer/general/documentation-style-guide:image linking>`"
+" for why this syntax is important)."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:141
+#: 84e71820c2e64058b1e88f36417d95c2
+msgid ""
+"Then, submit your image(s) in a separate pull request to the `qubes-"
+"attachment <https://github.com/QubesOS/qubes-attachment>`__ repository using"
+" the same path and filename. This is the only permitted way to include "
+"images. Do not link to images on other websites."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:146
+#: cade750949644b5a867bcf61130a0255
+msgid "Serving the website locally"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:148
+#: a9e16eee7a474c9d92d5914ee13c67a7
+msgid ""
+"You can serve the website offline on your local machine by following `these "
+"instructions <https://github.com/QubesOS/qubesos.github.io#instructions>`__."
+" This can be useful for making sure that your changes render the way you "
+"expect, especially when your changes affect formatting, images, tables, "
+"styling, etc."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:154
+#: b5a96f7326a24c0dbc12a7cdf002dad5
+msgid "Security"
+msgstr "Sicherheit"
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:156
+#: 53abf344078646c3bd71e2129f5f72f5
+msgid ""
+"*Also see:*\\ :ref:`Should I trust this website? <introduction/faq:should i "
+"trust this website>`"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:158
+#: 9f48b33445da4fd0a39a5c07979a25c6
+msgid ""
+"All pull requests (PRs) against `qubes-doc "
+"<https://github.com/QubesOS/qubes-doc>`__ must pass review prior to be "
+"merged, except in the case of :ref:`external documentation "
+"<developer/general/how-to-edit-the-documentation:external documentation>` "
+"(see `#4693 <https://github.com/QubesOS/qubes-issues/issues/4693>`__). This "
+"process is designed to ensure that contributed text is accurate and non-"
+"malicious. This process is a best effort that should provide a reasonable "
+"degree of assurance, but it is not foolproof. For example, all text "
+"characters are checked for ANSI escape sequences. However, binaries, such as"
+" images, are simply checked to ensure they appear or function the way they "
+"should when the website is rendered. They are not further analyzed in an "
+"attempt to determine whether they are malicious."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:168
+#: d3e39fc6c8bb4fd8942c359aade1fd5e
+msgid ""
+"Once a pull request passes review, the reviewer should add a signed comment "
+"stating, “Passed review as of ``<LATEST_COMMIT>``” (or similar). The "
+"documentation maintainer then verifies that the pull request is mechanically"
+" sound (no merge conflicts, broken links, ANSI escapes, etc.). If so, the "
+"documentation maintainer then merges the pull request, adds a PGP-signed tag"
+" to the latest commit (usually the merge commit), then pushes to the remote."
+" In cases in which another reviewer is not required, the documentation "
+"maintainer may review the pull request (in which case no signed comment is "
+"necessary, since it would be redundant with the signed tag)."
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:180
+#: 4903a0176c0f48218eacfab2116ee41e
+msgid "Questions, problems, and improvements"
+msgstr ""
+
+#: ../../../_doc/developer/general/how-to-edit-the-documentation.rst:182
+#: 0f5381c2323248fc9c4d86ac77dd3b3f
+msgid ""
+"If you have a question about something you read in the documentation or "
+"about how to edit the documentation, please post it on the `forum "
+"<https://forum.qubes-os.org/>`__ or send it to the appropriate :doc:`mailing"
+" list </introduction/support>`. If you see that something in the "
+"documentation should be fixed or improved, please :ref:`contribute "
+"<developer/general/how-to-edit-the-documentation:how to submit a pull "
+"request>` the change yourself. To report an issue with the documentation, "
+"please follow our standard :doc:`issue reporting guidelines "
+"</introduction/issue-tracking>`. (If you report an issue with the "
+"documentation, you will likely be asked to submit a pull request for it, "
+"unless there is a clear indication in your report that you are not willing "
+"or able to do so.)"
+msgstr ""

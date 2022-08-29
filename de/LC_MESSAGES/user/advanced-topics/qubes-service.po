@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:28+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/advanced-topics/qubes-service.rst:3
+#: 66857aee1c0e41679e22d9cdfd382017
+msgid "Qubes service"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/qubes-service.rst:5
+#: 698fd796fa8f4de4ae324264ea7c3b4b
+msgid ""
+"Usage documentation is in the ``qvm-service`` man page. There are also "
+"described predefined services."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/qubes-service.rst:8
+#: 3f190f5b1b424f9689d5d6e251f96bdd
+msgid ""
+"Under the hood, an enabled service in a VM is signaled by a file in "
+"``/var/run/qubes-service``. This can be used to implement an almost "
+"enable/disable **per-VM** switch controlled by dom0."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/qubes-service.rst:12
+#: 65849836450a49f9b585a27508b36092
+msgid ""
+"Adding support for systemd services is pretty simple. In the VM, create the "
+"following file (and directory, if needed): ``/etc/systemd/system/<service "
+"name>.service.d/30_qubes.conf``. It should contain the following:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/qubes-service.rst:22
+#: 823dc3861ce04cd49749f33cd4a1297d
+msgid ""
+"This will cause the service to be started only when you enable it with "
+"``qvm-service`` for this VM."
+msgstr ""

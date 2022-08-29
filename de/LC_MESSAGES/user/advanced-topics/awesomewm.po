@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Friedrich-Wilhelm Prussak <info@prussak.de>, 2022
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:29+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:3
+#: 63e55046dd56466c98798f77511f6d49
+msgid "AwesomeWM (window manager)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:6
+#: 856ef20ad68840b3a370abf758567457
+msgid "Qubes-specific features"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:8
+#: 7435975413724799a7fe1577a7a89143
+msgid "support for the Qubes OS window colors"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:9
+#: ce7feec943774055a71de8532fcfae78
+msgid ""
+"rudimentary support for the Qubes application menu entries following the "
+"freedesktop standard"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:11
+#: e33b65e7af53442da5b9205bf33d3374
+msgid "support for custom filters and menu entries"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:14
+#: fe502dff062d426ba9ec31d2b54d352f
+msgid "Installation"
+msgstr "Installation"
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:16
+#: a2e609a42660411588453fdfbd935ffd
+msgid ""
+"AwesomeWM can be installed with the standard dom0 installation mechanisms."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:23
+#: 649fed1e24eb4558a5ca42c6b87240e1
+msgid ""
+"That’s it. After logging out, you can select AwesomeWM in the login manager."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:27
+#: 46652ccef2e54b59be2c01cb89414dd8
+msgid "Development"
+msgstr "Entwicklung"
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:29
+#: a3ffcdd43da342cb92741821fbf50445
+msgid ""
+"To :doc:`contribute code </introduction/contributing>` you may clone the "
+"AwesomeWM repository as follows:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:36
+#: bbf7ceeb8c004e37907cea4f2444084f
+msgid "For build instructions please check the repository *README*."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:38
+#: 321a2e4fa12141fc916d286c5deb2fb4
+msgid "The repository attempts to follow the upstream Fedora repository."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:41
+#: 4af2306ab5c64c8898bc16177cb81141
+msgid "Common customizations"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:43
+#: 662eeb81da79410388129753527badad
+msgid ""
+"This section focuses on Qubes-specific customizations. For generic AwesomeWM"
+" customizations you might want to have a look at the `AwesomeWM website "
+"<https://awesomewm.org>`__."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:46
+#: 1986a2fb9fe74debb182e2f75ac41c01
+msgid ""
+"Customizations for AwesomeWM are usually done at "
+"``~/.config/awesome/rc.lua``. The default file can be found at "
+"``/etc/xdg/awesome/rc.lua``."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:51
+#: a85b70955bfd4bedb86305bc09407b55
+msgid "Application menu"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:53
+#: 24e3d299e226498ab70ed98a133bfcff
+msgid ""
+"Starting from Qubes 4.0 application menu entries specific to AwesomeWM can "
+"be put into ``~/.config/awesome/xdg-menu/`` following the freedesktop "
+"standard. The folder might have to be created."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:58
+#: f8c26629359f46b599f04c7082ad9750
+msgid "Focus steal hardening"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:60
+#: 065656520ce14c44abf4d6c5188b0670
+msgid ""
+"The default Qubes OS AwesomeWM installation comes with the defaults set by "
+"the AwesomeWM developers for focus changes. Some users may want more tight "
+"control over window focus changes - especially since focus changes can have "
+"security implications when sensitive data is provided to an incorrect "
+"application or even qube."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:67
+#: 1b9fc2f0b721499795f978ad97dd7eb2
+msgid "Definition"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:69
+#: 0444594bd4ae44d9a761d6c7e77321d3
+msgid ""
+"For the below example we’ll define *wanted focus changes* as one of the "
+"below:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:72
+#: 4d3a276445344f53aea028e1d59210c0
+msgid "mouse move & click afterwards"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:73
+#: 35258942ce864b3a8233cd96a74c27a9
+msgid "workspace/tag change"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:74
+#: f6522d64b5f34308a3c579a558143a4b
+msgid "pre-defined key combinations for focus changes (e.g. Mod-j & Mod-k)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:75
+#: b82ea116cf9b41adb3a898b4726c4172
+msgid "tag assignments and unassignments"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:77
+#: a2eeb1b72b00449fae155484168604b9
+msgid "Everything else is considered an unwanted *focus steal*."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:79
+#: 647606e47c0e4f57b5a36f7b8e7c3c18
+msgid ""
+"In particular the following events are not meant to cause a focus change:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:82
+#: f3887d714c044a36aaab45d98eba4fd2
+msgid "new window created"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:83
+#: c9bed5f434b74b4da6c408f4823a0cbd
+msgid "a window was closed"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:84
+#: 68181d91e4f8484387b615394993b33b
+msgid "application request"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:85
+#: b2990f1154f940ddb00326718e17ecf5
+msgid "mouse move without click (sloppy focus)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:87
+#: 7c73783e43414f9aa471d90328a28f4f
+msgid ""
+"For the below example other requests from applications to the window manager"
+" are meant to be ignored in general as well, e.g.:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:90
+#: 773766ce17674a06a8ea9b8e73e30fd5
+msgid ""
+"windows shouldn’t be able to maximize themselves without the user giving a "
+"respective command to the WM (simple test: Firefox F11 next to another "
+"window)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:93
+#: cbef09daa5bf4c8eb2675b6f65b1be08
+msgid "windows shouldn’t be able to change their size themselves"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:94
+#: c80fc4ae417444c29548b17ac94596d1
+msgid "windows shouldn’t be able to modify their borders in any way"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:96
+#: f3465377d3e34a5eab88899e305d6454
+msgid ""
+"Users may want to adjust their definitions and respective implementations "
+"according to their needs."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:100
+#: 79fe36e1f08e4598ae07129fc3c32fb0
+msgid "Implementation"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:102
+#: 39a19b0960284fd393c98dfb9be18204
+msgid ""
+"The implementation may be specific to the AwesomeWM version you’re running. "
+"This guide refers to AwesomeWM version 3.5.9 which is available to Qubes 4.0"
+" users."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:106
+#: 5531359efe2542f28fa9339065fb6421
+msgid ""
+"Please keep in mind that this guide may not be conclusive. Your mileage may "
+"vary."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:110
+#: ad0be993c1fc4fc7a0748690921a50e1
+msgid "Change the autofocus implementation"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:112
+#: 9d3b8c6fb64c4868a0d9df614c4ca07c
+msgid ""
+"The line ``require(\"awful.autofocus\")`` in your *rc.lua* implements "
+"various focus-related features for your AwesomeWM instance."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:115
+#: 6969cd85f3f645afb21575b725eda9b4
+msgid ""
+"In order to customise these, you can copy the file "
+"``/usr/share/awesome/lib/awful/autofocus.lua`` to "
+"e.g. ``~/.config/awesome/autofocus_custom.lua`` and replace the line above "
+"with ``require(\"autofocus_custom\")``."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:120
+#: 1fc4350ea7524d629e7dabcd027f9edf
+msgid ""
+"Then you can customise the focus behavior. According to our above "
+"definitions it would look as follows:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:175
+#: 5b381c9e88294cfba093b2c563da7150
+msgid "Remove unwanted focus changing key bindings"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:177
+#: 0993be8a5e0c47a9a47cb2f5400b4e8b
+msgid "The mouse bindings"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:184
+#: aaf588879a1b4dc7b9c7509f1478c48b
+msgid ""
+"in the default *rc.lua* may cause tag and thus focus changes without "
+"keyboard interaction and tend to happen accidentally. This doesn’t suit our "
+"definition from above and should therefore be removed or commented out."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:190
+#: 8d575c68cee2451f960fe3afa1a8e3ea
+msgid "Adjust client rules"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:192
+#: 17d67361128f445191240ac13c97cd92
+msgid ""
+"The default client rule allows certain focus changes via ``focus = "
+"awful.client.focus.filter``. These changes can be prevented entirely by "
+"setting ``focus = false``."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:196
+#: 695bbc92457146d586191a9cd536bbb7
+msgid "Alternatively users may provide their own focus filter functions."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:199
+#: 203b603251fb4d0d9b3c1be90d1876a9
+msgid "Disable sloppy focus"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:201
+#: 0e096bcd66a14c40826b8a67682a6034
+msgid "In your *rc.lua* you’ll find a section such as"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:213
+#: e481f25c2093489bbf1cbcc5a70a39bd
+msgid ""
+"These enable *sloppy focus* aka focus changes on mouse movements (without "
+"clicking) and should be removed or commented out to disable that behaviour."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:218
+#: c1d90514326242a38ae7076e3724c823
+msgid "Ignore requests from applications to the window manager"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:220
+#: 7c246075eadf459a82073f63764f7627
+msgid ""
+"Handling of such requests is currently mostly implemented by AwesomeWM in "
+"the file ``/usr/share/awesome/lib/awful/ewmh.lua``. You can either comment "
+"out the respective ``client.connect_singal()`` lines in that file (it will "
+"change back after each AwesomeWM update though) or disconnect the signals in"
+" your *rc.lua*."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:226
+#: 1c67ee1626ce4407aa895e3465f1ccd3
+msgid ""
+"As of AwesomeWM 3.5.9 this however is apparently only possible for signals "
+"connected to global functions, i.e. currently only the below signals can be "
+"disconnected in the *rc.lua*:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/awesomewm.rst:237
+#: 68599890d5cd4c2fa0a496558305d5b8
+msgid "The signal names may change across AwesomeWM versions."
+msgstr ""

@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:31+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/project-security/canary.rst:3
+#: 8137f8a488a44470a0d4d30211371a73
+msgid "Qubes canaries"
+msgstr ""
+
+#: ../../../_doc/project-security/canary.rst:5
+#: 4027542dd9744c93ac6eece953471ab7
+msgid ""
+"A **Qubes canary** is a security announcement periodically issued by the "
+":ref:`Qubes security team <project-security/security:qubes security team>` "
+"through the :doc:`Qubes security pack </project-security/security-pack>` "
+"consisting of several statements to the effect that the signers of the "
+"canary have not been compromised. The idea is that, as long as signed "
+"canaries including such statements continue to be published, all is well. "
+"However, if the canaries should suddenly cease, if one or more signers begin"
+" declining to sign them, or if the included statements change significantly "
+"without plausible explanation, then this may indicate that something has "
+"gone wrong."
+msgstr ""
+
+#: ../../../_doc/project-security/canary.rst:14
+#: 8615ad03638940628c5eb33d55b1fdd5
+msgid ""
+"The name originates from the practice in which miners would bring caged "
+"canaries into coal mines. If the level of methane gas in the mine reached a "
+"dangerous level, the canary would die, indicating to miners that they should"
+" evacuate. See `Wikipedia: warrant canary "
+"<https://en.wikipedia.org/wiki/Warrant_canary>`__ for more information, but "
+"bear in mind that Qubes Canaries are not strictly limited to legal warrants."
+msgstr ""
+
+#: ../../../_doc/project-security/canary.rst:22
+#: 41640c6971d840b589331bae2f72ac59
+msgid "Full list"
+msgstr ""

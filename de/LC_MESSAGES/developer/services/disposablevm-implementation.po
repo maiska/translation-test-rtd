@@ -1,0 +1,229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:30+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:3
+#: 5f84d9da103f4b4bba3c44d130fcffef
+msgid "Disposable implementation"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:5
+#: 528f9e7f185646ed92b5bdf8671f8fa8
+msgid "**Note: The content below applies to Qubes R3.2.**"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:8
+#: 0c06b9ce781745f794ee877d052df06e
+msgid "DisposableVM image preparation"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:10
+#: ecee38b1447d46c097af3d2b67c27580
+msgid ""
+"DisposableVM is not started like other VMs, by executing equivalent of ``xl "
+"create`` - it would be too slow. Instead, DisposableVM are started by "
+"restore from a savefile."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:14
+#: c9ff1d11ca6849ec984238b6b4d686c3
+msgid ""
+"Preparing a savefile is done by "
+"``/usr/lib/qubes/qubes_prepare_saved_domain.sh`` script. It takes two "
+"mandatory arguments, appvm name (APPVM) and the savefile name, and optional "
+"path to “prerun” script. The script executes the following steps:"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:20
+#: 26cb7cb7d12b47fcbd62f5682fc173c3
+msgid "APPVM is started by ``qvm-start``"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:21
+#: 7417bdf4b92243e58cedac347d602c7c
+msgid ""
+"xenstore key ``/local/domain/appvm_domain_id/qubes_save_request`` is created"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:23
+#: ea54147e4fa94df3977e379458ab72f3
+msgid ""
+"if prerun script was specified, copy it to ``qubes_save_script`` xenstore "
+"key"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:25
+#: cfa30882c9e84d5c8383860858c7c147
+msgid "wait for the ``qubes_used_mem`` key to appear"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:26
+#: 104e430dc74e4f1c994eb82b1c53a79a
+msgid ""
+"(in APPVM) APPVM boots normally, up to the point in "
+"``/etc/init.d/qubes_core`` script when the presence of "
+"``qubes_save_request`` key is tested. If it exists, then"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:30
+#: a9043e9fb3a647acb06d319e9b1329f1
+msgid ""
+"(in APPVM) if exists, prerun script is retrieved from the respective "
+"xenstore key and executed. This preloads filesystem cache with useful "
+"applications, so that they will start faster."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:33
+#: 51e78e43fa6f4b0a9bd1fec08fa6889d
+msgid ""
+"(in APPVM) the amount of used memory is stored to ``qubes_used_mem`` "
+"xenstore key"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:35
+#: 11aedd01fd004ba396f511c55eee9508
+msgid ""
+"(in APPVM) busy-waiting for ``qubes_restore_complete`` xenstore key to "
+"appear"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:38
+#: 4a3d2ec49fce4df3a51d32654154dea1
+msgid ""
+"when ``qubes_used_mem`` key appears, the domain memory is reduced to this "
+"amount, to make the savefile smaller."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:40
+#: 53d936f162264a1da303a199382b82ec
+msgid "APPVM private image is detached"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:41
+#: 117cd74f228c447eab89f2cc83b2a437
+msgid "the domain is saved via ``xl save``"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:42
+#: 8707c3365d8e4641b3b0ff53148ef54e
+msgid ""
+"the COW file volatile.img (cow for root fs and swap) is packed to "
+"``saved_cows.tar`` archive"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:45
+#: e5397ccc05f443abbbfdc34b083bc610
+msgid ""
+"The ``qubes_prepare_saved_domain.sh`` script is lowlevel. It is usually "
+"called by ``qvm-create-default-dvm`` script, that takes care of creating a "
+"special AppVM (named template_name-dvm) to be passed to "
+"``qubes_prepare_saved_domain.sh``, as well as copying the savefile to "
+"/dev/shm (the latter action is not done if the "
+"``/var/lib/qubes/dvmdata/dont_use_shm`` file exists)."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:53
+#: e31ec709d03c4071877f2fc27bb117a7
+msgid "Restoring a DisposableVM from the savefile"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:55
+#: b89585e726ea4604887e06596bd1d404
+msgid ""
+"Normally, disposable VM is created when qubes rpc request with target "
+"*$dispvm* is received. Then, as a part of rpc connection setup, the ``qfile-"
+"daemon-dvm`` program is executed; it executes "
+"``/usr/lib/qubes/qubes_restore`` program. It is crucial that this program "
+"executes quickly, to make DisposableVM creation overhead bearable for the "
+"user. Its main steps are:"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:62
+#: 7870dcbb67da4a6faf3303409bf18d72
+msgid ""
+"modify the savefile so that the VM name, VM UUID, MAC address and IP address"
+" are unique"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:64
+#: d5a3ba361eee4eb2b23db5ecfbdf9350
+msgid "restore the COW files from the ``saved_cows.tar``"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:65
+#: 6c1103d70dc14828b84195ddf00e7823
+msgid ""
+"create the ``/var/run/qubes/fast_block_attach`` file, whose presence tells "
+"the ``/etc/xen/scripts/block`` script to bypass some redundant checks and "
+"execute as fast as possible."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:68
+#: 550def96b05c4957abfdadafd6e77e65
+msgid "execute ``xl restore`` in order to restore a domain."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:69
+#: 4ea8c87ba45f4168be64c77151e735e4
+msgid ""
+"create the same xenstore keys as normally created when AppVM boots "
+"(e.g. ``qubes_ip``)"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:71
+#: fce578965d1043b3aa223a54928e2a50
+msgid ""
+"create the ``qubes_restore_complete`` xenstore key. This allows the boot "
+"process in DisposableVM to continue."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:74
+#: d9281ae1dcfb4cf4a7d5062942d44b93
+msgid ""
+"The actual passing of files between AppVM and a DisposableVM is implemented "
+"via qubes rpc."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:78
+#: 371c7494539f43669cc3a23e74d9f06a
+msgid "Validating the DisposableVM savefile"
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:80
+#: 3395c06a014842dc97b9422ded1e9314
+msgid ""
+"DisposableVM savefile contains references to template rootfs and to COW "
+"files. The COW files are restored before each DisposableVM start, so they "
+"cannot change. On the other hand, if templateVM is started, the template "
+"rootfs will change, and it may not be coherent with the COW files."
+msgstr ""
+
+#: ../../../_doc/developer/services/disposablevm-implementation.rst:86
+#: a82a538015b64c58819f33e9d1dc03f0
+msgid ""
+"Therefore, the check for template rootfs modification time being older than "
+"DisposableVM savefile modification time is required. It is done in "
+"``qfilexchgd`` daemon, just before restoring DisposableVM. If necessary, an "
+"attempt is made to recreate the DisposableVM savefile, using the last "
+"template used (or default template, if run for the first time) and the "
+"default prerun script, residing at ``/var/lib/qubes/vm-"
+"templates/templatename/dispvm_prerun.sh``. Unfortunately, the prerun script "
+"takes a lot of time to execute - therefore, after template rootfs "
+"modification, the next DisposableVM creation can be longer by about 2.5 "
+"minutes."
+msgstr ""

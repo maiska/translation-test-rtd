@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:26+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:3
+#: ed92a8fbe5e146efbdf59bd4c81bf483
+msgid "Passwordless root access in qubes"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:5
+#: be39a22981874b1eb366493d0298b6c6
+msgid "Background (``/etc/sudoers.d/qubes`` in VM):"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:55
+#: 5e3a3ce4940d468abc1c20f008ddd341
+msgid ""
+"Below is a complete list of configuration made according to the above "
+"statement, with (not necessary complete) list of mechanisms depending on "
+"each of them:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:59
+#: 944105e6354a42d4a3c2c43a247d5bb3
+msgid "sudo (``/etc/sudoers.d/qubes``):"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:66
+#: 60235d133b034f078a4c6f8fc93eb094
+msgid "Easy user -> root access (main option for the user)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:67
+#: 2f3b70a60222484697c3b693503c61e6
+msgid "``qvm-usb`` (not really working, as of R2)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:69
+#: 4ccbc36fd6364796aff25986d00b538a
+msgid "PolicyKit (``/etc/polkit-1/rules.d/00-qubes-allow-all.rules``):"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:76
+#: f727f6c6841d445e80a465be966cf9f8
+msgid "and ``/etc/polkit-1/localauthority/50-local.d/qubes-allow-all.pkla``:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:87
+#: d5f405f1ad0a41bfbf0ed93b37155eef
+msgid "NetworkManager configuration from normal user (``nm-applet``)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:88
+#: 5a679dc41c8147349bd729d9a95daa00
+msgid "Updates installation (``gpk-update-viewer``)."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:89
+#: 414c7d4f123d4cad986cc7c67dbffe2b
+msgid ""
+"User can use pkexec just like sudo Note: above is needed mostly because "
+"Qubes user GUI session isn’t treated by PolicyKit/logind as “local” session "
+"because of the way in which X server and session is started. Perhaps we will"
+" address this issue in the future, but this is really low priority. Patches "
+"welcomed anyway."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:95
+#: d4151ffdfdfc47ba82a53523f4cab38d
+msgid "Empty root password:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:97
+#: eccdfa35ee7d4290a69ca0bb72aaf477
+msgid ""
+"Used for access to ‘root’ account from text console (``qvm-console-dispvm``)"
+" - the only way to access the VM when GUI isn’t working."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:100
+#: 8bc6f10aa2504161b2afac210360a1e3
+msgid "Can be used for easy ‘su -’ from user to root."
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:103
+#: 04746e0e34704f2fa6b29834eec3bbc2
+msgid "Replacing passwordless root access with Dom0 user prompt"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:105
+#: a023e1421a7d4e7aaf687b0974b1611f
+msgid ""
+"While ITL supports the statement above, some Qubes users may wish to enable "
+"user/root isolation in VMs anyway. We do not support it in any of our "
+"packages, but of course nothing is preventing the user from modifying his or"
+" her own system. A list of steps to do so is provided here **without any "
+"guarantee of safety, accuracy, or completeness. Proceed at your own risk. Do"
+" not rely on this for extra security.**"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:112
+#: 6fd5929a76ee4ed4af096f4bbdbdde41
+msgid "Adding Dom0 “VMAuth” service:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:121
+#: b11bc4e226ef46619d71032ec26759a4
+msgid ""
+"(Note: any VMs you would like still to have passwordless root access "
+"(e.g. Templates) can be specified in the second file with “<vmname> dom0 "
+"allow”)"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:125
+#: 56747d4aa525474aa9b6f435e6dada0f
+msgid ""
+"Configuring Fedora template to prompt Dom0 for any authorization request:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:128
+#: 552e8e8548214647be38e72022d3860e
+msgid ""
+"In ``/etc/pam.d/system-auth``, replace all lines beginning with “auth” with "
+"these lines:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:137
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:163
+#: 777eee7f69794f49b0dbaea1773d5f9e a03e69663c1c4eaea299b5d39fca787e
+msgid ""
+"Require authentication for sudo. Replace the first line of "
+"``/etc/sudoers.d/qubes`` with:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:144
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:170
+#: ccb51ffea77245e989ae61c7c1c2b6a9 0301c54bbac04d608ca3d3d7aa129651
+msgid "Disable PolKit’s default-allow behavior:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:151
+#: 2076446091414431bf63924efb2ad3a1
+msgid ""
+"Configuring Debian/Whonix template to prompt Dom0 for any authorization "
+"request:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:154
+#: 10c02e1ed1cc482a8d106a811f3f1f29
+msgid ""
+"In ``/etc/pam.d/common-auth``, replace all lines beginning with “auth” with "
+"these lines:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:177
+#: 279c1a8f485d422db701962791354f79
+msgid ""
+"In ``/etc/pam.d/su.qubes``, comment out this line near the bottom of the "
+"file:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:184
+#: c6f8f45b46b447f69da86a0a83b8cce9
+msgid ""
+"For Whonix, if prompts appear during boot, create ``/etc/sudoers.d/zz99`` "
+"and add these lines:"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:196
+#: 2928622048fb48f49d532e3412275de8
+msgid "Dom0 passwordless root access"
+msgstr ""
+
+#: ../../../_doc/user/security-in-qubes/vm-sudo.rst:198
+#: b4850116a61d4783894a6cf5de88a35d
+msgid ""
+"There is also passwordless user->root access in dom0. As stated in comment "
+"in sudo configuration there (different one than VMs one), there is really no"
+" point in user/root isolation, because all the user data (and VM management "
+"interface) is already accessible from dom0 user level, so there is nothing "
+"more to get from dom0 root account."
+msgstr ""

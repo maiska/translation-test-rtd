@@ -1,0 +1,387 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# m, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:32+0000\n"
+"Last-Translator: m, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/introduction/screenshots.rst:3
+#: 20941965e118445fb7aa988fd8aad7ab
+msgid "Screenshots"
+msgstr "Screenshots"
+
+#: ../../../_doc/introduction/screenshots.rst:5
+#: a363504cc9f64475a6af014402893b39
+msgid "|r4.0-xfce-desktop.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 82e6b68bb045438a9a468ba27d336df7 1ec01735c3e64abfaf4552bf6bbbb093
+msgid "r4.0-xfce-desktop.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:7
+#: c712806a03e5464dbe648551d8dab0c5
+msgid "The default desktop environment is Xfce4."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:11
+#: 9dbb376aec7e42dfa202610ad52efb58
+msgid "|r4.0-xfce-start-menu.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 706357cd2ea44c338453f6652af6d604 7c917fcb9ba240cabe779f57e8d07e3e
+msgid "r4.0-xfce-start-menu.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:13
+#: e28af231ed724f6fa23ac9a9d7cb07a3
+msgid "Starting applications from different domains (AppVMs) is very easy."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:17
+#: a748bd89d044439b9b3f1f3ee1201c35
+msgid "|r4.0-xfce-three-domains-at-work.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: c44d7e19b39d4d1da3125b310abbfe1a 5a6173f6a20745b597dd322667d8f78d
+msgid "r4.0-xfce-three-domains-at-work.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:19
+#: 7a15e78b41f1428ea594c0b307911c9e
+msgid ""
+"In this example, the word processor runs in the “work” domain, which has "
+"been assigned the “blue” label. It is fully isolated from other domains, "
+"such as the “untrusted” domain (assigned the “red” label – “Watch out!”, "
+"“Danger!”) used for random Web browsing, news reading, as well as from the "
+"“work-web” domain (assigned the “yellow” label), which is used for work-"
+"related Web browsing that is not security critical. Apps from different "
+"domains run in different AppVMs and have different X servers, filesystems, "
+"etc. Notice the different color frames (labels) and VM names in the "
+"titlebars. These are drawn by the trusted Window Manager running in Dom0, "
+"and apps running in domains cannot fake them:"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:32
+#: a9f57319aa9b4ee8856c91a7e9d26f86
+msgid "|r2b3-windows-seamless-1.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 273bf2fa1b7f430699c59bfc8450e357 cfe2203abc2141149e0595e5967ff808
+msgid "r2b3-windows-seamless-1.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:34
+#: edf4da6bff444b2baaed5285bf89e099
+msgid ""
+"Qubes Release 2 can also run Windows AppVMs in seamless mode, integrated "
+"onto the common Qubes trusted desktop, just like Linux AppVMs! The seamless "
+"GUI integration has been introduced in Qubes R2 Beta 3. This requires `Qubes"
+" Windows Tools <https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/os/windows/windows-tools.md>`__ to be "
+"installed in the Windows VMs first."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:42
+#: 9f4a049bfeef4da5b85dbc2837aba4a0
+msgid "|r2b3-windows-seamless-filecopy.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 6ddab77d2d3b43489ab54dbf799756e0 45c0955bc1b74c7c89f8543146ad1a3f
+msgid "r2b3-windows-seamless-filecopy.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:44
+#: 97de980f47194dfc8a6cadbc3d6ca6ae
+msgid ""
+"Windows AppVMs are fully integrated with the rest of the Qubes OS system, "
+"which includes things such as secure, policy governed, inter-VM file copy, "
+"clipboard, and generally our whole elastic qrexec infrastructure for secure "
+"inter-VM RPC! Starting with Qubes R2 Beta 3 we also support HVM-based "
+"templates allowing to instantly create many Windows AppVMs with shared “root"
+" filesystem” from the Template VM (but one should ensure their license "
+"allows for such instantiation of the OS in the template). Just like with "
+"Linux AppVMs!"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:55
+#: 56e3543d33024080a63b356e06856b65
+msgid "|r4.0-xfce-programmers-desktop.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 39794bfaf12a49bfbd8db1cfb7ba1546 34cea108cfe6418bbcc0dadbeda5a685
+msgid "r4.0-xfce-programmers-desktop.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:57
+#: 98822201668e47ab8d0802af3c91c8d2
+msgid ""
+"Here we see Xfce4.14 Window Manager running in Dom0 (instead of KDE as on "
+"previous versions). Qubes supports customized Xfce4 in dom0 beginning with "
+"R2 Beta 2!"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:63
+#: 7b5578de716447eab081af396b15750a
+msgid "|r4.0-password-prompt.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 037f020909fe48bf8748e72fc045eb3d 6358987acf684f4fb746fe201d1d48ca
+msgid "r4.0-password-prompt.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:65
+#: 2a1337bf44dc485e838480390274491b
+msgid ""
+"It is always clearly visible to which domain a given window belongs. Here "
+"it’s immediately clear that the passphrase-prompting window belongs to some "
+"domain with the “blue” label. When we look at the titlebar, we see "
+"“[qubes]”, which is the name of the actual domain. Theoretically, the "
+"untrusted application (here, the red Tor Browser running in a DisposableVM) "
+"beneath the prompt window could draw a similar looking window within its "
+"contents. In practice, this would be very hard, because it doesn’t know, "
+"e.g., the exact decoration style that is in use. However, if this is a "
+"concern, the user can simply try to move the more trusted window onto some "
+"empty space on the desktop such that no other window is present beneath it. "
+"Or, better yet, use the Expose-like effect (available via a hot-key). A "
+"malicious application from an untrusted domain cannot spoof the whole "
+"desktop because the trusted Window Manager will never let any domain “own” "
+"the whole screen. Its titlebar will always be visible."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:83
+#: 0c2a0ac1ccde429eae10f96bf189863a
+msgid "|r4.0-xfce-tray-icons.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 67dc290c224044a0ad4847e7144fa28e d7252a77071d46009e95ce76356cb766
+msgid "r4.0-xfce-tray-icons.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:85
+#: fd9b66f56a854899978d37c76568b4c7
+msgid ""
+"Qubes is all about seamless integration from the user’s point of view. Here "
+"you can see how it virtualizes tray icons from other domains. Notice the "
+"network icon is in red. This icon is in fact managed by the Network Manager "
+"running in a separate NetVM."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:92
+#: f02c7959ba7243bb9012be4072c0def7
+msgid "|r4.0-manager-and-sysnet-network-prompt.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 9692c776dce54457af1700e65a2a31d2 7c3c0533bec34b39bf99a16b807b4cd4
+msgid "r4.0-manager-and-sysnet-network-prompt.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:94
+#: 05053676e9eb4b0a97f2857194eaa921
+msgid ""
+"All the networking runs in a special, unprivileged NetVM. (Notice the red "
+"frame around the Network Manager dialog box on the screen above.) This means"
+" that in the event that your network card driver, Wi-Fi stack, or DHCP "
+"client is compromised, the integrity of the rest of the system will not be "
+"affected! This feature requires Intel VT-d or AMD IOMMU hardware (e.g., Core"
+" i5/i7 systems) \\* \\* \\* \\* \\*"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:101
+#: d2ff1a50a9114298aa5684c4d8bad6f2
+msgid "|r4.0-software-update.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 6dfa1414abc14450aa8a1cdec503bec0 bd5c10cbc54a4528b5fe9ecf89e9f170
+msgid "r4.0-software-update.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:103
+#: 714822a7d54c466ca081ec5cce2711b4
+msgid ""
+"Qubes lets you update all the software in all the domains all at once, in a "
+"centralized way. This is possible thanks to Qubes’ unique TemplateVM "
+"technology. Note that the user is not required to shut down any AppVMs "
+"(domains) for the update process. This can be done later, at a convenient "
+"moment, and separately for each AppVM."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:111
+#: 25057c862f83440db9a3718912e73f05
+msgid "|r4.0-copy-paste.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: b762e320d94f48b29fe066d261b2eb87 86b2c93908c049cab822920df33aa509
+msgid "r4.0-copy-paste.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:113
+#: e09930004d96455aa1b008c69453d171
+msgid ""
+"Qubes supports secure copy-and-paste operations between AppVMs. Only the "
+"user can initiate a copy or paste operation using a special key combination "
+"(Ctrl-Shift-C/V). Other AppVMs have no access to the clipboard buffer, so "
+"they cannot steal data from the clipboard. Only the user decides which AppVM"
+" should be given access to the clipboard. (This is done by selecting the "
+"destination AppVM’s window and pressing the Ctrl-Shift-V combination.)"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:123
+#: 9bc61cc4c0b54523adf56584fe542b50
+msgid "|“r4.0-copy-to-other-appvm-1.png| |r4.0-copy-to-other-appvm-3.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 8a5d16cd6b4e4a2f892b938b03591c9a 1240c3e06de3405ba88bf3586745868e
+msgid "“r4.0-copy-to-other-appvm-1.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 340503b6cde5463d8457ff7ec92ae9c2 5f28a86beef2462a814d3a02467061e1
+msgid "r4.0-copy-to-other-appvm-3.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:125
+#: ba0578c736d84f99bae1e1cd502ccab3
+msgid "Qubes also supports secure file copying between AppVMs."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:129
+#: 283613eca0ae481095defb06b06d858e
+msgid "|r4.0-open-in-dispvm-1.png| |r4.0-open-in-dispvm-2.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: af575d5ea5524b1ab5e2aa7da91a3b64 bf5f1b5487384b9ea18976ec8cab0d21
+msgid "r4.0-open-in-dispvm-1.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 0f0a6b1ec8b94be08e3b970f401ef836 5b0b4d078cc24c0fb5c040519be813f4
+msgid "r4.0-open-in-dispvm-2.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:131
+#: 33d0002b55ef478c9b71b6f9fae44cad
+msgid ""
+"Qubes’ unique DisposableVMs (DispVMs) allow the user to open any file in a "
+"disposable VM in a matter of seconds! A file can be edited in a disposable "
+"VM, and any changes are projected back onto the original file. Currently, "
+"there is no way to mark files to be automatically opened in a disposable VM "
+"(one needs to right-click on the file and choose the “View in DisposableVM” "
+"or “Edit in DisposableVM” option), but this is planned for the R2 Beta 3 "
+"release."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:141
+#: bdb3be38d83d4edd8520a6c7cdb6539f
+msgid "|r4.0-convert-to-trusted-pdf-1.png| |r4.1-converting-pdf.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 3e4c3fb637a442cea979e91062028b65 25b58f2ea0674cbcb6fae44c67f3323a
+msgid "r4.0-convert-to-trusted-pdf-1.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 635c0df282a2434998a423d9655e88e8 a36ad14960c44be4835d40b058692650
+msgid "r4.1-converting-pdf.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:143
+#: 19fc9d10d6864494b2209a2aae0c10f3
+msgid ""
+"Qubes provides an advanced infrastructure for programming inter-VM services,"
+" such as a PDF converter for untrusted files (which is described in `this "
+"article <https://blog.invisiblethings.org/2013/02/21/converting-untrusted-"
+"pdfs-into-trusted.html>`__)."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:149
+#: f2bb10a23c3a440f8646d45e3d3fc0d3
+msgid "|r4.0-manager-firewall.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: e90a297c4e53439abd39644af8e97c27 fa5fb5623fd742ef8a31b412040a53bc
+msgid "r4.0-manager-firewall.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:151
+#: e7b86fe62f274f63a9b8ed681738460d
+msgid ""
+"Qubes provides a dedicated firewall that itself runs in an isolated "
+"FirewallVM."
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:156
+#: c0d1ca00f33847c19a12f4deaeef493a
+msgid "And some more screenshots:"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:158
+#: d6b63849fc2a47648e4cbb7172d457af
+msgid "|r4.0-xfce-red-and-green-terminals.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 007dd153d3c84ce1aa2063635b86737d 1a07ee9ad91c4782b0cb91ab97baa587
+msgid "r4.0-xfce-red-and-green-terminals.png"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:160
+#: 53d6fe51db6d484a960884781b3397d6
+msgid "|r2b3-windows-seamless-2.png|"
+msgstr ""
+
+#: ../../../_doc/introduction/screenshots.rst:0
+#: ../../../_doc/introduction/screenshots.rst:0
+#: 7c80e0f3b3924c50bfe88738c33c2707 0777c389d7ae402180f476f0b319b474
+msgid "r2b3-windows-seamless-2.png"
+msgstr ""

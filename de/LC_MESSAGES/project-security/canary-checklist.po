@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:31+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/project-security/canary-checklist.rst:3
+#: 8a035894835a48a7ab1bb6aef468be31
+msgid "Qubes canary checklist"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:6
+#: 8bfbf9891b32489287428ce842543187
+msgid "Preparation"
+msgstr "Vorbereitung"
+
+#: ../../../_doc/project-security/canary-checklist.rst:8
+#: b8525d8f71fa43f4a83f20f3e4e76e03
+msgid "Draft canary and push to private repository"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:9
+#: 9e2e8c28677745bbbd75477f41653ae9
+msgid "Finalize canary, sign, and add signed tags"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:12
+#: b622c269cb5041dfb192cae8bb7ca283
+msgid "Announcement"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:14
+#: caae93daae0744398306852f6ca38741
+msgid "Push canary to public repository"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:15
+#: 8e6caa0de8724dbd9eafdc7a7cff5adf
+msgid ""
+"Publish a `news post <https://www.qubes-os.org/news/>`__ using the "
+":doc:`Canary    Template </project-security/canary-template>`"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:16
+#: 96f3ad0188ab4be6bced5223f24108ed
+msgid ""
+"Send the content of the news post to the appropriate :doc:`mailing    lists "
+"</introduction/support>`"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:17
+#: 75d1b157602d465ba4304e68fad99733
+msgid "Share link to news post on social media"
+msgstr ""
+
+#: ../../../_doc/project-security/canary-checklist.rst:18
+#: dbbbb7a3c5c445989444f45e50d95d3e
+msgid "Set a reminder for the next canary"
+msgstr ""

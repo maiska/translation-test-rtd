@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:28+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:3
+#: 7b937bc00b5144a79412a29746bcc24b
+msgid "Upgrading to R2B2"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:5
+#: 48781857dc9f4a07be41dd04ece91bef
+msgid ""
+"Existing users of Qubes R1 (but not R1 betas!) can upgrade their systems to "
+"the latest R2 beta release by following the procedure below. As usual, it is"
+" advisable to backup the system before proceeding with the upgrade. While it"
+" is possible to upgrade the system **it is strongly recommended to reinstall"
+" it**. You will preserve all your data and settings thanks to :doc:`backup "
+"and restore tools </user/how-to-guides/how-to-back-up-restore-and-migrate>`."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:13
+#: 72d9928c04f3475fad84ab87279856ba
+msgid "Upgrade all Template and Standalone VM(s)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:15
+#: 4ae2bb4a3f0d46ad81d1353ef4363455
+msgid ""
+"**If you have already R2 Beta1 installed, follow standard template update "
+"procedure (e.g. “Update VM” button in Qubes Manager) and skip the rest of "
+"this section**"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:19
+#: 607cb7768ee0471282fc96cbb9fe5e53
+msgid ""
+"By default, in Qubes R1, there is only one template, however users are free "
+"to create more templates for special purposes, as well as Standalone VMs. "
+"More information on using multiple templates, as well as Standalone VMs, can"
+" be found :doc:`here </user/templates/templates>` and :doc:`here "
+"</user/advanced-topics/standalones-and-hvms>`. The steps described in this "
+"section should be repeated in *all* user’s Template and Standalone VMs."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:25
+#: 4bb86ce372d44bfeb6973862bade00b8
+msgid ""
+"Open terminal in the template (or standalone VM). E.g. use the Qubes "
+"Manager’s right-click menu and choose Run Command in VM and type ``gnome-"
+"terminal`` there."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:29
+#: ef40f37ccbd640688caeb1abd9747339
+msgid ""
+"Install ``qubes-upgrade-vm`` package (this package brings in R2 repo "
+"definitions and R2 keys)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:36
+#: 2d9c8364460145089b76ea4cfcefd28f
+msgid ""
+"Proceed with normal update in the template (this should bring in also the R2"
+" packages for the VMs):"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:43
+#: 397f2d1764bd4f2c887fda51e2e383f4
+msgid ""
+"The installer (yum) will prompt to accept the new Qubes R2 signing key:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:55
+#: 354c16703c4e427ea32cc89db257f121
+msgid ""
+"If you see (as is the case on the “screenshot” above) that the new key was "
+"imported from a local filesystem (``/etc/pki/rpm-gpg/...``) you can safely "
+"accept the key, without checking its fingerprint. This is because there were"
+" only two ways for such a key to make it to your template’s filesystem:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:61
+#: 7752e2bb56bc4519a619796360be20a3
+msgid ""
+"via a legitimate RPM package previously installed (in our case it was the "
+"``qubes-upgrade-vm`` RPM). Such an RPM must have been signed by one of the "
+"keys you decided to trust previously, by default this would be either via "
+"the Qubes R1 signing key, or Fedora 17 signing key."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:66
+#: a781ba9b484e4ad38b5641310994b0d7
+msgid ""
+"via system compromise or via some illegal RPM package (e.g. Fedora released "
+"package pretending to bring new Firefox). In that case, however, your VM is "
+"already compromised, and it careful checking of the new R2 key would not "
+"change this situation to any better one. The game is lost for this VM anyway"
+" (and all VMs based on this template)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:72
+#: 6dc84d9bbba545c69d7341f9d6eca379
+msgid "Shut down the VM."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:75
+#: b07b8eaa340e404983e5da8dc3648aca
+msgid "Installing new template"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:77
+#: aaab194dff3747968634a5775ba2f19b
+msgid ""
+"Qubes R2 Beta2 brings new fedora-18-x64 template (based on Fedora 18). You "
+"can install it from Qubes installation DVD. Insert installation DVD into "
+"your drive and issue following commands:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:89
+#: 5a9ad34bb4934bfcbe6260809447db17
+msgid ""
+"If you already have fedora-17-x64, you can also upgrade it to fedora-18-x64 "
+"following `standard Fedora upgrade procedure "
+"<https://fedoraproject.org/wiki/Upgrading_Fedora_using_yum>`__ (only “yum” "
+"method will work in Qubes VM)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:94
+#: cb37d249f3a747f0901e0ff079cd6ace
+msgid "Upgrade Dom0"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:96
+#: a75b3a231a604cd2a2f417ca981cfd46
+msgid ""
+"Be sure to do steps described in this section after *all* your template and "
+"standalone VMs got updated as described in the section above."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:99
+#: 51ae5c721e9d4b64aaa808fd985ea4d9
+msgid "Open terminal in Dom0. E.g. Start->System Settings->Konsole."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:101
+#: 79d3c9112296435c96c110f3bb9fd66c
+msgid ""
+"Upgrade the ``qubes-release`` package to the latest version which brings in "
+"new repo definitions and R2 signing keys:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:108
+#: fd3e5896c3b74cd787350ac70f71f796
+msgid "This should install ``qubes-release-1-6`` in your Dom0."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:110
+#: cc0abc86fec341ab939768d609e2db3a
+msgid "Install R2 upgrade package:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:116
+#: 8e00c57d1098496eb5473d5aab28e22d
+msgid "Start upgrade process:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:122
+#: acd10e9b9f784484bba1c189b0abe79d
+msgid ""
+"Follow instructions on screen, first stage of upgrade should end up with "
+"reboot request."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:125
+#: 53d1dbc796a4449ba05c660927507987
+msgid ""
+"Reboot your system, ensure that you choose “Qubes Upgrade” boot option."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:128
+#: be360b8881c14a33954c42cddb7c06da
+msgid "When system starts up, login and start start"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:134
+#: 6223a5bf7bbc4175af7e1bf9fbffa455
+msgid ""
+"again. This will start second stage of upgrade, here most packages will be "
+"upgraded, so this will take a while."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:137
+#: f56b06a96b464ce58db65f3d33d364bc
+msgid ""
+"You will be prompted to install new bootloader. If you haven’t changed "
+"anything in this matter from initial installation, just accept the default."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:141
+#: e3c2df414c3e494d9e8c3c71f45f74ea
+msgid ""
+"Reboot your system. System shutdown may hung because some running system "
+"components no longer match that installed on disk; just wait a few minutes "
+"and hard reset the system in such case."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:145
+#: 8cd92e5c49754fe4924112518ea29cfd
+msgid "This is end of upgrade process, you should now have Qubes R2 system."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/2b2.rst:147
+#: 35da484555ae47d9b829f5184a8da4db
+msgid ""
+"Please note that if you use Anti Evil Maid, then it won’t be able to unseal "
+"the passphrase this time, because the Xen, kernel, and initramfs binaries "
+"have changed. Once the system boots up again, you could reseal your Anti "
+"Evil Maid’s passphrase to the new configuration. Please consult Anti Evil "
+"Maid documentation for explanation on how to do that."
+msgstr ""

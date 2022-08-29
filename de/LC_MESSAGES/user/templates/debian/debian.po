@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# IDRASSI Mounir <mounir.idrassi@idrix.fr>, 2022
+# Emma Peel, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:27+0000\n"
+"Last-Translator: Emma Peel, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/templates/debian/debian.rst:3
+#: 3e9848157557405f9282c6f493b7e4d1
+msgid "Debian templates"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:5
+#: d47402a4cc2845ce809a23d4010079f5
+msgid ""
+"The Debian :doc:`template </user/templates/templates>` is an officially "
+":ref:`supported <user/downloading-installing-upgrading/supported-"
+"releases:templates>` template in Qubes OS. This page is about the standard "
+"(or “full”) Debian template. For the minimal version, please see the "
+":doc:`Minimal templates </user/templates/minimal-templates>` page. There is "
+"also a `Qubes page on the Debian Wiki <https://wiki.debian.org/Qubes>`__."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:10
+#: 921ce4ad44da48339dca2521b109f2ec
+msgid "Installing"
+msgstr "Installiert"
+
+#: ../../../_doc/user/templates/debian/debian.rst:12
+#: aec3ac906324478bb29211fc09508c2f
+msgid ""
+"To :ref:`install <user/templates/templates:installing>` a specific Debian "
+"template that is not currently installed in your system, use the following "
+"command in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:20
+#: 1aa920b1d66d4b07b83f7ea36610e470
+msgid ""
+"(Replace ``XX`` with the Debian version number of the template you wish to "
+"install.)"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:23
+#: c6815f077f304781b2fe855ee82e5fab
+msgid ""
+"To reinstall a Debian template that is already installed in your system, see"
+" :doc:`How to Reinstall a template </user/templates/how-to-reinstall-a-"
+"template>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:27
+#: 6474ab263d304cf4ad5cb06d4697f274
+msgid "After Installing"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:29
+#: 8be3de618b9845e38e3141aee1d07e5c
+msgid ""
+"After installing a fresh Debian template, we recommend performing the "
+"following steps:"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:32
+#: 18470274478b43fdbe1837c8a3053683
+msgid ""
+":doc:`Update the template </user/how-to-guides/how-to-install-software>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:34
+#: a6ac14f74c0a4d11b07b285b73d7c1f0
+msgid ""
+":ref:`Switch any app qubes that are based on the old template to the new    "
+"one <user/templates/templates:switching>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:36
+#: 2dd7ea067d41462e8b5f19979f836d18
+msgid ""
+"If desired, :ref:`uninstall the old    template "
+"<user/templates/templates:uninstalling>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:39
+#: e99ab16e73054a9ea0c5dfd5d2344007
+msgid "Installing software"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:41
+#: 36a061d569384b6993e483831ba6a469
+msgid ""
+"See :doc:`How to Install Software </user/how-to-guides/how-to-install-"
+"software>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:44
+#: 552c418dea4446ef8d679c1523fdac70
+msgid "Updating"
+msgstr "Aktualisieren"
+
+#: ../../../_doc/user/templates/debian/debian.rst:46
+#: a0c216af39ba41d5804f013c44fd0417
+msgid ""
+"For routine daily updates within a given release, see :doc:`How to Update "
+"</user/how-to-guides/how-to-update>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:49
+#: 58aa60a1fe034994b2cdbe57b1997014
+msgid "Upgrading"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:51
+#: 9c8cb438211e4cb295c8208674a48c69
+msgid "There are two ways to upgrade your template to a new Debian release:"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:53
+#: 42672c5d99384a1b869a273a7b9e3a3c
+msgid ""
+"**Recommended:** :ref:`Install a fresh template to replace the existing    "
+"one. <user/templates/debian/debian:installing>` **This option may be simpler"
+" for less experienced users.** After you install the new template, redo all "
+"desired template modifications and :ref:`switch everything that was set to"
+"    the old template to the new template "
+"<user/templates/templates:switching>`. You may want to write down the "
+"modifications you make to your templates so that you remember what to redo "
+"on each fresh install. In the old Debian template, see ``/var/log/dpkg.log``"
+" and ``/var/log/apt/history.log`` for logs of package manager actions."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:61
+#: 9d3015104dc24cf2b489b2d0f732d67c
+msgid ""
+"**Advanced:** :doc:`Perform an in-place upgrade of an existing Debian    "
+"template. </user/templates/debian/debian-upgrade>` This option will preserve"
+" any modifications you’ve made to the template, **but it may be more "
+"complicated for less experienced users.**"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:66
+#: 4de571ac9ff34c23bcd245883098ce2e
+msgid "Release-specific notes"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:68
+#: 7d7c41a8b61541b28a173022ecb53304
+msgid "This section contains notes about specific Debian releases."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:71
+#: 5cbe3208e3214ea592aae277effd0d52
+msgid "Debian 10"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:73
+#: b3c30b2269b84e66adac8333b7f8d03a
+msgid "Debian 10 (buster) - minimal:"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:79
+#: 6e024b955d1e4df4abb0af28f93014b7
+msgid "Debian 10 (buster) - stable:"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:86
+#: 82632311d7d646d4adb1d6d5abd39cc1
+msgid "Starting services"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:88
+#: bc2987749fdb4237b7b8f2f75ac64c9f
+msgid ""
+"The Debian way (generally) is to start daemons if they are installed. This "
+"means that if you install (say) ssh-server in a template, *all* the qubes "
+"that use that template will run a ssh server when they start. (They will, "
+"naturally, all have the same server key.) This may not be what you want."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:94
+#: 7b112b57b89249f59395ab7161124a3a
+msgid ""
+"So be very careful when installing software in Templates - if the daemon "
+"spawns outbound connections then there is a serious security risk."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:97
+#: 74bd2e3f75cd47d89f4c849e8820f79c
+msgid "In general, a reasonable approach would be, (using ssh as example):"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:99
+#: 580ca9bc702c4307aa23ae1bdc3313b8
+msgid "Install the ssh service."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:100
+#: 715be025cb7e4d1ab4c1bf45ee4db8b7
+msgid "``systemctl stop ssh``"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:101
+#: ca0b67f241f24700ba5b5414453b7078
+msgid "``systemctl disable ssh``"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:102
+#: 7481abb0ebbf412ab6a59130281b934b
+msgid "``systemctl mask ssh``"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:103
+#: 9ec6c5843bec4905a40c5a2dfd6ac4d0
+msgid "Close down template"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:105
+#: f96e989a79404e71bd6e0aca2a083735
+msgid ""
+"Now the ssh service will **NOT** start in qubes based on this template."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:107
+#: 2cde494dd4974fd69f516e082cac1384
+msgid ""
+"Where you **DO** want the service to run, put this in "
+"``/rw/config/rc.local``:"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:115
+#: 9d9945f837ee49d79bcfe6e72f605011
+msgid "Don’t forget to make the file executable."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:118
+#: 0af789bbeb6645cba44ebe1e5d7b8a3c
+msgid "Unattended Upgrades"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:120
+#: 0f5c51d9750a4a4fa7805a038ba386aa
+msgid ""
+"Some users have noticed that on upgrading to Stretch, the ``unattended-"
+"upgrade`` package is installed."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:123
+#: 16f2d9f9ae244a2b88de63845f033ca2
+msgid ""
+"This package is pulled in as part of a Recommend chain, and can be purged."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:126
+#: bfb79aea975045eba4d23ea8826316be
+msgid ""
+"The lesson is that you should carefully look at what is being installed to "
+"your system, particularly if you run ``dist-upgrade``."
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:130
+#: 7ffacfafa13440b680ca8dbadf6a71f5
+msgid "Package installation errors in Qubes 4.0"
+msgstr ""
+
+#: ../../../_doc/user/templates/debian/debian.rst:132
+#: b5998c0a06184f23974afb19106e8f5f
+msgid ""
+"If some packages throw installation errors, see :ref:`this guide. "
+"<user/troubleshooting/vm-troubleshooting:fixing package installation "
+"errors>`"
+msgstr ""

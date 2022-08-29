@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:26+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:3
+#: fba212e2e04245dd8ea696e2a81cc985
+msgid "How to enter fullscreen mode"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:6
+#: 635294f409be40d0b81bee12f3c79f00
+msgid "What is fullscreen mode?"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:8
+#: 8b5b1873bea3484d861ea06989822786
+msgid ""
+"Normally, the Qubes GUI virtualization daemon restricts the VM from “owning”"
+" the full screen, ensuring that there are always clearly marked decorations "
+"drawn by the trusted Window Manager around each of the VMs window. This "
+"allows the user to easily realize to which domain a specific window belongs."
+" See the :doc:`screenshots </introduction/screenshots>` page for examples."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:15
+#: 51039e1337c5421194bd6aa4aa4e2043
+msgid "Why is fullscreen mode potentially dangerous?"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:17
+#: 4c6c6fee885f40ff807af14fc88c069f
+msgid ""
+"If one allowed one of the VMs to “own” the full screen, e.g. to show a movie"
+" on a full screen, it might not be possible for the user to know if the "
+"applications/VM really “released” the full screen, or if it has started "
+"emulating the whole desktop and is pretending to be the trusted Window "
+"Manager, drawing shapes on the screen that look e.g. like other windows, "
+"belonging to other domains (e.g. to trick the user into entering a secret "
+"passphrase into a window that looks like belonging to some trusted domain)."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:27
+#: 2447fd84cd484aa59b4b52ae66db3a2b
+msgid "Secure use of fullscreen mode"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:29
+#: 9b8c91d9eda845f482d714ed52b609f7
+msgid ""
+"However, it is possible to deal with fullscreen mode in a secure way "
+"assuming there are mechanisms that can be used at any time to switch between"
+" windows or show the full desktop and that cannot be intercepted by the VM. "
+"The simplest example is the use of Alt+Tab for switching between windows, "
+"which is a shortcut handled by dom0."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:35
+#: 2ccb109a423b42f19397290841357290
+msgid ""
+"Other examples such mechanisms are the KDE “Present Windows” and “Desktop "
+"Grid” effects, which are similar to Mac’s “Expose” effect, and which can be "
+"used to immediately detect potential “GUI forgery”, as they cannot be "
+"intercepted by any of the VM (as the GUID never passes down the key "
+"combinations that got consumed by KDE Window Manager), and so the VM cannot "
+"emulate those. Those effects are enabled by default in KDE once Compositing "
+"gets enabled in KDE (System Settings -> Desktop -> Enable Desktop Effects), "
+"which is recommended anyway. By default, they are triggered by Ctrl-F8 and "
+"Ctrl-F9 key combinations, but can also be reassigned to other shortcuts."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:47
+#: bd8041f089de46fd8a5e0505268a8acf
+msgid "Enabling fullscreen mode for select VMs"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:49
+#: 331f324da0864b45bcf4e95348ef4bf2
+msgid ""
+"You can always put a window into fullscreen mode in Xfce4 using the trusted "
+"window manager by right-clicking on a window’s title bar and selecting "
+"“Fullscreen” or pressing ``alt`` + ``f11``. This functionality should still "
+"be considered safe, since a VM window still can’t voluntarily enter "
+"fullscreen mode. The user must select this option from the trusted window "
+"manager in dom0. To exit fullscreen mode from here, press ``alt`` + "
+"``space`` to bring up the title bar menu again, then select “Leave "
+"Fullscreen” or simply press ``alt`` + ``f11``. For StandaloneHVMs, you "
+"should set the screen resolution in the qube to that of the host, (or "
+"larger), *before* setting fullscreen mode in Xfce4."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:60
+#: b0ff4172cd76459ba43ceabeb61aa8d1
+msgid ""
+"As an alternative to the Xfce4 method, you can enable fullscreen mode for "
+"select VMs by creating the following entry in the ``/etc/qubes/guid.conf`` "
+"file in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:72
+#: 86796d7555944c2f86ec93cc75493089
+msgid ""
+"The string ‘personal’ above is an example only and should be replaced by the"
+" actual name of the VM for which you want to enable this functionality."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:76
+#: 67f68e8eda7542f4a9538e7c27a87d1b
+msgid ""
+"**Note:** There should be only one ``VM: {} block in the file (or you will "
+"`get into problems <https://groups.google.com/d/msg/qubes-"
+"users/-Yf9yNvTsVI/xXsEm8y2lrYJ>`__)."
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:78
+#: 7476613af4e14aec9e5c8fbb4a2da698
+msgid ""
+"One can also enable this functionality for all the VMs globally in the same "
+"file, by modifying the ‘global’ section:"
+msgstr ""
+
+#: ../../../_doc/user/how-to-guides/how-to-enter-fullscreen-mode.rst:92
+#: d2e2153be5ed474c961a33d652a3a860
+msgid ""
+"Be sure to restart the VM(s) after modifying this file, for the changes to "
+"take effect."
+msgstr ""

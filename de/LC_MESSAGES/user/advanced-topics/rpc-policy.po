@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:29+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:3
+#: 3d4ab1732d694f3e9dfbaafa55def0dc
+msgid "RPC policies"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:5
+#: 03f5f27db9644af3b26a92b22efd072f
+msgid ""
+"*Qubes OS 4.1 introduced a new qrexec policy system and policy format. "
+"Please see*\\ `this article <https://www.qubes-os.org/news/2020/06/22/new-"
+"qrexec-policy-system/>`__\\ *for details.*"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:8
+#: 7b67e625e4db4788bdda2f81aa3777d4
+msgid ""
+"This document explains the basics of RPC policies in Qubes. For more "
+"information, see :doc:`Qrexec: command execution in VMs "
+"</developer/services/qrexec>`."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:11
+#: 284a8ddc5e3949b3a87a3cdd63e397cd
+msgid "Here’s an example of an RPC policy file in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:23
+#: 16dcb5cb8ea9436ab715a83f1ea6d214
+msgid ""
+"It has three columns (from left to right): source, destination, and "
+"permission. Each row is a rule. For example, the second row says that we’re "
+"**allowed** (third column) to copy a file (since this is the policy file for"
+" ``qubes.FileCopy``) **from** (first column) any VM tagged with “work” "
+"**to** (second column) any VM tagged with “work”. In other words, all the "
+"VMs tagged with “work” are allowed to copy files to each other without any "
+"prompts. (If the third column were “ask” instead of “allow”, there would be "
+"prompts. I.e., we would be **asked** to approve the action, instead of it "
+"always being **allowed**.)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:33
+#: 7ad1b2e7ad644e23a20eee29531c6140
+msgid ""
+"Now, the whole policy file is parsed from top to bottom. As soon as a rule "
+"is found that matches the action being evaluated, parsing stops. We can see "
+"what this means by looking at the third row. It says that we’re **denied** "
+"from attempting to copy a file **from** any VM tagged with “work” **to** any"
+" VM whatsoever. (That’s what the ``@anyvm`` keyword means – literally any VM"
+" in the system, except for dom0). But, wait a minute, didn’t we just say (in"
+" the second row) that all the VMs tagged with work are **allowed** to copy "
+"files to each other? That’s exactly right. The second and third rows "
+"contradict each other, but that’s intentional. Since we know that parsing "
+"goes from top to bottom (and stops at the first match), we intentionally put"
+" the second row above the third row so that it would take precedence. This "
+"is how we create a policy that says: “VMs tagged with ‘work’ are allowed to "
+"copy files to each other but not to any *other* VMs (i.e., not to VMs that "
+"*aren’t* tagged with ‘work’).”"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:49
+#: a7cde31d79c647a68197cfbc471bc43e
+msgid ""
+"When an operation is initiated with a specific target, e.g. ``qvm-copy-to-vm"
+" other_work_vm some_file`` the policy mechanism looks for a row matching "
+"``source_work_vm other_work_vm PERMISSION``. In this case, assuming both VMs"
+" have the ``work`` tag, the second row would match, and the operation would "
+"be ``allow``\\ ed without any prompts. When an operation is initiated "
+"without a specific target, e.g. ``qvm-copy some_file``, the policy mechanism"
+" looks for a row matching ``source_work_vm @default PERMISSION``. In this "
+"case, the first row indicates that the user should be prompted for the "
+"destination. The list of destination VMs in the prompt is filtered to only "
+"include VMs that are valid as per the policy (so in this example, only other"
+" work VMs would be listed). If the first row was commented out, the second "
+"row would not match (the ``@default`` placeholder is not included in "
+"``@tag:work``) but the third row would match (the ``@default`` placeholder "
+"is included in ``@anyvm``). The ``qvm-copy`` operation would therefore "
+"terminate immediately with the message ``Request refused``, without "
+"prompting the user with a list of valid destination VMs, and only ``qvm-"
+"copy-to-vm`` operations with valid destinations would be allowed."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:69
+#: fdc2f8a1c6914a29b949f677c6ae304d
+msgid ""
+"The fourth row says that we’re **denied** from copying files **from** any VM"
+" in the system **to** any VM tagged with “work”. Again, since parsing goes "
+"from top to bottom, this doesn’t mean that no files can ever be copied from "
+"*any* VM to a VM tagged with “work”. Rather, it means that only VMs that "
+"match an earlier rule can do so (in this case, only VMs tagged with “work”)."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:76
+#: 1ff58b6da34f4685b67502520246e292
+msgid ""
+"The fifth and final row says that we’re **asked** (i.e., prompted) to copy "
+"files **from** any VM in the system **to** any VM in the system. (This rule "
+"was already in the policy file by default. We added the first four.) Note "
+"that it wouldn’t make sense to add any rules after this one, since every "
+"possible pair of VMs will match the ``@anyvm  @anyvm`` pattern. Therefore, "
+"parsing will always stop at this rule, and no rules below it will ever be "
+"evaluated."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:84
+#: e9761efbca824ef3a589bf21a75159cd
+msgid ""
+"All together, the four rules we added say that all VMs tagged with “work” "
+"are allowed to copy files to each other; however, they’re denied from "
+"copying files to other VMs (without the “work” tag), and other VMs (without "
+"the “work” tag) are denied from copying files to them. The fifth rule means "
+"that the user gets prompted for any situation not already covered."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:91
+#: 549b3fee8fe1454c8cd672f7df1417c6
+msgid ""
+"Further details about how this system works can be found in :doc:`Qrexec: "
+"command execution in VMs </developer/services/qrexec>`."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/rpc-policy.rst:93
+#: 1db6d975b07a4f98882a12bae1c865ae
+msgid ""
+"(**Note**\\ *: the ``$`` character is deprecated in qrexec keywords – please"
+" use ``@`` instead (e.g. ``@anyvm``). For more information, see the "
+"bulletin*\\ `here <https://github.com/QubesOS/qubes-"
+"secpack/blob/master/QSBs/qsb-038-2018.txt>`__\\ *.*)"
+msgstr ""

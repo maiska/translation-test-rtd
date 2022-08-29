@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:29+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:3
+#: 500fe0daaec5461b96bac10cb34f0155
+msgid "Windows debugging"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:5
+#: 02516db616024fd88c267f918ddd441d
+msgid ""
+"Debugging Windows code can be tricky in a virtualized environment. The guide"
+" below assumes Xen hypervisor and Windows 7 VMs."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:8
+#: 2e07244bd48145acb493166ca56b77ec
+msgid ""
+"User-mode debugging is usually straightforward if it can be done on one "
+"machine. Just duplicate your normal debugging environment in the VM."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:11
+#: b9fa30f8be5543459bd30d8b6d73dc23
+msgid ""
+"Things get complicated if you need to perform kernel debugging or "
+"troubleshoot problems that only manifest on system boot, user logoff or "
+"similar. For that you need two Windows VMs: the *host* and the *target*. The"
+" *host* will contain `WinDbg <https://msdn.microsoft.com/en-"
+"us/library/windows/hardware/ff551063(v=vs.85).aspx>`__ installation, your "
+"source code and private symbols. The *target* will run the code being "
+"debugged. Both will be linked by virtual serial ports."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:19
+#: 68b5451b384649a7b6998e505b5d3594
+msgid ""
+"First, you need to prepare separate copies of both *target* and *host* VM "
+"configuration files with some changes. Copy the files from "
+"**/var/lib/qubes/appvms/vmname/vmname.conf** to some convenient location, "
+"let’s call them **host.conf** and **target.conf**."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:23
+#: 5b1fd8a8122d49dc91d7c7f4197c32a8
+msgid ""
+"In both copied files add the following line at the end: ``serial = 'pty'``. "
+"This will make Xen connect VM’s serial ports to dom0’s ptys."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:26
+#: 4243ef1345a04e51be3e0a75db3f10e8
+msgid ""
+"From now on you need to start both VMs like this: ``qvm-start --custom-"
+"config=/your/edited/host.conf host -  To connect both VM serial ports "
+"together you will either need    `socat <http://www.dest-"
+"unreach.org/socat/>`__ or a custom utility described later."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:29
+#: 93be4a16b7294b148ea6993a7d7960b1
+msgid ""
+"To determine which dom0 pty corresponds to VM’s serial port you need to read"
+" xenstore, example script below:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:40
+#: e2c3e691a47f4d1e9789de33973beece
+msgid ""
+"Pass it a running VM name and it will output the corresponding pty name."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:42
+#: e5c54bb3fa8c46c3b4fd80e86526ef7f
+msgid ""
+"To connect both ptys you can use `socat <http://www.dest-"
+"unreach.org/socat/>`__ like that:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:55
+#: 81e0b89dd21f4731aa7ad9df860635b7
+msgid ""
+"…but there is a catch. Xen seems to process the traffic that goes through "
+"serial ports and changes all **0x0a** bytes into **0x0d, 0x0a** pairs "
+"(newline conversion). I didn’t find a way to turn that off (setting ptys to "
+"raw mode didn’t change anything) and it’s not mentioned anywhere on the "
+"Internet, so maybe it’s something on my system. If the above script works "
+"for you then you don’t need anything more in dom0."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:62
+#: 15dc2196b0194f91a69d124ae1b1fabd
+msgid ""
+"On the *target* system, run ``bcdedit /set debug on`` on the console to turn"
+" on kernel debugging. It defaults to the first serial port."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:65
+#: 7cd7e81041d64f3ab5fa8fd22a517f74
+msgid ""
+"On the *host* system, install `WinDbg <http://msdn.microsoft.com/en-"
+"us/library/windows/hardware/ff551063(v=vs.85).aspx>`__ and start the kernel "
+"debug (Ctrl-K), choose **com1** as the debug port."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:70
+#: 8fb0af2051284b8ab6939dd54ad9a2d6
+msgid "Reboot the *target* VM."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:72
+#: ccc653a5edc3422eb07c68182b96d253
+msgid "Run the above shell script in dom0."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:74
+#: 47f95054069a409397857a948f7e0a76
+msgid ""
+"If everything is fine you should see the proper kernel debugging output in "
+"WinDbg. However, if you see something like that:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:99
+#: 4b2d0a9657544fbc98133023a6d3c46e
+msgid ""
+"…then you’re most likely a victim of the CRLF issue mentioned above. To get "
+"around it I wrote a small utility that basically does what socat would do "
+"and additionally corrects those replaced bytes in the stream. It’s not "
+"pretty but it works:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:218
+#: d67d5afc8c0e4d30bed98b5a9efdda98
+msgid ""
+"This utility is a unidirectional relay so you need to run two instances to "
+"get duplex communication, like:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:232
+#: d348e9c2bcda4523abc4f5d604fd882d
+msgid "With this everything should be good:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:249
+#: ee0cec829a764ef68009855682c7a054
+msgid "Debugging HVMs in the Qubes R4.0"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:251
+#: eecc528910e34a21a7c8b823b3b06746
+msgid ""
+"There are two main issues to be adopted to get all things to work in the "
+"R4.0."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:255
+#: 3c2ddecc22434cd9bf32d090629dcb70
+msgid "Add a virtual serial port"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:257
+#: 08edb0c016a74f8ca752b042040e090f
+msgid ""
+"Qemu in the stub domain with virtual serial port added in a recommended way "
+"(``<serial type=\"pty\"/>``) fails to start (Could not open ‘/dev/hvc1’: No "
+"such device). It seems like a lack of multiple xen consoles "
+"support/configuration. The only way that I have found is to attach serial "
+"port explicitly to the available console."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:263
+#: c5d0a55a891a44c583161de22aca4aab
+msgid "Unpack stub domain in dom0:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:274
+#: 339da672222e435da0f56b2d1c053f0b
+msgid ""
+"Edit Init script to remove last loop and to add “-serial /dev/hvc0” to the "
+"qemu command line."
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:277
+#: 2f4652e45b204684b7194ae8db3d5aa0
+msgid "Apply changes:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:285
+#: 37dd62a43ff643a1b994b51b26b0555b
+msgid "Connect two consoles"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:287
+#: 96aef33d953c4b10a7809fdf086793c6
+msgid "Run the following script:"
+msgstr ""
+
+#: ../../../_doc/developer/debugging/windows-debugging.rst:301
+#: e84951b44eb3433a89a0e53e24e31c58
+msgid "Happy debugging!"
+msgstr ""

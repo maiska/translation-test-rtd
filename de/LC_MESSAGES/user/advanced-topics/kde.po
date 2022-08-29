@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Steve Dougherty, 2022
+# Friedrich-Wilhelm Prussak <info@prussak.de>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:29+0000\n"
+"Last-Translator: Friedrich-Wilhelm Prussak <info@prussak.de>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/advanced-topics/kde.rst:3
+#: b0148e61d3c44f028be16a631dfa4aeb
+msgid "KDE (desktop environment)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:6
+#: ca8e20150b7d444f914b630d3782d119
+msgid "Installation"
+msgstr "Installation"
+
+#: ../../../_doc/user/advanced-topics/kde.rst:8
+#: b1b4e26a678542b4b0f699f9167cb4c4
+msgid ""
+"Prior to R3.2, KDE was the default desktop environment in Qubes. Beginning "
+"with R3.2, however, :doc:`XFCE is the new default desktop environment "
+"</developer/releases/3_2/release-notes>`. Nonetheless, it is still possible "
+"to install KDE by issuing this command in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:16
+#: 134e7233ba9444d4af607c6dd3d6eb2d
+msgid ""
+"You can also change your default login manager (lightdm) to the new KDE "
+"default: sddm"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:19
+#: 6160b12fd0f040cbb4dcceb760b2bba2
+msgid ""
+"first you need to edit the ``/etc/sddm.conf`` to make sure if the custom X "
+"parameter is set according to Qubes needs:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:27
+#: fbc716ad2a2d466bac7f5534f24cfa5e
+msgid "disable the lightdm service:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:33
+#: f655b36651b04b51bc5d1fccd437bf5d
+msgid "enable the sddm service:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:39
+#: 574d00530d9c445bbfdcbe666d786360
+msgid "reboot"
+msgstr "Neustart"
+
+#: ../../../_doc/user/advanced-topics/kde.rst:41
+#: 39f4567c67e24cfd90f1d79a1579d0fb
+msgid ""
+"If you encounter performance issues with KDE, try switching back to LightDM."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:45
+#: cf604aaa79864336b6e4888bd5f937c7
+msgid "Window Management"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:47
+#: 0f007d3cd7384642a6406b7f12a9fca2
+msgid "You can set each window’s position and size like this:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:61
+#: e49ab0f7ed3c472cb3e04518bedec02c
+msgid ""
+"You can also use ``kstart`` to control virtual desktop placement like this:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:68
+#: bda707ecd3bb4d2b845f76c157cc4aa2
+msgid ""
+"(Replace “3” with whichever virtual desktop you want the window to be on.)"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:71
+#: 08e7c9a9307c46a1b5236de0e7e60aa1
+msgid ""
+"This can be useful for creating a simple shell script which will set up your"
+" workspace the way you like."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:75
+#: c62519d399dc406c978f8d1d49dc2d88
+msgid "Removal"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:77
+#: 54558ca2fce94defbc765aa1f8655bd4
+msgid ""
+"If you decide to remove KDE do **not** use ``dnf remove @kde-desktop-"
+"qubes``. You will almost certainly break your system."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:81
+#: 90220045d9b3419fac09e88e35378914
+msgid "The safest way to remove (most of) KDE is:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:88
+#: 4354ce082550420da95376685d87ed61
+msgid "Mailing List Threads"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/kde.rst:90
+#: de7c97cb00c442a0b483a4f140879e55
+msgid ""
+"`Nalu’s KDE customization    thread "
+"<https://groups.google.com/d/topic/qubes-users/KhfzF19NG1s/discussion>`__"
+msgstr ""

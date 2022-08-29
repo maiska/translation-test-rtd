@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:32+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/introduction/video-tours.rst:3
+#: 35ad1fd821894f47a083748b5a5051d4
+msgid "Video tours"
+msgstr ""
+
+#: ../../../_doc/introduction/video-tours.rst:6
+#: 63af89294c6e42df8fc68c0944715cd3
+msgid ""
+"Micah Lee presents “Qubes OS: The Operating System That Can Protect You Even"
+" If You Get Hacked”"
+msgstr ""
+
+#: ../../../_doc/introduction/video-tours.rst:7
+#: 63d7fd8090834e8ab7c9e065b4e0f120
+msgid ""
+"`Micah Lee <https://micahflee.com/>`__, a long-time Qubes `advocate "
+"<https://www.qubes-os.org/endorsements/>`__, presented `Qubes OS: The "
+"Operating System That Can Protect You Even If You Get Hacked "
+"<https://archive.org/details/QubesOSTheOperatingSystemThatCanProtectYouEvenIfYouGetHackedTalkByMicahLee>`__"
+" at the `Circle of HOPE <https://www.hope.net/index.html>`__ conference,"
+msgstr ""
+
+#: ../../../_doc/introduction/video-tours.rst:8
+#: 838f96c9686c4a0faf12847d2a00969c
+msgid "which took place July 20-22, 2018 in New York City."
+msgstr ""
+
+#: ../../../_doc/introduction/video-tours.rst:13
+#: 532771c73625424a8711f4ba98d2714a
+msgid ""
+"Explaining Computers presents “Qubes OS: Security Oriented Operating System”"
+msgstr ""

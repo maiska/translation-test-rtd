@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:27+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:3
+#: 0980fc5965aa4c3e808eb7d136d499d1
+msgid "GUI troubleshooting"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:6
+#: ac3f1511d8104405815b0d3df04e7aee
+msgid "Can’t click on anything after connecting 4k external display"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:8
+#: bf217256e55f4124a4721e77da2562fd
+msgid ""
+"When you connect a 4K external display, you may be unable to click on "
+"anything but a small area in the upper-right corner."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:11
+#: 45cd9dd30c1645cfae94819a1b753982
+msgid ""
+"When a qube starts, a fixed amount of RAM is allocated to the graphics "
+"buffer called video RAM. This buffer needs to be at least as big as the "
+"whole desktop, accounting for all displays that are or will be connected to "
+"the machine. By default, it is as much as needed for the current display and"
+" an additional full HD (FHD) display (1920×1080 8 bit/channel RGBA). This "
+"logic fails when the machine has primary display in FHD resolution and, "
+"after starting some qubes, a 4K display is connected. If the buffer is too "
+"small, and internal desktop resize fails."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:20
+#: a80783627e044f929d1e14d0c1c0ef9a
+msgid ""
+"The solution to this problem is to increase the minimum size of the video "
+"RAM buffer, as explained in :ref:`GUI Configuration <user/advanced-"
+"topics/gui-configuration:video ram adjustment for high resolution "
+"displays>`."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:24
+#: 055f2aa916cf4e9a8f846e094f2ea9c0
+msgid ""
+"Screen blanks / Weird computer glitches like turning partially black or "
+"black boxes"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:26
+#: 0cb0c07b45154e7e8ee7ef3a9eb15092
+msgid ""
+"You may encountering seemingly random screen blanking while using Qubes, "
+"where the screen will black and shows the logon screen, yet, only the active"
+" window will show when you move the mouse or use the keyboard. Sometimes, "
+"you will get random black screens or black boxes."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:31
+#: 37a8fc16c6dc49a285afd172dca0f4e2
+msgid ""
+"Similarly, while working, the XScreenSaver dialog may pop up (indicating the"
+" screen is locked) and the screen goes black. However, the screen is not "
+"locked, and you have to move a window to redraw the screen."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:35
+#: 4a6f6bcd449a48f5939de859990f84de
+msgid ""
+"If you are experiencing the any of the above symptoms, try disabling the "
+"window compositor:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:38
+#: cf343dedd41d44b689c17349432262d8
+msgid ""
+"``Q → System Tools → Window Manager Tweaks → Compositor → uncheck “Enable "
+"display compositing”``"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:41
+#: 1ba489e77f4e467aa83d6c7e35a6c87f
+msgid ""
+"Post installation, screen goes black and freezes following LUKS decryption"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:43
+#: 2bfa7031460840559980a4803ec94411
+msgid ""
+"After installing Qubes, you may experience a black screen after entering "
+"your LUKS decryption password. To fix the problem, use your preferred text "
+"editor (``nano`` works) to edit "
+"``/mnt/sysimage/boot/efi/EFI/qubes/xen.cfg``, adding the ``efi=no-rs`` "
+"option to the end of the ``options= line``. For example:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:54
+#: 7ba9c64e18bd4ed1b14e8dec790a14f0
+msgid ""
+"Note that the ``/mnt/sysimage/boot/efi/EFI/qubes/xen.cfg`` path applies when"
+" running from the installer (either directly after installation, before the "
+"reboot, or by starting the installer again in recovery mode). On the actual "
+"installed system, the file to edit is ``/boot/efi/EFI/qubes/xen.cfg`` – but "
+"it may be hard to access directly when your system won’t boot."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:62
+#: 77a60ad5efa14e9f9974314a515b69e9
+msgid "Can start VM, but can’t launch any applications"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:64
+#: a9c05614855b4db8965096195f1a262f
+msgid ""
+"If you can start your VM, but can’t launch any applications, then you need "
+"to fix the issues from the ``VM console``, accessible from xen through:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:73
+#: 3637e56484804a1d96c9fd70970dbace
+msgid ""
+"After launching a VM console using ``qvm-console-dispvm``, you may look at "
+"the ``qubes-gui-agent`` service state with:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:80
+#: bc78a56407c64d30ac2276ed3ce28e75
+msgid ""
+"If the service is in a failed state, you should see some messages on why it "
+"failed."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:83
+#: d69f945104d24ecd9408ea592357b08d
+msgid ""
+"Another helpful place to look into is ``/home/user/.xsession-errors``, which"
+" may also contain some hints what is wrong."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:87
+#: 9f88a9dd051f4650bdd341a32574ddec
+msgid "Disable audited messages"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:89
+#: 1fcf1302c7c2402aa9392429f366662b
+msgid ""
+"During troubleshooting, you may be getting a lot of ‘audit’ messages which "
+"make the log very noisy. To disable audited messages, you need to edit your "
+"VM kernel parameters:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:98
+#: b3f33ea3fc664ac3a1b62433882e9a2c
+msgid "Then, restart your VM."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/gui-troubleshooting.rst:100
+#: d56fea083b1745fc8fb20fd5fb05df93
+msgid ""
+"Once your troubleshooting is done, don’t forget to remove this kernel "
+"parameters, it makes troubleshooting VMs not starting easier."
+msgstr ""

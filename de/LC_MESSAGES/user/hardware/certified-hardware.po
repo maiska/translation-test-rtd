@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:28+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:3
+#: ea69d54f5e3d48eabe7c074a3265d513
+msgid "Certified hardware"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:5
+#: 9d2f215cdfb7454b8b87402d57557560
+msgid ""
+"The Qubes OS Project aims to partner with a select few computer vendors to "
+"ensure that Qubes users have reliable hardware purchasing options. We aim "
+"for these vendors to be as diverse as possible in terms of geography, cost, "
+"and availability."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:12
+#: 5a744c21d4ed45a89a3d990697619f86
+msgid ""
+"Warning: The Qubes OS Project certifies only that a particular hardware "
+"configuration is supported by Qubes OS and is available to purchase with "
+"Qubes OS preinstalled. We take no responsibility for any vendor’s "
+"manufacturing, shipping, payment, or other practices; nor can we control "
+"whether physical hardware is modified (whether maliciously or otherwise) en "
+"route to the user."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:19
+#: ae08996f758646eaa82d057941267a19
+msgid ""
+"You may also be interested in the `community-recommended hardware "
+"<https://forum.qubes-os.org/t/5560>`__ list and the :doc:`hardware "
+"compatibility list (HCL) </user/hardware/hcl>`."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:22
+#: 4e38a2cf61524a38ba0f1e26d16aa76d
+msgid "Qubes-certified Laptops"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:24
+#: 643182e053354162b758792654ba4931
+msgid ""
+"Qubes-certified laptops are certified for a :doc:`major release "
+"</developer/releases/version-scheme>` and regularly tested by the Qubes "
+"developers to ensure compatibility with all of Qubes’ features within that "
+"major release. The developers test all new updates within that major release"
+" to ensure that no regressions are introduced."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:30
+#: 578e50d946f943ceb148f4b890f5158f
+msgid "Insurgo PrivacyBeast X230"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:32
+#: dcb2e9b8894445049a57085487c219e2
+msgid "|insurgo-privacybeast-x230.png|"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:0
+#: ../../../_doc/user/hardware/certified-hardware.rst:0
+#: 8a52fcf9cc2947c2a55a261b0813c003 faf7caaa1ac446038b363cdf851aab1c
+msgid "insurgo-privacybeast-x230.png"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:34
+#: 06eb9fc537274850a3fafcc8575996d0
+msgid ""
+"The `Insurgo PrivacyBeast X230 <https://insurgo.ca/produit/qubesos-"
+"certified-privacybeast_x230-reasonably-secured-laptop/>`__ meets and exceeds"
+" our hardware certification requirements for Qubes 4. Read our `announcement"
+" <https://www.qubes-os.org/news/2019/07/18/insurgo-privacybeast-qubes-"
+"certification/>`__ of the certification for further details!"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:38
+#: 8c8467efc6ed4cc8baf46ae0cafa708f
+msgid "NitroPad X230"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:40
+#: 2da21c5a069e41d88eafca61b937b5fd
+msgid "|nitropad-x230.jpg|"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:0
+#: ../../../_doc/user/hardware/certified-hardware.rst:0
+#: 747b50a5e8e946afad9504ad23654199 7d7b981008074cd798a7972ae852bd54
+msgid "nitropad-x230.jpg"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:42
+#: 53c0a50284bb44e58cab252bde94e62b
+msgid ""
+"The `NitroPad X230 "
+"<https://shop.nitrokey.com/shop/product/nitropad-x230-67>`__ satisfies all "
+"hardware certification requirements for Qubes 4, offering users extensive "
+"hardware security options. Read our `announcement <https://www.qubes-"
+"os.org/news/2020/03/04/nitropad-x230-qubes-certification/>`__ of the "
+"certification for further details!"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:46
+#: cf80b4789f5940c3bd7382f45a797599
+msgid "NitroPad T430"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:48
+#: b5babf7aa8834a579faf05e7ff23af3e
+msgid "|nitropad-t-430.jpg|"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:0
+#: ../../../_doc/user/hardware/certified-hardware.rst:0
+#: 8ceaaec6b1234786b6d895e7b0a53a6f acc07be94b594b86b08c625830f6e4fb
+msgid "nitropad-t-430.jpg"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:50
+#: e0303a83ddf34f7387269f214867fe14
+msgid ""
+"The `NitroPad T430 "
+"<https://shop.nitrokey.com/shop/product/nitropad-t430-119>`__ satisfies all "
+"hardware certification requirements for Qubes 4, offering users extensive "
+"hardware security options. Read our `announcement <https://www.qubes-"
+"os.org/news/2021/06/01/nitropad-t430-qubes-certification/>`__ of the "
+"certification for further details!"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:54
+#: f32b4654b80c41beb5cf103fe8e81160
+msgid "Become Hardware Certified"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:56
+#: 46153318fa704fcd9158da685c3a3afa
+msgid ""
+"If you are a hardware vendor, you can have your hardware certified as "
+"compatible with Qubes OS. The benefits of hardware certification include:"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:60
+#: 410260345e7347099941f7af7bf707ee
+msgid ""
+"Your customers can purchase with confidence, knowing that they can take full"
+" advantage of Qubes OS on your hardware for a specific major version."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:63
+#: a27e91af36684162a63dca1330c87e24
+msgid ""
+"We will continue testing your hardware to ensure compatibility with the "
+"supported major version. In the course of this testing, we will also test "
+"your hardware against upcoming versions, which can help with future "
+"planning."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:67
+#: ca8b3f4c7e85494280972c78ab65318c
+msgid ""
+"Your hardware will continue to be compatible with Qubes OS as it further "
+"develops within that major version, and we will work with you toward "
+"preserving compatibility and certification in future releases."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:70
+#: db7b6ac370e04fce850411c15d4e7e62
+msgid "You can support the development of Qubes OS."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:73
+#: 88ad226707314798913507032a824b2d
+msgid "Hardware Certification Requirements"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:75
+#: b2e832edc3bc40bcbaf82f16914987d6
+msgid ""
+"(Please note that these are the requirements for hardware *certification*, "
+"*not* the requirements for *running* Qubes OS. For the latter, please see "
+"the :doc:`system requirements </user/hardware/system-requirements>`.)"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:79
+#: 08c3009f1b8742a8883823f6094eb274
+msgid ""
+"A basic requirement is that all Qubes-certified devices must be be available"
+" for purchase with Qubes OS preinstalled. Customers may be offered the "
+"option to select from a list of various operating systems (or no operating "
+"system at all) to be preinstalled, but Qubes OS must be on that list in "
+"order to maintain Qubes hardware certification."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:85
+#: ce53c44c004541f5a573f00b776953f1
+msgid ""
+"One of the most important security improvements introduced with the release "
+"of Qubes 4.0 was to replace paravirtualization (PV) technology with "
+"**hardware-enforced memory virtualization**, which recent processors have "
+"made possible thanks to so-called Second Level Address Translation (`SLAT "
+"<https://en.wikipedia.org/wiki/Second_Level_Address_Translation>`__), also "
+"known as `EPT "
+"<https://ark.intel.com/Search/FeatureFilter?productType=processors&ExtendedPageTables=true&MarketSegment=Mobile>`__"
+" in Intel parlance. SLAT (EPT) is an extension to Intel VT-x virtualization,"
+" which originally was capable of only CPU virtualization but not memory "
+"virtualization and hence required a complex Shadow Page Tables approach. We "
+"hope that embracing SLAT-based memory virtualization will allow us to "
+"prevent disastrous security bugs, such as the infamous `XSA-148 "
+"<https://xenbits.xen.org/xsa/advisory-148.html>`__, which — unlike many "
+"other major Xen bugs — regrettably did `affect "
+"<https://github.com/QubesOS/qubes-"
+"secpack/blob/master/QSBs/qsb-022-2015.txt>`__ Qubes OS. Consequently, we "
+"require SLAT support of all certified hardware beginning with Qubes OS 4.0."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:100
+#: bd6c0970504d46a29f54c2b1f26bba98
+msgid ""
+"Another important requirement is that Qubes-certified hardware should run "
+"only **open-source boot firmware** (aka “the BIOS”), such as `coreboot "
+"<https://www.coreboot.org/>`__. The only exception is the use of (properly "
+"authenticated) CPU-vendor-provided blobs for silicon and memory "
+"initialization (see `Intel FSP <https://firmware.intel.com/learn/fsp/about-"
+"intel-fsp>`__) as well as other internal operations (see `Intel ME "
+"<https://www.apress.com/9781430265719>`__). However, we specifically require"
+" all code used for and dealing with the System Management Mode (SMM) to be "
+"open-source."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:105
+#: 2babeb071ba945c889241838ab63d479
+msgid ""
+"While we `recognize "
+"<https://blog.invisiblethings.org/papers/2015/x86_harmful.pdf>`__ the "
+"potential problems that proprietary CPU-vendor code can cause, we are also "
+"pragmatic enough to realize that we need to take smaller steps first, before"
+" we can implement even stronger countermeasures such as a `stateless laptop "
+"<https://blog.invisiblethings.org/papers/2015/state_harmful.pdf>`__. A "
+"switch to open source boot firmware is one such important step. To be "
+"compatible with Qubes OS, the BIOS must properly expose all the VT-x, VT-d, "
+"and SLAT functionality that the underlying hardware offers (and which we "
+"require). Among other things, this implies **proper DMAR ACPI table** "
+"construction."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:115
+#: 8d0c060f4ca947dcaf3b5ce7656a9e0f
+msgid ""
+"Finally, we require that Qubes-certified hardware does not have any built-in"
+" *USB-connected* microphones (e.g. as part of a USB-connected built-in "
+"camera) that cannot be easily physically disabled by the user, e.g. via a "
+"convenient mechanical switch. Thankfully, the majority of laptops on the "
+"market that we have seen already satisfy this condition out-of-the-box, "
+"because their built-in microphones are typically connected to the internal "
+"audio device, which itself is a type of PCIe device. This is important, "
+"because such PCIe audio devices are — by default — assigned to Qubes’ "
+"(trusted) dom0 and exposed through our carefully designed protocol only to "
+"select app qubes when the user explicitly chooses to do so. The rest of the "
+"time, they should be outside the reach of malware."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:128
+#: 2c02c52ad55c4ff1b08933b285b99044
+msgid ""
+"While we also recommend a physical kill switch on the built-in camera (or, "
+"if possible, not to have a built-in camera), we also recognize this isn’t a "
+"critical requirement, because users who are concerned about it can easily "
+"cover it a piece of tape (something that, regrettably, is far less effective"
+" on a microphone)."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:134
+#: 39e004aba33b41249a9e9e91aee2b7f2
+msgid ""
+"Similarly, we don’t consider physical kill switches on Wi-Fi and Bluetooth "
+"devices to be mandatory. Users who plan on using Qubes in an air-gap "
+"scenario would do best if they manually remove all such devices persistently"
+" (as well as the builtin `speakers <https://github.com/romanz/amodem/>`__!),"
+" rather than rely on easy-to-flip-by-mistake switches, while others should "
+"benefit from the Qubes default sandboxing of all networking devices in "
+"dedicated VMs."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:141
+#: adb6f199f5de439bb12c2978bc04eaee
+msgid ""
+"We hope these hardware requirements will encourage the development of more "
+"secure and trustworthy devices."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:145
+#: 0b4da91bc5914e3b8c3d639dbfcad903
+msgid "Hardware Certification Process"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:147
+#: a3ac1b50dcd3430a9a25f6e9d882cf2e
+msgid "To have hardware certified, the vendor must:"
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:149
+#: e6e9ba35ea3e4fd0acc68846c427b8c9
+msgid ""
+"Send the Qubes team two (2) units for testing (non-returnable) for each "
+"configuration the vendor wishes to be offering."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:151
+#: e54f87c0daf44f6ba0c7fe126e02cb96
+msgid ""
+"Offer to customers the very same configuration (same motherboard, same "
+"screen, same BIOS version, same Wi-Fi module, etc.) for at least one year."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:154
+#: 65f84cefadd0427ba466a20e8a7f6502
+msgid ""
+"Pay the Qubes team a flat monthly rate, to be agreed upon between the "
+"hardware vendor and the Qubes team."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:157
+#: 3054a88b4944484cb5157594c21e72fe
+msgid ""
+"It is the vendor’s responsibility to ensure the hardware they wish to have "
+"certified can run Qubes OS, at the very least the latest stable version. "
+"This could be done by consulting the :doc:`Hardware Compatibility List "
+"</user/hardware/hcl>` or trying to install it themselves before shipping any"
+" units to us. While we are willing to troubleshoot simple issues, we will "
+"need to charge a consulting fee for more in-depth work."
+msgstr ""
+
+#: ../../../_doc/user/hardware/certified-hardware.rst:163
+#: 36d83fd84beb41f79eb86ae0740d1f3f
+msgid ""
+"If you are interested in having your hardware certified, please `contact us "
+"<mailto:business@qubes-os.org>`__."
+msgstr ""

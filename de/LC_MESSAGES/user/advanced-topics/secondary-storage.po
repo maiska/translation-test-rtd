@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:29+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:3
+#: 39c4f3de5c784aa3bdcc1e195376876b
+msgid "Secondary storage"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:5
+#: 92dfc28a30ef43bbac79cda1e938e7a2
+msgid ""
+"Suppose you have a fast but small primary SSD and a large but slow secondary"
+" HDD. You want to store a subset of your app qubes on the HDD."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:9
+#: 093cbadbed1341b3a199ab711ef35ece
+msgid "Instructions"
+msgstr "Anleitung"
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:11
+#: fbf545c8b38847b98136b17631398e00
+msgid ""
+"Qubes 4.0 is more flexible than earlier versions about placing different VMs"
+" on different disks. For example, you can keep templates on one disk and app"
+" qubes on another, without messy symlinks."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:15
+#: a1ad3f746bab4fa18da3ab68e343b0cf
+msgid ""
+"These steps assume you have already created a separate `volume group "
+"<https://access.redhat.com/documentation/en-"
+"us/red_hat_enterprise_linux/6/html/logical_volume_manager_administration/vg_admin#VG_create>`__"
+" and `thin pool <https://access.redhat.com/documentation/en-"
+"us/red_hat_enterprise_linux/6/html/logical_volume_manager_administration/thinly_provisioned_volume_creation>`__"
+" (not thin volume) for your HDD. See also `this example "
+"<https://www.linux.com/blog/how-full-encrypt-your-linux-system-lvm-luks>`__ "
+"if you would like to create an encrypted LVM pool (but note you can use a "
+"single logical volume if preferred, and to use the ``-T`` option on "
+"``lvcreate`` to specify it is thin). You can find the commands for this "
+"example applied to Qubes at the bottom of this R4.0 section."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:21
+#: ff04ec87db784f26a9381cf6e12eede1
+msgid "First, collect some information in a dom0 terminal:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:28
+#: 2b17b6801e374ab2954773864313d49d
+msgid ""
+"Take note of the VG and thin pool names for your HDD, then register it with "
+"Qubes:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:38
+#: bc42926d3be54dc3bf89e6faf1f0b747
+msgid "Now, you can create qubes in that pool:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:44
+#: 96d92aed7ce24ebcb8504a96b5fc3657
+msgid ""
+"It isn’t possible to directly migrate an existing qube to the new pool, but "
+"you can clone it there, then remove the old one:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:52
+#: 3386a00a39d3418c9ac9dad2cd26bbfb
+msgid ""
+"If that was a template, or other qube referenced elsewhere (NetVM or such), "
+"you will need to adjust those references manually after moving. For example:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:60
+#: 2cf44ae198be4700aafb689bccc4cd6e
+msgid ""
+"In theory, you can still use file-based disk images (“file” pool driver), "
+"but it lacks some features such as you won’t be able to do backups without "
+"shutting down the qube."
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:65
+#: 687a3ea6be624e4183ca3aca76134d3a
+msgid "Example HDD setup"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:67
+#: d2213a032f81401b8e1cf8f485567184
+msgid ""
+"Assuming the secondary hard disk is at /dev/sdb (it will be completely "
+"erased), you can set it up for encryption by doing in a dom0 terminal (use "
+"the same passphrase as the main Qubes disk to avoid a second password prompt"
+" at boot):"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:77
+#: eaeabe8061754cdcaf212523dae55bf0
+msgid ""
+"Note the device’s UUID (in this example “b209…”), we will use it as its luks"
+" name for auto-mounting at boot, by doing:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:84
+#: 467ac1cd0bbd480a8d27ec3438f2b16d
+msgid ""
+"And adding this line (change both “b209…” for your device’s UUID from blkid)"
+" to crypttab:"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:91
+#: 06598b18b0fe47b6891099b692593ce9
+msgid ""
+"Reboot the computer so the new luks device appears at /dev/mapper/luks-b209…"
+" and we can then create its pool, by doing this on a dom0 terminal "
+"(substitute the b209… UUIDs with yours):"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:95
+#: 43128993a0404fe9a5e7e4ef29e8db7b
+msgid "First create the physical volume"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:101
+#: cb3883b278f649e7b51b8681fd112385
+msgid ""
+"Then create the LVM volume group, we will use for example “qubes” as the :"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:108
+#: 1671ef2ab38d420081f2423d817c84ca
+msgid "And then use “poolhd0” as the (LVM thin pool name):"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:114
+#: e92840fb2a864cde931a21db36cfd5d4
+msgid ""
+"Finally we will tell Qubes to add a new pool on the just created thin pool"
+msgstr ""
+
+#: ../../../_doc/user/advanced-topics/secondary-storage.rst:121
+#: bfd66d906f5a496a82c59536d6bc12e1
+msgid ""
+"By default VMs will be created on the main Qubes disk (i.e. a small SSD), to"
+" create them on this secondary HDD do the following on a dom0 terminal:"
+msgstr ""

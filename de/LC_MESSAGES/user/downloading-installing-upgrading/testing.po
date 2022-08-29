@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Wasilis <m.wasilis@yahoo.de>, 2022
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# Curtis Baltimore <curtisbaltimore@protonmail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:28+0000\n"
+"Last-Translator: Curtis Baltimore <curtisbaltimore@protonmail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:3
+#: 7727ae3a2b8b4bc9a0089f6b857e4f46
+msgid "Testing new releases and updates"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:5
+#: 9474f5eeefdc41fda4a174c445dd042a
+msgid ""
+"Testing new Qubes OS releases and updates is one of the most helpful ways in"
+" which you can :doc:`contribute </introduction/contributing>` to the Qubes "
+"OS Project. If you’re interested in helping with this, please `join the "
+"testing team <https://forum.qubes-os.org/t/joining-the-testing-"
+"team/5190>`__. There are several different types of testing, which we’ll "
+"cover below."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:10
+#: 463ae4b1389b4cfaa3c0bf7adef4cc49
+msgid ""
+"**Warning:** Software testing is intended for advanced users and developers."
+" You should only attempt to do this if you know what you’re doing. Never "
+"rely on code that is in testing for critical work!"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:15
+#: 8cb13f05d3e04eb0b2c3b1f7585091ea
+msgid "Releases"
+msgstr "Versionen"
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:17
+#: 7a95f4d50c494e9e9578e51e9ce93828
+msgid "How to test upcoming Qubes OS releases:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:19
+#: e56f00e6c7834285b0ce8c66f2152fd4
+msgid ""
+"Use :doc:`qubes-builder </developer/building/qubes-builder>` to build the "
+"latest release."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:21
+#: 6102ac03276a43aba67aa4044bf3d357
+msgid "Test the latest release candidate (RC), if one is currently available."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:23
+#: 0d51682774f0438ab2db14ce921db92c
+msgid ""
+"(No support) Experiment with devel alpha ISOs found from time to time at "
+"`Qubes OpenQA <https://openqa.qubes-os.org/>`__."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:26
+#: 438b2b970767462cba2f59c412b3b786
+msgid ""
+"Please make sure to :doc:`report any bugs you encounter "
+"</introduction/issue-tracking>`."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:28
+#: cc625367a03d4ff6a2285ad8e4f40a98
+msgid ""
+"See :doc:`Version Scheme </developer/releases/version-scheme>` for details "
+"about release versions and schedules. See :doc:`Release Checklist "
+"</developer/releases/todo>` for details about the RC process."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:33
+#: 777ee28b889e4c4384eecba8b54018d2
+msgid "Updates"
+msgstr "Updates"
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:35
+#: b5618e3bbffa4b7983e72afe7c8468b5
+msgid "How to test updates:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:37
+#: b2f5c0e83cb74b8fb4ed53119d59c296
+msgid ""
+"Enable :ref:`dom0 testing    repositories <user/advanced-topics/how-to-"
+"install-software-in-dom0:testing repositories>`."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:38
+#: fc2b61a8c42e47838265275e0d9a3276
+msgid ""
+"Enable :ref:`template testing    repositories <user/how-to-guides/how-to-"
+"install-software:testing repositories>`."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:40
+#: 767d806f710c4a0bb535fe44b792ac93
+msgid ""
+"Every new update is first uploaded to the ``security-testing`` repository if"
+" it is a security update or ``current-testing`` if it is a normal update. "
+"The update remains in ``security-testing`` or ``current-testing`` for a "
+"minimum of one week. On occasion, an exception is made for a particularly "
+"critical security update, which is immediately pushed to the ``current`` "
+"stable repository. In general, however, security updates remain in "
+"``security-testing`` for two weeks before migrating to ``current``. Normal "
+"updates generally remain in ``current-testing`` until they have been "
+"sufficiently tested by the community, which can last weeks or even months, "
+"depending on the amount of feedback received (see :ref:`Providing feedback "
+"<user/downloading-installing-upgrading/testing:providing feedback>`)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:52
+#: fc40b094f3054ac2b081c530fc0253a8
+msgid ""
+"“Sufficient testing” is, in practice, a fluid term that is up the "
+"developers’ judgment. In general, it means either that no negative feedback "
+"and at least one piece of positive feedback has been received or that the "
+"package has been in ``current-testing`` for long enough, depending on the "
+"component and the complexity of the changes."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:58
+#: 8a5546702d5d4c0fb657bdd37a904d0f
+msgid ""
+"A limitation of the current testing setup is that it is only possible to "
+"migrate the *most recent version* of a package from ``current-testing`` to "
+"``current``. This means that, if a newer version of a package is uploaded to"
+" ``current-testing``, it will no longer be possible to migrate any older "
+"versions of that same package from ``current-testing`` to ``current``, even "
+"if one of those older versions has been deemed stable enough. While this "
+"limitation can be inconvenient, the benefits outweigh the costs, since it "
+"greatly simplifies the testing and reporting process."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:69
+#: 7474f18c8d094f1fb4a5a9f865237969
+msgid "Templates"
+msgstr "Vorlagen"
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:71
+#: 0f742e5d8315448a8876d58bd2a803e3
+msgid "How to test :doc:`templates </user/templates/templates>`:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:73
+#: a9fded2dbb194289a13b907740747435
+msgid ""
+"For official templates, enable the ``qubes-templates-itl-testing`` "
+"repository, then :ref:`install <user/templates/templates:installing>` the "
+"desired template."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:76
+#: 528c62882496403cbfd710d36027cec3
+msgid ""
+"For community templates, enable the ``qubes-templates-community-testing`` "
+"repository, then :ref:`install <user/templates/templates:installing>` the "
+"desired template."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:80
+#: ede6678222ea421ab0d9b764a29e7979
+msgid ""
+"To temporarily enable any of these repos, use the ``--enablerepo=<repo-"
+"name>`` option. Example commands:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:88
+#: 9df5025266694ffdaa20281056d4d99f
+msgid ""
+"To enable or disable any of these repos permanently, change the "
+"corresponding ``enabled`` value to ``1`` in ``/etc/yum.repos.d/qubes-"
+"templates.repo``."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:93
+#: e3f4529ee58b42f1ac232e272193d94f
+msgid "Providing feedback"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:95
+#: 794902846cb640329c92ddc6f86d4fbc
+msgid ""
+"Since the whole point of testing software is to discover and fix bugs, your "
+"feedback is an essential part of this process."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/testing.rst:98
+#: 8dde59a9142349e3b2523bfcf1fe23e4
+msgid ""
+"We use an `automated build process <https://github.com/QubesOS/qubes-"
+"infrastructure/blob/master/README.md>`__. For every package that is uploaded"
+" to a testing repository, a GitHub issue is created in the `updates-status "
+"<https://github.com/QubesOS/updates-status/issues>`__ repository for "
+"tracking purposes. We welcome any kind of feedback on any package in any "
+"testing repository. Even a simple or on the package’s associated issue would"
+" help us to decide whether the package is ready to be migrated to a stable "
+"repository. If you :doc:`report a bug </introduction/issue-tracking>` in a "
+"package that is in a testing repository, please reference the appropriate "
+"issue in `updates-status <https://github.com/QubesOS/updates-"
+"status/issues>`__."
+msgstr ""

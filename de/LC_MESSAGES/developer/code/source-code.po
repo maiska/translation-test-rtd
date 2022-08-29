@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:29+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/code/source-code.rst:3
+#: 7f5ac057c76e4b23bd1826c82ac5afd7
+msgid "Source code"
+msgstr "Quellcode"
+
+#: ../../../_doc/developer/code/source-code.rst:5
+#: 0be01a1ebf8e4ea986f6651dd106a9c6
+msgid ""
+"All the Qubes code is kept in Git repositories. We have divided the project "
+"into several components, each of which has its own separate repository, for "
+"example:"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:9
+#: 2cc991281ac5470fba368adcfe01322d
+msgid ""
+"``core-admin.git`` – The core Qubes infrastructure, responsible for VM "
+"management, VM templates, fs sharing, etc."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:11
+#: 8abadd6a79614f1a9083e501498ce1d9
+msgid "``gui-daemon.git`` – GUI virtualization, Dom0 side."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:12
+#: e65d500d4fab4941964ff2f41b9e3bab
+msgid "``gui-agent-linux.git`` – GUI virtualization, Linux VM side."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:13
+#: d08079db8e1345b7a4f40b6614d76ae3
+msgid ""
+"``linux-template-builder.git`` – Scripts and other files used to create "
+"Qubes template images."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:16
+#: f8aaf023ff12417d85420ef47600bd5a
+msgid ""
+"All of our repositories are available under the `QubesOS GitHub account "
+"<https://github.com/QubesOS/>`__."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:18
+#: 1926e55122e049d29e07ce77df16663a
+msgid "To clone a repository:"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:24
+#: 66f49bd4375c419fb5c17f2124029bdf
+msgid "e.g.:"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:30
+#: 15049d6ce6b5418daa4e322165405108
+msgid ""
+"To build Qubes you do not need to download all these repositories. If you "
+"use :doc:`qubes builder </developer/building/qubes-builder>` you can specify"
+" *what* you want to build, and download only the repositories needed to "
+"build that target."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:35
+#: e4504ffbb69c4a84b9f7eb139ce98a74
+msgid ""
+"If you really do want to clone **all** of the repositories, you can use "
+"these commands:"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:43
+#: 2d8fd9088c0c4b9a924fbf0c3ae69c38
+msgid "To update (git fetch) **all** of these repositories :"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:49
+#: ba4c1054671343e0b4461b096f8e217b
+msgid "(Alternatively, you can pull instead of just fetching.)"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:52
+#: ba70b14e08d5466a9712b36a9be4d12f
+msgid "How to Send Patches"
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:54
+#: 235996dec9cf4b20aacd07c1dc533763
+msgid ""
+"If you want to :ref:`contribute code <introduction/contributing:contributing"
+" code>` to the project, there are two ways. Whichever method you choose, you"
+" must :doc:`sign your code </developer/code/code-signing>` before it can be "
+"accepted."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:57
+#: 7a3c424e30364350bc0769f4bc13d8f4
+msgid ""
+"**Preferred**: Use GitHub’s `fork & pull    requests "
+"<https://guides.github.com/activities/forking/>`__."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:59
+#: 852eecadd8904444b97bcb5d9c6c09c0
+msgid ""
+"Opening a pull request on GitHub greatly eases the code review and tracking "
+"process. In addition, especially for bigger changes, it’s a good idea to "
+"send a message to the :ref:`qubes-devel mailing    list "
+"<introduction/support:qubes devel>` in order to notify people who do not "
+"receive GitHub notifications."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:64
+#: 167cbbd9b51c4f618aeeb4a84f45541e
+msgid ""
+"Send a patch to the :ref:`qubes-devel mailing    list "
+"<introduction/support:qubes devel>` (``git format-patch``)."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:66
+#: 901729e76abb46bca06cc5a7bf4ed376
+msgid ""
+"Make all the changes in your working directory, i.e. edit files, move them "
+"around (you can use ‘git mv’ for this), etc."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:68
+#: fac7e3219b6148e6908cc85fe4351c2d
+msgid ""
+"Add the changes and commit them (``git add``, ``git commit``). Never mix "
+"different changes into one commit! Write a good description of the commit. "
+"The first line should contain a short summary, and then, if you feel like "
+"more explanations are needed, enter an empty new line, and then start the "
+"long, detailed description (optional)."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:74
+#: 65c8060634dc42509a0481780a1ea5e0
+msgid "Test your changes NOW: check if RPMs build fine, etc."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:75
+#: 15d6c2c516dc494ea38f81704c9f10aa
+msgid ""
+"Create the patch using ``git format-patch``. This has an advantage over "
+"``git diff``, because the former will also include your commit message, your"
+" name and email, so that *your* name will be used as a commit’s author."
+msgstr ""
+
+#: ../../../_doc/developer/code/source-code.rst:79
+#: c73185a5366144a6996c83d4da29da39
+msgid ""
+"Send your patch to ``qubes-devel``. Start the message subject with "
+"``[PATCH]``."
+msgstr ""

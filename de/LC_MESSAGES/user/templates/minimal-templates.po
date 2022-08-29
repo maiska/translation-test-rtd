@@ -1,0 +1,623 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# gamag, 2022
+# Philipp . <Kuschat@gmx.de>, 2022
+# Friedrich-Wilhelm Prussak <info@prussak.de>, 2022
+# nextloop <ga25day@mytum.de>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:27+0000\n"
+"Last-Translator: nextloop <ga25day@mytum.de>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/templates/minimal-templates.rst:3
+#: 5581d1d2aa3c4fef81cbf01f5ac9c618
+msgid "Minimal templates"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:5
+#: c4227d300c2e43f6b2c08b59cfd5c5ea
+msgid ""
+"The minimal :doc:`templates </user/templates/templates>` are lightweight "
+"versions of their standard template counterparts. They have only the most "
+"vital packages installed, including a minimal X and xterm installation. When"
+" properly configured and used, minimal templates can be less resource-"
+"intensive, reduce attack surface, and support more fine-grained "
+"compartmentalization. The sections below contain instructions for installing"
+" and configuring minimal templates, along with some examples of common use "
+"cases."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:15
+#: c32f7c95d0854ef8b443e07750f85b8c
+msgid "Important"
+msgstr "Wichtig"
+
+#: ../../../_doc/user/templates/minimal-templates.rst:17
+#: 2d706f2cad814c29bb3d92486d37e239
+msgid ""
+"`The minimal templates are intended only for advanced    users. "
+"<https://forum.qubes-os.org/t/9717/15>`__ If you encounter problems with the"
+" minimal templates, we recommend that you use their standard template "
+"counterparts instead."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:21
+#: 53982a81ad464933be66738f52f66ea4
+msgid ""
+"If something works with a standard template but not the minimal version, "
+"this is most likely due to user error (e.g., a missing package or "
+"misconfiguration) rather than a bug. In such cases, please do *not* file a "
+"bug report. Instead, please see :doc:`Help, Support,    Mailing Lists, and "
+"Forum </introduction/support>` for the appropriate place to ask for help. "
+"Once you have learned how to solve your problem, please :doc:`contribute "
+"what you learned to the    documentation </developer/general/how-to-edit-"
+"the-documentation>`."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:28
+#: 807f3d8d8df9443884a46e91182b6be9
+msgid ""
+"The minimal templates are intentionally *minimal*. :ref:`Do not ask for    "
+"your favorite package to be added to the minimal template by    default. "
+"<introduction/faq:could you please make my preference the default>`"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:30
+#: 7392a926d4734406883a82fedbd06f91
+msgid ""
+"In order to reduce unnecessary risk, unused repositories have been disabled "
+"by default. If you wish to install or update any packages from those "
+"repositories, you must enable them."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:35
+#: c2e9753371564f58a7aa7e9f96deb948
+msgid "List"
+msgstr "Liste"
+
+#: ../../../_doc/user/templates/minimal-templates.rst:37
+#: 761bee15a84d4feb9314fc02a8f61c41
+msgid "Minimal templates of the following distros are available:"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:39
+#: ../../../_doc/user/templates/minimal-templates.rst:115
+#: 5d45037e323b4e5fb67c737a7071a2f1 c84b5692a5584390a63fceeff3292075
+msgid "Fedora"
+msgstr "Fedora"
+
+#: ../../../_doc/user/templates/minimal-templates.rst:40
+#: ../../../_doc/user/templates/minimal-templates.rst:210
+#: 20f3614a762f4648b6bedc4c6b296770 987da7e23b41476eaf210229ff9c62fb
+msgid "Debian"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:41
+#: ../../../_doc/user/templates/minimal-templates.rst:287
+#: dd2824e05bea48b59f9af889c11822cf d4824c8f8e7948c898f5d02c4b34ddd3
+msgid "CentOS"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:42
+#: 5e768ea1858a4033bca9008f1a85ddef
+msgid "Gentoo"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:44
+#: 35583e53c603499d904492542716d809
+msgid ""
+"A list of all available templates can also be obtained with the "
+":doc:`Template Manager </developer/system/template-manager>` tool."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:47
+#: db3322eba3b949378cef78263a709a5e
+msgid "Installation"
+msgstr "Installation"
+
+#: ../../../_doc/user/templates/minimal-templates.rst:49
+#: a7629ad69c1341e5ac32823a042e0a4c
+msgid ""
+"The minimal templates can be installed with the following type of command:"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:56
+#: 2c838fcaa5d24c309227f235e0ea1dcd
+msgid ""
+"If your desired version is not found, it may still be in :doc:`testing "
+"</user/downloading-installing-upgrading/testing>`. You may wish to try again"
+" with the testing repository enabled:"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:63
+#: 9303aa5e4b774cffb2011d0932253160
+msgid ""
+"If you would like to install a community distribution, try the install "
+"command by enabling the community repository:"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:70
+#: b2835ca2879f408ea284b0cc9155fc29
+msgid "The download may take a while depending on your connection speed."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:73
+#: 94821745d883409aabbd03021e0c318c
+msgid "Passwordless root"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:75
+#: d39a932b376c4bfa9c4b59abf5ec7d4b
+msgid ""
+"It is an intentional design choice for :doc:`Passwordless Root Access in VMs"
+" </user/security-in-qubes/vm-sudo>` to be optional in minimal templates. "
+"Since the minimal templates are *minimal*, they are not configured for "
+"passwordless root by default. To update or install packages, execute the "
+"following command in dom0:"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:84
+#: 79946c00cc194b448dad1bb7696370ad
+msgid ""
+"This opens a root terminal in the minimal template, from which you can use "
+"execute root commands without ``sudo``. You will have to do this every time "
+"if you choose not to enable passwordless root."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:88
+#: 2c4bf55ebf37436eafc3fa54bc741bdf
+msgid ""
+"If you want to be able to use ``sudo`` inside a minimal template (or app "
+"qubes based on a minimal template), open a root terminal as just instructed,"
+" then install the ``qubes-core-agent-passwordless-root`` package."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:93
+#: 842c1b5629ce4f1796a164406ab9d9fb
+msgid ""
+"Optionally, verify that passwordless root now works by opening a normal "
+"(non-root) xterm window in the minimal template, then issue the command "
+"``sudo -l``. This should give you output that includes the ``NOPASSWD`` "
+"keyword."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:99
+#: 5907034280cb4d7abb93632a24e322d8
+msgid "Customization"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:101
+#: b860b09a969b486586d061fcae4de92c
+msgid ""
+"You may wish to clone the original template and make any changes in the "
+"clone instead of the original template. You must start the clone in order to"
+" customize it."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:105
+#: a2abe72170f1465bb995fa6b3d0a4aa2
+msgid ""
+"Customizing the template for specific use cases normally only requires "
+"installing additional packages."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:109
+#: a2a09fb02b9140c7b58b91b4c944f953
+msgid "Distro-specific notes"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:111
+#: cbc132af765d4094b52dc92c8d4be157
+msgid ""
+"This following sections provide information that is specific to a particular"
+" minimal template distro."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:117
+#: ../../../_doc/user/templates/minimal-templates.rst:212
+#: ../../../_doc/user/templates/minimal-templates.rst:289
+#: 43614de60e374fe8a5266ccdaaec1fb1 995a24c028a44cc2ac23fed9e0d53d9e
+#: 54f83ce17e3e476d98d5ebd369884467
+msgid ""
+"The following list provides an overview of which packages are needed for "
+"which purpose. As usual, the required packages are to be installed in the "
+"running template with the following command (replace ``packages`` with a "
+"space-delimited list of packages to be installed):"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:126
+#: 84febefcf3494ae7a4430323e6d6b6ec
+msgid ""
+"Commonly used utilities: ``pciutils`` ``vim-minimal`` ``less`` ``psmisc`` "
+"``gnome-keyring``."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:128
+#: ../../../_doc/user/templates/minimal-templates.rst:300
+#: 9a80da081c5341a0a3e60c4bdd66585c 9ff1d3416b1643869a1aa1682ad75f00
+msgid "Audio: ``pulseaudio-qubes``."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:129
+#: ../../../_doc/user/templates/minimal-templates.rst:223
+#: ../../../_doc/user/templates/minimal-templates.rst:301
+#: 8bd1d435826a48c98362ca7017478fbb 44833bad0bd040778e9658e76646db11
+#: c823aa4766354417b317872fbe0769ca
+msgid ""
+"Networking: ``qubes-core-agent-networking``, and whatever network tools you "
+"want. N.B. minimal templates do not include any browser."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:131
+#: 26fdaebfea18400c87731533b52b7f33
+msgid ""
+":doc:`FirewallVM </user/security-in-qubes/firewall>`, such as the template "
+"for ``sys-firewall``: at least ``qubes-core-agent-networking`` and "
+"``iproute``, and also ``qubes-core-agent-dom0-updates`` if you want to use "
+"it as the ``UpdateVM`` (which is normally ``sys-firewall``)."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:135
+#: 17976b22096b4a22abed1bfe5957c35c
+msgid ""
+"NetVM, such as the template for ``sys-net``: ``qubes-core-agent-networking``"
+" ``qubes-core-agent-network-manager`` ``NetworkManager-wifi`` ``network-"
+"manager-applet`` ``wireless-tools`` ``notification-daemon`` ``gnome-"
+"keyring`` ``polkit`` ``@hardware-support``. If your network devices need "
+"extra packages for the template to work as a network VM, use the ``lspci`` "
+"command to identify the devices, then run ``dnf search firmware`` (replace "
+"``firmware`` with the appropriate device identifier) to find the needed "
+"packages and then install them. If you need utilities for debugging and "
+"analyzing network connections, install ``tcpdump`` ``telnet`` ``nmap`` "
+"``nmap-ncat``."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:146
+#: 1264b2ef999b42bdb467ffd97e8c3a9c
+msgid ""
+":doc:`USB qube </user/advanced-topics/usb-qubes>`, such as the template for "
+"``sys-usb``: ``qubes-usb-proxy`` to provide USB devices to other Qubes and "
+"``qubes-input-proxy-sender`` to provide keyboard or mouse input to    dom0. "
+"-  `VPN    qube <https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/vpn.md>`__: Use the ``dnf "
+"search \"NetworkManager VPN plugin\"`` command to look up the VPN packages "
+"you need, based on the VPN technology you’ll be using, and install them. "
+"Some GNOME related packages may be needed as well. After creation of a "
+"machine based on this template, follow the `VPN    instructions "
+"<https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-"
+"as-a-vpn-gateway-using-networkmanager>`__ to configure it."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:155
+#: ../../../_doc/user/templates/minimal-templates.rst:247
+#: ../../../_doc/user/templates/minimal-templates.rst:323
+#: 0677720f1827496cb0adff0e1f291d4d 9e6df29f03df4ee1b1508633f479efaa
+#: 39066c1ddb89409b86cf8820bfc0a6be
+msgid ""
+"``default-mgmt-dvm``: requires ``qubes-core-agent-passwordless-root`` and "
+"``qubes-mgmt-salt-vm-connector``."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:158
+#: ../../../_doc/user/templates/minimal-templates.rst:250
+#: ../../../_doc/user/templates/minimal-templates.rst:326
+#: c97d6c31573145fe822f545f6bdd080b 2dd0ed8750ff41e19feaa3c6fe0669bf
+#: 450128a9caf54a429f900ebb8d16683e
+msgid ""
+"In Qubes 4.0, additional packages from the ``qubes-core-agent`` suite may be"
+" needed to make the customized minimal template work properly. These "
+"packages are:"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:162
+#: ../../../_doc/user/templates/minimal-templates.rst:254
+#: ../../../_doc/user/templates/minimal-templates.rst:330
+#: 36f73f7f6ec84cd6bdabbebc5ea17e4e dd3dec03f363460ca73cf473d4bb7e76
+#: f117871cce3b4816b3cefaa2784d41a4
+msgid ""
+"``qubes-core-agent-nautilus``: This package provides integration with the "
+"Nautilus file manager (without it, items like “copy to VM/open in "
+"disposable” will not be shown in Nautilus)."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:165
+#: ../../../_doc/user/templates/minimal-templates.rst:257
+#: ../../../_doc/user/templates/minimal-templates.rst:333
+#: 0cc3dfcccead49b0aef4078846f748a1 98d0bedcd1594f90acf8e0e98e10828c
+#: 5c31e4b510014784aa27d37f55779854
+msgid ""
+"``qubes-core-agent-thunar``: This package provides integration with the "
+"thunar file manager (without it, items like “copy to VM/open in disposable” "
+"will not be shown in thunar)."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:168
+#: ../../../_doc/user/templates/minimal-templates.rst:260
+#: ../../../_doc/user/templates/minimal-templates.rst:336
+#: 3f2082d3f51041afab3d3bca671fc1d9 956ec4dd68c04b27be22dfe49d75f518
+#: dd707d09833641e28e56a8dce5951c86
+msgid ""
+"``qubes-core-agent-dom0-updates``: Script required to handle ``dom0`` "
+"updates. Any template on which the qube responsible for ‘dom0’ updates (e.g."
+" ``sys-firewall``) is based must contain this package."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:171
+#: ../../../_doc/user/templates/minimal-templates.rst:263
+#: ../../../_doc/user/templates/minimal-templates.rst:339
+#: 3c8a64e61be9481c89d5d07c1c7e16c5 82806e8a8a744d5d85c402e4c0d41723
+#: c108ea648ce14495b94f079cce7fcb11
+msgid "``qubes-menus``: Defines menu layout."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:172
+#: ../../../_doc/user/templates/minimal-templates.rst:264
+#: ../../../_doc/user/templates/minimal-templates.rst:340
+#: 68ac17a549ce40498fe4e901c4944788 dc51c953d1ae4e6e89e4c748cf33da5d
+#: ea9417f82f8a4de2942c6b6c007bb4d0
+msgid ""
+"``qubes-desktop-linux-common``: Contains icons and scripts to improve "
+"desktop experience."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:174
+#: 404aceae33ca4c79b482a558d6bc756d
+msgid "``qubes-core-agent-qrexec``: Qubes qrexec agent. Installed by default."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:176
+#: 850013cd562d47a083defc6e33b9bb3b
+msgid ""
+"``qubes-core-agent-systemd``: Qubes unit files for SystemD init style. "
+"Installed by default."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:178
+#: 73b7a3278455484186376792c7e16e9a
+msgid ""
+"``qubes-core-agent-passwordless-root``, ``polkit``: By default, the Fedora "
+"minimal template doesn’t have passwordless root. These two packages enable "
+"this feature."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:181
+#: 8b72f1742b3f45e79c58bf97c4196df0
+msgid ""
+"``qubes-core-agent-sysvinit``: Qubes unit files for SysV init style or "
+"upstart."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:184
+#: ../../../_doc/user/templates/minimal-templates.rst:267
+#: ../../../_doc/user/templates/minimal-templates.rst:343
+#: 4efaad66b06b4558be202aaf2169979b 17cced4768b64eb5abed4462fc8da877
+#: 47ce6268715a406d9d807c26691e3f7b
+msgid "Also, there are packages to provide additional services:"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:186
+#: ../../../_doc/user/templates/minimal-templates.rst:269
+#: ../../../_doc/user/templates/minimal-templates.rst:345
+#: e541dfd598234381859210b50615251e 37ff7c1386364d158068b42e61085fd3
+#: 56272a214ca944b39bc3cfe05f4077e6
+msgid "``qubes-gpg-split``: For implementing split GPG."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:187
+#: ../../../_doc/user/templates/minimal-templates.rst:270
+#: 4fb58e6ef20a4ad1ae5d56447d4f8720 ac442ddecf0247d3821fc5263dfd8a3b
+msgid "``qubes-u2f``: For implementing secure forwarding of U2F messages."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:188
+#: ../../../_doc/user/templates/minimal-templates.rst:271
+#: ../../../_doc/user/templates/minimal-templates.rst:346
+#: 5c317430ab544f29a9fe6afa838f6f22 5c53292c0de746b09d9646362ae885b3
+#: 0ee71cdb620b4338962094b736d92f74
+msgid "``qubes-pdf-converter``: For implementing safe conversion of PDFs."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:189
+#: ../../../_doc/user/templates/minimal-templates.rst:272
+#: ../../../_doc/user/templates/minimal-templates.rst:347
+#: 5557df83ab824041be85b06a73e45a95 870ac7c9e4ef45b0bcaaf40e13373ba2
+#: db846b6327a44660b356e971c6447b9a
+msgid "``qubes-img-converter``: For implementing safe conversion of images."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:190
+#: ../../../_doc/user/templates/minimal-templates.rst:273
+#: ../../../_doc/user/templates/minimal-templates.rst:348
+#: e26494e2b4b5412f99e5ff2661f030c4 8f82e5e32a2f4a2f945d1624039cc1b5
+#: 79763446afa54a7eb051555c1827026a
+msgid "``qubes-snapd-helper``: If you want to use snaps in qubes."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:191
+#: 244eb2edaf59437fb432943d28ddccae
+msgid "``thunderbird-qubes``: Additional tools for use in thunderbird."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:192
+#: ../../../_doc/user/templates/minimal-templates.rst:275
+#: da0b00b09801464588fd9972cf2d07fa 1f2aa4e019f7416dbf30c0044b2f901d
+msgid ""
+"``qubes-app-shutdown-idle``: If you want qubes to automatically shutdown "
+"when idle."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:194
+#: ../../../_doc/user/templates/minimal-templates.rst:277
+#: ../../../_doc/user/templates/minimal-templates.rst:349
+#: c8f9afc369f1444b811c53dde21cee4a e2694f6fbd9a45b383a8563981f8d9a2
+#: b99bfceda0274ed0bfdb3c8c2a096c29
+msgid ""
+"``qubes-mgmt-salt-vm-connector``: If you want to use salt management on the "
+"template and qubes."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:197
+#: 12f51cc6d7d44d0ba75816cea2216a9e
+msgid ""
+"You may also wish to consider additional packages from the ``qubes-core-"
+"agent`` suite.  See `here <https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/customization/fedora-minimal-template-"
+"customization.md>`__ for further information on customizing ``fedora-"
+"minimal``."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:201
+#: 91b11ca6693840c396acca1f4e765779
+msgid "Logging"
+msgstr "Statusberichte"
+
+#: ../../../_doc/user/templates/minimal-templates.rst:203
+#: d7f96a88118346bea3be910d6ff1a4d5
+msgid ""
+"The ``rsyslog`` logging service is not installed by default, as all logging "
+"is instead being handled by the ``systemd`` journal. Users requiring the "
+"``rsyslog`` service should install it manually."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:207
+#: 2e11e1fb8a684d9db33642c19b0e527b
+msgid "To access the ``journald`` log, use the ``journalctl`` command."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:221
+#: d73edd8b6e2049b39eed786427f0d4b8
+msgid ""
+"Commonly used utilities: ``pciutils`` ``vim-minimal`` ``less``    ``psmisc``"
+" ``gnome-keyring`` -  The ``zenity`` package is required for interactive "
+"dialogs, e.g.,    file selection    (`#5202 "
+"<https://github.com/QubesOS/qubes-issues/issues/5202>`__) and    for using "
+"the Nautilus menu option to copy some files to other qubes    (`#6801 "
+"<https://github.com/QubesOS/qubes-issues/issues/6801>`__)."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:222
+#: b0e58ee4ea2149ab94210bac056d1b17
+msgid "Audio: ``pulseaudio-qubes``"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:225
+#: ../../../_doc/user/templates/minimal-templates.rst:303
+#: 182fa44662ef4ed9805c4bcf07289384 fa77c1e98cea4d78b8813f5bcbf0360f
+msgid ""
+":doc:`FirewallVM </user/security-in-qubes/firewall>`, such as the template "
+"for ``sys-firewall``: at least ``qubes-core-agent-networking``, and also "
+"``qubes-core-agent-dom0-updates`` if you want to use it as the ``UpdateVM`` "
+"(which is normally ``sys-firewall``)."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:229
+#: ed43c4bb96824899a294594da524b847
+msgid ""
+"NetVM, such as the template for ``sys-net``: ``qubes-core-agent-networking``"
+" ``qubes-core-agent-network-manager``. If your network devices need extra "
+"packages for a network VM, use the ``lspci`` command to identify the "
+"devices, then find the package that provides necessary firmware and install "
+"it. If you need utilities for debugging and analyzing network connections, "
+"install the following packages: ``tcpdump`` ``telnet`` ``nmap`` ``ncat``."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:236
+#: 2cf12e170a0441088c50898baae9da53
+msgid ""
+":doc:`USB qube </user/advanced-topics/usb-qubes>`, such as the template for "
+"``sys-usb``: ``qubes-usb-proxy`` to provide USB devices to other Qubes and "
+"``qubes-input-proxy-sender`` to provide keyboard or mouse input to    dom0."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:238
+#: 3e90b1e47b12414bb149e55a29a418a8
+msgid ""
+"Qubes to which USB devices are attached: ``libpam-systemd`` (Until    `#7689"
+" <https://github.com/QubesOS/qubes-issues/issues/7689>`__ is fixed, either "
+"pair it with ``qubes-core-agent-passwordless-root`` or manually activate the"
+" user session with ``loginctl activate <USER_SESSION_ID>``.)"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:242
+#: b910bbcbeaf64c70b10d47931c8a03d8
+msgid ""
+"`VPN    qube <https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/vpn.md>`__: You may need "
+"to install network-manager VPN packages, depending on the VPN technology "
+"you’ll be using. After creating a machine based on this template, follow the"
+" `VPN    howto <https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-"
+"as-a-vpn-gateway-using-networkmanager>`__ to configure it."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:274
+#: 2d263d98ec0844029c79069c7aa10941
+msgid "``qubes-thunderbird``: Additional tools for use in thunderbird."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:280
+#: ../../../_doc/user/templates/minimal-templates.rst:352
+#: ca7a4fc7ac7144ffa397d605d39a437e 1f39905be87147b6a0e7869807162b75
+msgid "Documentation on all of these can be found in the `docs </>`__."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:282
+#: ../../../_doc/user/templates/minimal-templates.rst:354
+#: bcb8e85d8cfe4c9abce4a08bfb12a358 a66ebc4ce6844c08b3042e852f27e1a1
+msgid ""
+"You could, of course, use ``qubes-vm-recommended`` to automatically install "
+"many of these, but in that case you are well on the way to a standard Debian"
+" template."
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:298
+#: 9a6c2d87d8444e5384fe2f6545776f01
+msgid ""
+"Commonly used utilities: ``pciutils`` ``vim-minimal`` ``less`` ``psmisc`` "
+"``gnome-keyring``"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:307
+#: 92a75d09ea5f464fb3cf8279219ef8d4
+msgid ""
+"NetVM, such as the template for ``sys-net``: ``qubes-core-agent-networking``"
+" ``qubes-core-agent-network-manager`` ``NetworkManager-wifi`` ``network-"
+"manager-applet`` ``wireless-tools`` ``notification-daemon`` ``gnome-"
+"keyring``. If your network devices need extra packages for a network VM, use"
+" the ``lspci`` command to identify the devices, then find the package that "
+"provides necessary firnware and install it. If you need utilities for "
+"debugging and analyzing network connections, install the following packages:"
+" ``tcpdump`` ``telnet`` ``nmap`` ``nmap-ncat``"
+msgstr ""
+
+#: ../../../_doc/user/templates/minimal-templates.rst:316
+#: 43533345f0744bbf876855ec95210a1a
+msgid ""
+":doc:`USB qube </user/advanced-topics/usb-qubes>`, such as the template for "
+"``sys-usb``: ``qubes-usb-proxy`` to provide USB devices to other Qubes and "
+"``qubes-input-proxy-sender to provide keyboard or mouse input to    dom0. -"
+"  `VPN    qube <https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/vpn.md>`__: You may need "
+"to install network-manager VPN packages, depending on the VPN technology "
+"you’ll be using. After creating a machine based on this template, follow the"
+" `VPN    howto <https://github.com/Qubes-"
+"Community/Contents/blob/master/docs/configuration/vpn.md#set-up-a-proxyvm-"
+"as-a-vpn-gateway-using-networkmanager>`__ to configure it."
+msgstr ""

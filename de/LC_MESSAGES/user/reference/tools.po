@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:29+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/reference/tools.rst:3 b50acb826e5f4685a0784f65af4de72a
+msgid "Command-line tools"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:6 5580bb86b2ed40ca941438c86b455bf3
+msgid "Dom0"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:8 9dafb02aa36c45099b6d9a087b4d32f8
+msgid ""
+"`core-admin <https://dev.qubes-os.org/projects/core-"
+"admin/en/latest/manpages/>`__"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:9 ec4f3f1c26f946b29a61c8256447fe25
+msgid ""
+"`core-admin-client <https://dev.qubes-os.org/projects/core-admin-"
+"client/en/latest/manpages/>`__"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:12 ed43aea666b04737b5c3d427deb27406
+msgid "DomU"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:14 b7ec1362fbee4c35889a3d6c63f1ccb0
+msgid ""
+"`qrexec-client-vm <https://github.com/QubesOS/qubes-core-"
+"qrexec/blob/master/agent/qrexec-client-vm.rst>`__"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:15 a5c868cb2f7848e4be5f30c37fd57677
+msgid ""
+"`qvm-copy <https://github.com/QubesOS/qubes-core-agent-"
+"linux/blob/master/doc/vm-tools/qvm-copy.rst>`__"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:16 28cd98fb35364a37811acdfccb634be6
+msgid ""
+"`qvm-open-in-dvm <https://github.com/QubesOS/qubes-core-agent-"
+"linux/blob/master/doc/vm-tools/qvm-open-in-dvm.rst>`__"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:17 0c51a25f556a4224a9479abe7914adb5
+msgid ""
+"`qvm-open-in-vm <https://github.com/QubesOS/qubes-core-agent-"
+"linux/blob/master/doc/vm-tools/qvm-open-in-vm.rst>`__"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:18 3a008ff3999a46108b2c1ce56143a85b
+msgid ""
+"`qvm-run-vm <https://github.com/QubesOS/qubes-core-agent-"
+"linux/blob/master/doc/vm-tools/qvm-run-vm.rst>`__"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:19 ce4d62a8829f43d78db9415fb0916f9c
+msgid ""
+"`qvm-convert-pdf <https://github.com/QubesOS/qubes-app-linux-pdf-"
+"converter/blob/master/README.md>`__"
+msgstr ""
+
+#: ../../../_doc/user/reference/tools.rst:20 4274de72db0f430a9636f220ccd5ef51
+msgid ""
+"`qvm-convert-img <https://github.com/QubesOS/qubes-app-linux-img-"
+"converter/blob/master/README.md>`__"
+msgstr ""

@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:28+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:3
+#: 02afd6fcb03b4668a584e10501a5566b
+msgid "Media troubleshooting"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:6
+#: 2ad62044ddee46e98c1620239c417dc6
+msgid "Can’t play media videos in a VM due to missing codecs"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:8
+#: c487e3c4466b4d3989a2eff9d9858365
+msgid ""
+"If you’re having trouble playing a video file in a qube, you’re probably "
+"missing the required codecs. The easiest way to resolve this is to install "
+"VLC Media Player and use that to play your video files. You can do this in "
+"multiple different template distros by following the instructions :ref:`here"
+" <introduction/faq:how do i play video files>`."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:15
+#: 03d3b6acceb3478ead208acd87aed130
+msgid "Video lagging"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:17
+#: 6b359aceafea4708bf360cbc72d5f1cf
+msgid ""
+"Playing videos may cause lags since software decoding uses a lot of CPU."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:19
+#: f3e520e0f46347de9a1fcdda327f8b9e
+msgid ""
+"Depending on your video player, there are some settings that may smoothen "
+"video plays:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:22
+#: 08070a48f054440db983f30294759b62
+msgid ""
+"If using VLC media player, go to Tools–> Preferences –> Video –> Output. By "
+"default, the Output is set to “Automatic”. Go through the list and try out "
+"other output options to see if any makes videos run smoother."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:26
+#: 682fea4172bb4638870c71bf5f9e2177
+msgid ""
+"If using mpv media player, you may be able to improve performance by "
+"entering ``mpv --profile=sw-fast --vo=x11`` in a terminal."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/media-troubleshooting.rst:28
+#: d8ef9c134e1846c1b7aae65279122329
+msgid ""
+"For video lags when playing videos from a browser, disable hardware "
+"acceleration in the browser. If the problem arises when watching streams, it"
+" may be smoother to use ``streamlink`` to view streams in mpv instead of "
+"using the browser."
+msgstr ""

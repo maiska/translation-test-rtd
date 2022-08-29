@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:31+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/releases/schedules.rst:3
+#: 88699010cc4940b3a920928558d9a43f
+msgid "Release schedules"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:5
+#: 940580eb8c63482a9be050c2c8636b18
+msgid ":doc:`Qubes R3.0 release schedule </developer/releases/3_0/schedule>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:6
+#: 21c43aea0d564530a2b08cc894465665
+msgid ":doc:`Qubes R3.1 release schedule </developer/releases/3_1/schedule>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:7
+#: 6274bbb831274b208507eae717250634
+msgid ":doc:`Qubes R3.2 release schedule </developer/releases/3_2/schedule>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:8
+#: d43218f688aa4fb3973d88df991ccab0
+msgid ":doc:`Qubes R4.0 release schedule </developer/releases/4_0/schedule>`"
+msgstr ""
+
+#: ../../../_doc/developer/releases/schedules.rst:9
+#: c090cb23721c498d8e63f21f4fade7d1
+msgid ":doc:`Qubes R4.1 release schedule </developer/releases/4_1/schedule>`"
+msgstr ""

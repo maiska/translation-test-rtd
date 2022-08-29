@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:32+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/project-security/qsb-checklist.rst:3
+#: a34fe4e0a6da4aa199653558f756a4d6
+msgid "Qubes security bulletin (QSB) checklist"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:6
+#: ec2623ad69d0460f9ca19f64f6018df3
+msgid "Preparation"
+msgstr "Vorbereitung"
+
+#: ../../../_doc/project-security/qsb-checklist.rst:8
+#: 160f9249cc3146da9c8eeeec155c7391
+msgid "Draft QSB and push to private repository"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:9
+#: b0941aa2495e48cbb2ccf38836f41d82
+msgid "Build fixed packages"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:10
+#: 0f373fb7b7f84433a8dc2aa3cc7da1ed
+msgid "Finalize QSB, sign, and add signed tags"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:13
+#: d45d30488c4047269d05bbd2a2d670ee
+msgid "Announcement"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:15
+#: 38879c71b5b047a681abe0e8eadc5d7d
+msgid ""
+"Upload packages to ``security-testing and ``current-testing    repositories "
+"-  Push QSB to public repository -  Publish a `news post <https://www.qubes-"
+"os.org/news/>`__ using the :doc:`QSB    Template </project-security/qsb-"
+"template>`"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:16
+#: a5a1d7379f3045f48a057e91652bdcf7
+msgid ""
+"Send the content of the news post to the appropriate :doc:`mailing    lists "
+"</introduction/support>`"
+msgstr ""
+
+#: ../../../_doc/project-security/qsb-checklist.rst:17
+#: f2a5de235754458f88ecc1aacee5ba03
+msgid "Share link to news post on social media"
+msgstr ""

@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# AO <ao@localizationlab.org>, 2022
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# nextloop <ga25day@mytum.de>, 2022
+# E, 2022
+# kytv <killyourtv@i2pmail.org>, 2022
+# ducki2p <ducki2p@gmail.com>, 2022
+# erinm, 2022
+# IDRASSI Mounir <mounir.idrassi@idrix.fr>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:30+0000\n"
+"Last-Translator: IDRASSI Mounir <mounir.idrassi@idrix.fr>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/system/networking.rst:3
+#: 3446f9d62323472b98de0b4bb950762c
+msgid "Networking"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:6
+#: ea7f3139d3f34dd385230cf671211be0
+msgid "Overall description"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:8
+#: 4e0492b4f6274149897a22e0e46e1360
+msgid ""
+"In Qubes, the standard Xen networking is used, based on backend driver in "
+"the driver domain and frontend drivers in VMs. In order to eliminate layer 2"
+" attacks originating from a compromised VM, routed networking is used "
+"instead of the default bridging of ``vif`` devices and NAT is applied at "
+"each network hop. The default *vif-route* script had some deficiencies "
+"(requires ``eth0`` device to be up, and sets some redundant iptables rules),"
+" therefore the custom *vif-route-qubes* script is used."
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:16
+#: ae3c269a3a144f358fcfe7e4fbdb197b
+msgid ""
+"The IP address of ``eth0`` interface in AppVM, as well as two IP addresses "
+"to be used as nameservers (``DNS1`` and ``DNS2``), are passed via QubesDB to"
+" AppVM during its boot (thus, there is no need for DHCP daemon in the "
+"network driver domain). ``DNS1`` and ``DNS2`` are private addresses; "
+"whenever an interface is brought up in the network driver domain, the "
+"*/usr/lib/qubes/qubes_setup_dnat_to_ns* script sets up the DNAT iptables "
+"rules translating ``DNS1`` and ``DNS2`` to the newly learned real dns "
+"servers. This way AppVM networking configuration does not need to be changed"
+" when configuration in the network driver domain changes (e.g. user switches"
+" to a different WLAN). Moreover, in the network driver domain, there is no "
+"DNS server either, and consequently there are no ports open to the VMs."
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:30
+#: c19bee4d18af429ebfc2730bd895b4db
+msgid "Routing tables examples"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:32
+#: d393b67b19f44c129b63d1abfcd592c9
+msgid "VM routing table is simple:"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:34
+#: b43d2761f9ed4edbbfa6b6294d3fb3d8
+msgid "VM routing table"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:38
+#: ../../../_doc/developer/system/networking.rst:62
+#: 064a395aebed48aa950771b99434a7f4 7a7489e347794e29a32c74a1236f89d8
+msgid "Destination"
+msgstr "Ziel"
+
+#: ../../../_doc/developer/system/networking.rst:39
+#: ../../../_doc/developer/system/networking.rst:63
+#: 37d233c1dd4b454f8cebfc4be4d9ba20 b08bca2ee149447dbf16e7e7bc66fb98
+msgid "Gateway"
+msgstr "Schnittstelle"
+
+#: ../../../_doc/developer/system/networking.rst:40
+#: ../../../_doc/developer/system/networking.rst:64
+#: 8b0eff26abe644a598e6cfa07ac652b8 479f260ae24f40a8a286d2931c9d4525
+msgid "Genmask"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:41
+#: ../../../_doc/developer/system/networking.rst:65
+#: 842fb558678b4dfbb8906cb8f27d0a0b 1396b969c55449339bfdaabc53497919
+msgid "Flags"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:42
+#: ../../../_doc/developer/system/networking.rst:66
+#: 9c83091d359945b5a8a3da33c015da95 91ab17fc22fa499f993f56dd59d661c0
+msgid "Metric"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:43
+#: ../../../_doc/developer/system/networking.rst:67
+#: 16a26ebdc59e4e6eb2a554dfea9541f0 36dea0c202034c34aadaa2b1a9feb6b6
+msgid "Ref"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:44
+#: ../../../_doc/developer/system/networking.rst:68
+#: dcea14f01553484fa6c7ba67180d6ba4 6ac040f1436142ce968760882332bd93
+msgid "Use"
+msgstr "Benutze"
+
+#: ../../../_doc/developer/system/networking.rst:45
+#: ../../../_doc/developer/system/networking.rst:69
+#: 62786b5288dd46718a96d24563d5937a 76f6afdae073457cbb83f2f43a1436d5
+msgid "Iface"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:46
+#: ../../../_doc/developer/system/networking.rst:47
+#: ../../../_doc/developer/system/networking.rst:48
+#: ../../../_doc/developer/system/networking.rst:71
+#: ../../../_doc/developer/system/networking.rst:79
+#: ../../../_doc/developer/system/networking.rst:87
+#: ../../../_doc/developer/system/networking.rst:95
+#: ../../../_doc/developer/system/networking.rst:103
+#: ../../../_doc/developer/system/networking.rst:111
+#: ../../../_doc/developer/system/networking.rst:118
+#: ../../../_doc/developer/system/networking.rst:120
+#: f19b8fb42fa34115982a7c8a6b5dbb06 bf45e03e2ca946489710a4ba8460c010
+#: 4916f3cedba64704900614a97f9fdd12 29ccb60ebdb549918560476a03717aa7
+#: 88db204900384b43a368be8f7fe90bb8 d10302c4ae4d4870a43aa32893db38ea
+#: 9ac80a6a51684c1e8d380650829a1c15 8f70f283bb774149b99b76d44984608b
+#: f3fb2a2031c54aa08e50f47dbd8d6e0d 321c9c6fd6174ac285e1f35be9db02eb
+#: 798f83f7275848c0a96e250979de1d25
+msgid "0.0.0.0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:49
+#: ../../../_doc/developer/system/networking.rst:113
+#: 5a20a646fb1e40749c11d4321d030847 fc35ff840cd0450995e08597a71a7d5b
+msgid "U"
+msgstr "A"
+
+#: ../../../_doc/developer/system/networking.rst:50
+#: ../../../_doc/developer/system/networking.rst:51
+#: ../../../_doc/developer/system/networking.rst:52
+#: ../../../_doc/developer/system/networking.rst:74
+#: ../../../_doc/developer/system/networking.rst:75
+#: ../../../_doc/developer/system/networking.rst:76
+#: ../../../_doc/developer/system/networking.rst:82
+#: ../../../_doc/developer/system/networking.rst:83
+#: ../../../_doc/developer/system/networking.rst:84
+#: ../../../_doc/developer/system/networking.rst:90
+#: ../../../_doc/developer/system/networking.rst:91
+#: ../../../_doc/developer/system/networking.rst:92
+#: ../../../_doc/developer/system/networking.rst:98
+#: ../../../_doc/developer/system/networking.rst:99
+#: ../../../_doc/developer/system/networking.rst:100
+#: ../../../_doc/developer/system/networking.rst:106
+#: ../../../_doc/developer/system/networking.rst:107
+#: ../../../_doc/developer/system/networking.rst:108
+#: ../../../_doc/developer/system/networking.rst:115
+#: ../../../_doc/developer/system/networking.rst:116
+#: ../../../_doc/developer/system/networking.rst:122
+#: ../../../_doc/developer/system/networking.rst:123
+#: ../../../_doc/developer/system/networking.rst:124
+#: 91a4faa4ecb74acf8588502a9e7382b9 5d03e98d39b748f381a7dc3451fd8b5c
+#: 70e2a21340cd48a2982be113f5ffe42b 9db909e776024df190da2b4467759bb2
+#: d5703db119164b18935affa3f4d7f9c0 eb00c2279aa8446fa9d7c84dabdafd55
+#: d369c62e1d60475f9ca37209c4ad874c 6bc72f4f23ce46f6a3a0b76efdea190b
+#: bd11ff7463f14a048ac6b329445bc860 0c8bd77c936946919395ffc941c2aa81
+#: e8765f22d63f4137adc795a8b8c31bf7 956d0c515fbf4b54a9f14c731a71572d
+#: f1d73a027c024214a93e2081b0174176 70799da1553641fdaef8ad3200dcfe1c
+#: 06e3f11bfdce4073a1c0c2d7c692b9b7 7757050f06c1438580fa3c636ce7ed32
+#: f2f640b3d4284fddb50e13f12874f9ed 15dd54925a4f44c78c4e7702560c6cc0
+#: 538bd865a5cd4be796f9bd36efafb6a9 d85b67fbb0444ca6b28d0bcddefbf8c3
+#: 88351935d88f44f6aad02ac4cab14644 1a959f2e610045e6bdefc581d8b01c32
+#: 19b97fae11fd443ba53e6394483b097e
+msgid "0"
+msgstr "0"
+
+#: ../../../_doc/developer/system/networking.rst:53
+#: ../../../_doc/developer/system/networking.rst:117
+#: ../../../_doc/developer/system/networking.rst:125
+#: 5f1f3124bf1d4cdc817b898b66420f46 09fe56a2d95542b297d4a462af61d86d
+#: a7195f93f0fe49469537f04f39e45c74
+msgid "eth0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:56
+#: 2bb6dbe98a8542769816ea1cdd496a6b
+msgid "Network driver domain routing table is a bit longer:"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:58
+#: 27192508c2154d069443ed90f1f84a98
+msgid "Network driver domain"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:70
+#: 5352e792b4c64f80a6016c2da2f4232b
+msgid "10.137.0.16"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:72
+#: ../../../_doc/developer/system/networking.rst:80
+#: ../../../_doc/developer/system/networking.rst:88
+#: ../../../_doc/developer/system/networking.rst:96
+#: ../../../_doc/developer/system/networking.rst:104
+#: bfc91704df3341d080241e39788df64f 86cfd64a145341d993f01dc7f76fd4c3
+#: 161c42fecebe479e9c6eb5f6e8fe0ccf 79733599f7ee4411baf924e8ca6c38c0
+#: fedf75a201d54bcb809a4f63caee5dba
+msgid "255.255.255.255"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:73
+#: ../../../_doc/developer/system/networking.rst:81
+#: ../../../_doc/developer/system/networking.rst:89
+#: ../../../_doc/developer/system/networking.rst:97
+#: ../../../_doc/developer/system/networking.rst:105
+#: 4b5f752babcb4b75950183cb6fd187ff defafc9e42ae4908815f506eb13e3bc2
+#: f8e7f42000564cb19170bd178ed0c799 f788ffc21f874c2ea3dd71522dd2e5e8
+#: f158cfaf08094fa885112e12afb33807
+msgid "UH"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:77
+#: 729c4d40545246f8a8ef5751dfe7ab53
+msgid "vif4.0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:78
+#: 83e83d5c69574a30b5bf23ad97656743
+msgid "10.137.0.7"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:85
+#: 5617d87771164089a830ab155a01a094
+msgid "vif10.0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:86
+#: 042afc84fc534dfab16c67cd2b85694e
+msgid "10.137.0.9"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:93
+#: 970c1a2c1ae245c0a38f268f03416b91
+msgid "vif9.0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:94
+#: 0bd08394a3a349bda012138d874ccee0
+msgid "10.137.0.8"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:101
+#: 95656157cd72487184217e9e2f34d82d
+msgid "vif8.0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:102
+#: 8157e4d97fe74f4ba0e9484a90293791
+msgid "10.137.0.12"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:109
+#: 7ba5e9b076574c1db77adf648b2ed0ba
+msgid "vif3.0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:110
+#: b99a0ff3cd7446ea9d7df00f0abc3eed
+msgid "192.168.0.0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:112
+#: 2e661d64a870471f88fbb5a12f17c5e4
+msgid "255.255.255.0"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:114
+#: df0bf80d6926497ebcfd4923ff63ca58
+msgid "1"
+msgstr "1"
+
+#: ../../../_doc/developer/system/networking.rst:119
+#: 3871728d1357463eb150d581b87c6a19
+msgid "102.168.0.1"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:121
+#: 3762aff260e34ebbab91afbecefac029
+msgid "UG"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:129
+#: f809a5b556814000b142e9fd2cd886ea
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../../../_doc/developer/system/networking.rst:131
+#: a64f6dc396ba4315bbc565100473ede9
+msgid ""
+"Starting with Qubes 4.0, there is opt-in support for IPv6 forwarding. "
+"Similar to the IPv4, traffic is routed and NAT is applied at each network "
+"gateway. This way we avoid reconfiguring every connected qube whenever "
+"uplink connection is changed, and even telling the qube what that uplink is "
+"- which may be complex when VPN or other tunneling services are employed. "
+"The feature can be enabled on any network-providing qube, and will be "
+"propagated down the network tree, so every qube connected to it will also "
+"have IPv6 enabled. To enable the ``ipv6`` feature use ``qvm-features`` tool "
+"and set the value to ``1``. For example to enable it on ``sys-net``, execute"
+" in dom0:"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:146
+#: a221866a044a484c8d6db0c943977454
+msgid ""
+"It is also possible to explicitly disable IPv6 support for some qubes, even "
+"if it is connected to IPv6-providing one. This can be done by setting "
+"``ipv6`` feature to empty value:"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:154
+#: 2de605a282a946478d7ddd1fb0204a62
+msgid ""
+"This configuration is presented below - green qubes have IPv6 access, red "
+"one does not."
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:160
+#: ../../../_doc/developer/system/networking.rst:160
+#: c6fa0bb0d66941c3b1eaf0f467b74e25 91a5b0fcd11241f1a730ff6d1d5bf4cb
+msgid "ipv6-1"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:162
+#: d5ba709d615444a2aef48e07f561e65e
+msgid ""
+"In that case, system uplink connection have native IPv6. But in some cases "
+"it may not be true. Then some tunneling solution can be used (for example "
+"teredo). The same will apply when the user is connected to VPN service "
+"providing IPv6 support, regardless of user’s internet connection. Such "
+"configuration can be expressed by enabling ``ipv6`` feature only on some "
+"subset of Qubes networking, for example by creating separate qube to "
+"encapsulate IPv6 traffic and setting ``ipv6`` to ``1`` only there. See "
+"diagram below"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:174
+#: ../../../_doc/developer/system/networking.rst:174
+#: 210e4545e65949bfb80f8860c8cd38d0 3e995eb2ca2d4d46bedd5468d75b4520
+msgid "ipv6-2"
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:176
+#: 64a613695902452bb4f8b6194f214278
+msgid ""
+"Besides enabling IPv6 forwarding, standard Qubes firewall can be used to "
+"limit what network resources are available to each qube. Currently only "
+"``qvm-firewall`` command support adding IPv6 rules, GUI firewall editor will"
+" have this ability later."
+msgstr ""
+
+#: ../../../_doc/developer/system/networking.rst:182
+#: 6ebcca3911a04f01a91c4b6aacb38fae
+msgid "Limitations"
+msgstr "Einschränkungen"
+
+#: ../../../_doc/developer/system/networking.rst:184
+#: d39e85beccf04d8a9b624101fa16460f
+msgid ""
+"Currently only IPv4 DNS servers are configured, regardless of ``ipv6`` "
+"feature state. It is done this way to avoid reconfiguring all connected "
+"qubes whenever IPv6 DNS becomes available or not. Configuring qubes to "
+"always use IPv6 DNS and only fallback to IPv4 may result in relatively long "
+"timeouts and poor usability. But note that DNS using IPv4 does not prevent "
+"to return IPv6 addresses. In practice this is only a problem for IPv6-only "
+"networks."
+msgstr ""

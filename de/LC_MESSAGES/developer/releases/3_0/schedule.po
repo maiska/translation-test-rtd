@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:31+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:3
+#: d61f527b4a03494aac62b08f8e3f27b0
+msgid "Qubes R3.0 release schedule"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:6
+#: ffdfa69ea8a9426398971f9920f7de5c
+msgid "Date"
+msgstr "Datum"
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:6
+#: d410aaa0d5e44c7b90f7dcc688fc482a
+msgid "Stage"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:8
+#: 582702c855734d27ac3646adc50121bb
+msgid "5 Sep 2015"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:8
+#: fb0910c79677435a993b2e44962fb644
+msgid "current-testing freeze before 3.0-rc3"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:9
+#: edec754358684f09978aaa78840a8a74
+msgid "15 Sep 2015"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:9
+#: 2bb4567bac6f4aaba6da09653b7dbcb6
+msgid "3.0-rc3 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:10
+#: 79d74a3e51eb4fdcbb69b9eedb0e2c96
+msgid "1 Oct 2015"
+msgstr ""
+
+#: ../../../_doc/developer/releases/3_0/schedule.rst:10
+#: ca061265a4a64da7b1cc5209e2d88fb4
+msgid "3.0 release"
+msgstr ""

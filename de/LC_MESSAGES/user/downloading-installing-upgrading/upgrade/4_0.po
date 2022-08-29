@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:28+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:3
+#: b54c7f0a0655408890a26f328122a085
+msgid "Upgrading to R4.0"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:5
+#: 632ee8aa3ac3470da0d5245fd0e013c3
+msgid ""
+"**Before attempting either an in-place upgrade or a clean installation, we "
+"strongly recommend that users**\\ :doc:`back up their systems </user/how-to-"
+"guides/how-to-back-up-restore-and-migrate>`\\ **.**"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:8
+#: 6cb35dddea644b199cdf73610c34afa8
+msgid ""
+"Current Qubes R3.2 systems cannot be upgraded in-place to R4.0. A full "
+"backup, clean 4.0 install, and restore is required. This can be done by "
+"following the procedure below."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:13
+#: cd9c507eab4e447083b73de6fb6f4a35
+msgid "Preparation"
+msgstr "Vorbereitung"
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:15
+#: 7711844ba12a462cb60139c3120cd3bb
+msgid ""
+"Go to :doc:`downloads </user/downloading-installing-upgrading/downloads>` "
+"and prepare a USB drive or DVD with the R4.0 installer."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:18
+#: 6fa0f7aad8d74daaa83f9d802d048ec7
+msgid ""
+"If this is your only computer, and you do not have a R3.2 installer, you "
+"should also create a separate R3.2 USB drive or DVD installer at this time."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:23
+#: b5572c45dc3e42d1a9dc2bbe63670124
+msgid "Backup R3.2"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:25
+#: f1beeb93d465494490d3e3a567dd2421
+msgid ""
+"Attach the backup drive you will be using. These steps assume it is a USB "
+"drive."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:28
+#: b2e1370c67b2423294ee24f80d43a9bc
+msgid ""
+"Shutdown all non-essential VMs. Typically, ``sys-usb`` will be the only VM "
+"you need to leave running."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:31
+#: f1f3d1a1f5fb40369d8d57767590353e
+msgid ""
+"Follow the **Creating a Backup** section in the :doc:`Backup, Restoration,"
+"    and Migration </user/how-to-guides/how-to-back-up-restore-and-migrate>` "
+"guide to back up **all VMs** except sys-usb."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:34
+#: 671f37d317be40709ad0569a0f8941ee
+msgid ""
+"Verify the integrity of your backup by following the **Restoring from a "
+"Backup** section in the :doc:`Backup, Restoration, and    Migration "
+"</user/how-to-guides/how-to-back-up-restore-and-migrate>` guide and:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:37
+#: ad05c11a43aa4ce5a094ee55e042c808
+msgid ""
+"If you’re using Qubes Manager, check the box under “Restore options” that "
+"says, “Verify backup integrity, do not restore the data.”"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:40
+#: 0dec11b31e8f4749b9a3a97c4966e6b6
+msgid ""
+"If you’re using ``qvm-backup-restore`` from the command-line, use the "
+"``--verify-only`` option."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:43
+#: ac3127ec2a9e4b34a24fd776a5337c56
+msgid ""
+"If your backup verifies successfully, proceed to the next section. If it "
+"does not, **stop**. Go back and repeat the backup steps, review the "
+"documentation, and ask for :doc:`help </introduction/support>`."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:48
+#: e27c2389d9a7418a8ecf179b3833c0ab
+msgid "Install R4.0"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:50
+#: defc58a0e54c4d7cad6e6c29e58521ca
+msgid ""
+"This section provides general guidance on installing R4.0 as part of "
+"migrating from R3.2. For further details, please see the :doc:`installation "
+"guide </user/downloading-installing-upgrading/installation-guide>`."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:53
+#: 7614e7e8ff9f40cbbe5fac952228bbe7
+msgid "Shut down R3.2 and boot the R4.0 installer."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:55
+#: 97c4670abc7946ce8b25a9fa38bc12f5
+msgid ""
+"Follow the installation prompts until you get to the drive selection screen."
+" Choose **I want to make additional space available**. Select the box at the"
+" top of the list in order to select all partitions. **This will erase the "
+"entire drive**, so do this only if Qubes is the only OS installed on your "
+"computer. If you did not successfully verify your backup in the previous "
+"section, cancel the installation, and go back to do that now."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:63
+#: c3493d3723b84f9db57c11363b2ab677
+msgid ""
+"Complete the R4.0 installation. Ask for :doc:`help </introduction/support>` "
+"if you run into trouble."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:66
+#: e88eba34434f49a5827307b39c59b6a1
+msgid ""
+"If you are unable to successfully install R4.0 on your system, all is not "
+"lost. Use the R3.2 installer to reinstall R3.2, then restore from your "
+"backup."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:71
+#: 4899f3c78a7045109cfb299247735be4
+msgid "Restore from your backup"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:73
+#: 008fd94e149c4fd2b9c714c6d5125f88
+msgid ""
+"Welcome to Qubes R4.0! The first thing you might notice is that **Qubes "
+"Manager** is not started by default. We won’t need it for the next step, but"
+" we will be starting it later."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:77
+#: 956ae14a19b841e4875f6190cbb8abb3
+msgid ""
+"Since patches may have been released since your installation image was "
+"created, update Qubes R4.0 by going to the dom0 command line (**Qubes menu "
+"-> Terminal Emulator**) then running:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:85
+#: fb40199033cd498b895a11d85ddf44de
+msgid "Reboot dom0."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:87
+#: e57b25ece5d3417684d56b770d04c0b9
+msgid "Go to **Qubes menu -> System Tools -> Qubes Manager** to start it."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:89
+#: 53e7127d0d5b4d829148de3f73322588
+msgid ""
+"Follow the **Restoring from a Backup** section in the :doc:`Backup,    "
+"Restoration, and Migration </user/how-to-guides/how-to-back-up-restore-and-"
+"migrate>` guide. We recommend that you restore only your :ref:`app    qubes "
+"<user/reference/glossary:app qube>` and :ref:`standalones "
+"<user/reference/glossary:standalone>` from R3.2. Using :doc:`templates "
+"</user/templates/templates>` and :ref:`service    qubes "
+"<user/reference/glossary:service qube>` from R3.2 is not fully supported "
+"(see `#3514 <https://github.com/QubesOS/qubes-issues/issues/3514>`__). "
+"Instead, we recommend using the templates that were created specifically for"
+" R4.0, which you can :doc:`customize </user/how-to-guides/how-to-install-"
+"software>` according to your needs. For the template OS versions supported "
+"in R4.0, see :ref:`supported    releases <user/downloading-installing-"
+"upgrading/supported-releases:templates>`. If the restore tool complains "
+"about missing templates, you can select the option to restore the app qubes "
+"anyway, then change them afterward to use one of the default R4.0 templates."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:104
+#: bf9874e433864eb8906ead8700473629
+msgid "Note about additional disp-\\* qubes created during restore"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:106
+#: 9fcb06d4ff7d44a098e42ff38015b5e6
+msgid ""
+"One of differences between R3.2 and R4.0 is the handling of disposables. In "
+"R3.2, a disposable inherited its network settings (NetVM and firewall rules)"
+" from the calling qube. In R4.0, this is no longer the case. Instead, in "
+"R4.0 it’s possible to create multiple disposable templates and choose which "
+"one should be used by each qube. It’s even possible to use different "
+"disposable templates for different operations from the same qube. This "
+"allows much more flexibility, since it allows you to differentiate not only "
+"network settings, but all of a qube’s properties (including its template, "
+"memory settings, etc.)."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:116
+#: 22540ab521474fe79de1f4b3ef013d30
+msgid ""
+"Restoring a backup from R3.2 preserves the old behavior by creating separate"
+" disposable template for each network-providing qube (and also ``disp-no-"
+"netvm`` for network-isolated qubes). Then, each restored qube is configured "
+"to use the appropriate disposable template according to its ``netvm`` or "
+"``dispvm_netvm`` property from R3.2. This way, disposables started on R4.0 "
+"by qubes restored from a R3.2 backup have the same NetVM settings as they "
+"had on R3.2."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:124
+#: 3276cccdf5b4423db3f5e9eac7d7856b
+msgid ""
+"If you find this behavior undesirable and want to configure it differently, "
+"you can remove those ``disp-*`` disposable templates. But, to do so, you "
+"must first make sure they are not set as the value for the "
+"``default_dispvm`` property on any other qube. Both Qubes Manager and the "
+"``qvm-remove`` tool will show you where a disposable template is being used,"
+" so you can go there and change the setting."
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:132
+#: 6707001ee2894172803edb6058db45d0
+msgid "Upgrade all Template and Standalone VM(s)"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:134
+#: 587163dc92dc475db6c0df5cc1b55134
+msgid ""
+"We strongly recommend that you update **all** templates and standalones "
+"before use so that you have the latest security patches from upstream "
+"distributions. In addition, if the default templates have reached EOL (end-"
+"of-life) by the time you install R4.0, we strongly recommend that you "
+"upgrade them before use. Please see :doc:`supported releases "
+"</user/downloading-installing-upgrading/supported-releases>` for information"
+" on supported OS versions and consult the guides below for specific upgrade "
+"instructions:"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:141
+#: a5a469f74de34f41b56aaf4e1173964b
+msgid ""
+":ref:`Upgrading Fedora templates <user/templates/fedora/fedora:upgrading>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:142
+#: a41c513508134d00856375d2b19fa47a
+msgid ""
+":ref:`Upgrading Debian templates <user/templates/debian/debian:upgrading>`"
+msgstr ""
+
+#: ../../../_doc/user/downloading-installing-upgrading/upgrade/4_0.rst:143
+#: e5869fbd095d4fd2a21605e4902c1b94
+msgid ""
+"`Updating Whonix    templates <https://www.whonix.org/wiki/Qubes/Update>`__"
+msgstr ""

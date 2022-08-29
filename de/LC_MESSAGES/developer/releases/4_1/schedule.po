@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# erinm, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:31+0000\n"
+"Last-Translator: erinm, 2022\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:3
+#: dba86dce511a44d188e17a8574951a0d
+msgid "Qubes R4.1 release schedule"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:5
+#: 3c546a7716e040e0944dcb78b0c866c5
+msgid ""
+"The table below is based on our :ref:`release schedule policy "
+"<developer/releases/version-scheme:release schedule>`."
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:8
+#: a8cb7e355e214c56856c59b20207b398
+msgid "Date"
+msgstr "Datum"
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:8
+#: c43c422ce8e248dc987c66d239fe160b
+msgid "Stage"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:10
+#: 175a77901b2f437cb0a21850b346fad5
+msgid "2021-10-11"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:10
+#: 3ce30dc89f6f457295468379212cc6ec
+msgid "4.1.0-rc1 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:11
+#: e583825801cf43f0b0f1f83f9eec1ca9
+msgid "2021-11-08"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:11
+#: 43894f3d973e496b9726248b01544c87
+msgid "current-testing freeze before 4.1.0-rc2"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:12
+#: 02137b8d797149c8866823e2c0cfa4e8
+msgid "2021-11-15"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:12
+#: a29e2140e59a4b139122e9467a82349d
+msgid "4.1.0-rc2 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:13
+#: e2f74b4fae914d1882d2fdbeb549f730
+msgid "2021-11-29"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:13
+#: 51b0b50547e24eba8555e2e813b77df1
+msgid "decide whether 4.1.0-rc2 is the final 4.1"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:14
+#: b74e3732c9664bd0a259ddc47a7084a3
+msgid "2021-12-13"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:14
+#: d80b612e01404d479f40070e756dbd36
+msgid "current-testing freeze before 4.1.0-rc3"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:15
+#: b2e46a73fd8147e8b021a2379cec13f3
+msgid "2021-12-20"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:15
+#: 7928556e54da483faa1a7fde453de578
+msgid "4.1.0-rc3 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:16
+#: c11c7ece196742a1af2babba647747e7
+msgid "2022-01-03"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:16
+#: afc99d937ec84b76a61faa2d39674632
+msgid "decide whether 4.1.0-rc3 is the final 4.1"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:17
+#: b1eb7ece7b5f4cadbadc76a1d9c3d1f9
+msgid "2022-01-11"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:17
+#: 52970022bf2d45c8929e8831527adcaa
+msgid "current-testing freeze before 4.1.0-rc4"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:18
+#: b270418eb5e84acebecaf4d94a6ba780
+msgid "2022-01-18"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:18
+#: 83a050eea105427db0223685f2283ec0
+msgid "4.1.0-rc4 release"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:19
+#: 6ea12e03a1f14e31a88ee91318d20a0d
+msgid "2022-01-31"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:19
+#: af065e4263884b519b166cff92c34e45
+msgid "decide whether 4.1.0-rc4 is the final 4.1"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:20
+#: 204033eb8fe64b639af112aedf49e7fd
+msgid "2022-02-04"
+msgstr ""
+
+#: ../../../_doc/developer/releases/4_1/schedule.rst:20
+#: 56a8a23a609a4732b9f78460421f9c30
+msgid "final 4.1.0 release"
+msgstr ""

@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-29 01:28+0200\n"
+"PO-Revision-Date: 2022-08-29 00:27+0000\n"
+"Language-Team: German (https://www.transifex.com/otf/teams/56717/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:3
+#: 691595f04be34ba483b128b2819210f1
+msgid "Autostart troubleshooting"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:5
+#: 0f5c2a8970ab4993b4364dfe3ed21cbd
+msgid ""
+"The following instructions are valid for **Qubes OS R4.0 legacy mode** and "
+"**Qubes OS R4.1 legacy and UEFI modes**. For **Qubes OS R4.0 in UEFI mode**,"
+" there is no GRUB, so manual boot from another operating system is needed."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:10
+#: cdc3e91bbc7a47719bc947d812792ee0
+msgid ""
+"In several cases, there is a need to prevent ``autostart=True`` for qubes on"
+" boot. For example:"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:13
+#: fd4b295de3d44efb922acabe710fc919
+msgid ""
+"``sys-usb`` was enabled, but the only keyboard is attached via USB, and the "
+"``qubes.InputKeyboard`` service is disabled."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:15
+#: 3307195311a647b199da8b97a99d5073
+msgid ""
+"A PCI device assigned to an autostarting qube crashes the system (e.g., a "
+"GPU or RAID controller card)."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:18
+#: 4dcef78366b94c8d86f3bffef653b221
+msgid ""
+"To address this, there is a ``qubes.skip_autostart`` option for the kernel "
+"command line. You can use it at the grub boot menu."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:21
+#: 2f030fb0e2c9478f8c12913195502d32
+msgid "|grub1.png|"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:0
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:0
+#: e726fce0e005477290f7cd8e5bde3c3e b907403731b941609046284f465c1855
+msgid "grub1.png"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:23
+#: 0707ee933a09465fa87f1baee86188cf
+msgid ""
+"Press the ``E`` key on the first prompt (or your custom prompt). Then, press"
+" the down arrow key multiple times to reach the line starting with "
+"``module2``."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:27
+#: e3d5d1f672e04ed3900a00c2d35bdd97
+msgid "|grub2.png|"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:0
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:0
+#: 15a8aee6ba6647f397278609b562f671 9646f217fb6344019890c25b30dee069
+msgid "grub2.png"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:29
+#: 9dba1f525f0a46fd98146ecfecd935eb
+msgid ""
+"Append ``qubes.skip_autostart`` to the end of this line (generally after the"
+" ``rhgb quiet`` options)."
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:32
+#: 88353bc7df0a4a90b1504b6ed9f2fbb1
+msgid "|grub3.png|"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:0
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:0
+#: a578deff93dd453b8145805cc0967956 f2a233a5eb014f63a52a68b0aa47bb4a
+msgid "grub3.png"
+msgstr ""
+
+#: ../../../_doc/user/troubleshooting/autostart-troubleshooting.rst:34
+#: 965aa5281c564d9e954e144ee136b215
+msgid ""
+"Press ``Ctrl+X`` to boot with the edited GRUB entry. The boot will proceed "
+"as usual from here, except that no qube will be autostarted."
+msgstr ""
